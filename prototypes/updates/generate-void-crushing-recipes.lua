@@ -17,10 +17,10 @@ for _, item in pairs(flib_prototypes.all("item")) do
       {
         type = "recipe",
         name = "kr-crush-" .. item.name,
-        localised_name = {
-          "recipe-name.kr-crush",
-          flib_locale.of(item),
-        },
+        -- localised_name = {
+        --   "recipe-name.kr-crush",
+        --   flib_locale.of_item(item),
+        -- },
         icon = "__Krastorio2Assets__/icons/recipes/trash.png",
         category = "kr-void-crushing",
         hidden = true,
