@@ -34,9 +34,8 @@ data:extend({
     corpse = "kr-medium-random-pipes-remnant",
     dying_explosion = "medium-explosion",
     alert_icon_shift = util.by_pixel(0, -12),
-    effectivity = 2.1,
     fluid_usage_per_tick = 5 / 3,
-    maximum_temperature = 975,
+    maximum_temperature = 4015,
     burns_fluid = false,
     resistances = {
       { type = "physical", percent = 50 },
@@ -54,13 +53,13 @@ data:extend({
       },
       production_type = "input-output",
       filter = "steam",
-      minimum_temperature = 950.0,
+      minimum_temperature = 165.0,
     },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-output",
     },
-    max_power_output = "100MW",
+    max_power_output = "200MW",
     working_sound = {
       sound = {
         filename = "__Krastorio2Assets__/sounds/buildings/advanced-steam-turbine.ogg",
