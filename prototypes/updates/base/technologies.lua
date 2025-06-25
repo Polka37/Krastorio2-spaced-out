@@ -112,6 +112,7 @@ data_util.add_recipe_unlock("railgun", "kr-railgun-turret")
 data_util.add_recipe_unlock("railgun", "kr-basic-railgun-shell")
 data_util.add_recipe_unlock("railgun", "kr-explosive-railgun-shell")
 data_util.add_recipe_unlock("captivity", "kr-biter-biomass")
+data_util.add_recipe_unlock("fusion-reactor", "kr-high-fusion")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")

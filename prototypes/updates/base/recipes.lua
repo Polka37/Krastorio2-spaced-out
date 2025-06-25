@@ -688,6 +688,11 @@ data_util.add_or_replace_product(
   "uranium-fuel-cell",
   { type = "item", name = "uranium-fuel-cell", amount = 1 }
 )
+data_util.add_or_replace_ingredient(
+  "fusion-power-cell",
+  "kr-tritium",
+  { type = "item", name = "kr-tritium", amount = 4 }
+)
 
 data.raw.recipe["uranium-processing"].results = {
   { type = "item", name = "uranium-235", probability = 0.007, amount = 1 },
@@ -784,6 +789,9 @@ data.raw.recipe["chemical-science-pack"] = {
   results = { { type = "item", name = "chemical-science-pack", amount = 5 } },
   allow_productivity = true,
 }
+
+data_util.convert_ingredient("lithium-plate","lithium", "kr-lithium" )
+data_util.add_or_replace_product("lithium", "lithium", { type = "item", name = "kr-lithium", amount = 5 })
 
 data.raw.recipe["production-science-pack"] = {
   type = "recipe",
