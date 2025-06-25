@@ -1,8 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.10
+Date: 2025-06-25
+  Features:
+    - Fusion reactor tuning
+  Changes:
+    - K2 Fusion reactor no longer can be placed on space platforms
+    - Advanced steam turbine can use low temputure steam
+    - Fusion fuel cell now needs tritium
+    - Uranium rocket payload is now 100 items
+    - merged vanilla and k2 lithium
+---------------------------------------------------------------------------------------------------
 Version: 1.3.9
 Date: 2025-06-25
   Changes:
-    - Shield mk3 now longer needs production tech cards
+    - Shield mk3 no longer needs production tech cards
     - All infinite techs require optimization data card without need of basic cards
     - Research productivity now requires all k2 cards
   Bugfixes:
