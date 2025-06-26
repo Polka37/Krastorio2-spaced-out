@@ -801,7 +801,7 @@ data.raw.recipe["production-science-pack"] = {
   enabled = false,
   energy_required = 20,
   ingredients = {
-    { type = "item", name = "kr-blank-tech-card", amount = 10 },
+    { type = "item", name = "kr-blank-tech-card", amount = 5 },
     { type = "item", name = "fast-transport-belt", amount = 10 },
     { type = "item", name = "productivity-module", amount = 5 },
     { type = "item", name = "uranium-238", amount = 5 },
@@ -817,7 +817,7 @@ data.raw.recipe["utility-science-pack"] = {
   enabled = false,
   energy_required = 20,
   ingredients = {
-    { type = "item", name = "kr-blank-tech-card", amount = 10 },
+    { type = "item", name = "kr-blank-tech-card", amount = 5 },
     { type = "item", name = "processing-unit", amount = 5 },
     { type = "item", name = "rocket-fuel", amount = 5 },
     { type = "item", name = "low-density-structure", amount = 5 },
