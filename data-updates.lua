@@ -24,6 +24,7 @@ require("prototypes.updates.generate-greenhouse-recipes")
 require("prototypes.updates.generate-matter-recipes")
 require("prototypes.updates.generate-roboport-variations")
 require("prototypes.updates.generate-void-crushing-recipes")
+require("prototypes.updates.generate-tech-card-cooling")
 require("prototypes.updates.remove-nuclear-fuel")
 require("prototypes.updates.set-new-resource-autoplace")
 
