@@ -6,7 +6,7 @@ data:extend({
     category = "kr-tech-cards",
     energy_required = 20,
     ingredients = {
-      { type = "item", name = "kr-blank-tech-card", amount = 15 },
+      { type = "item", name = "kr-blank-tech-card", amount = 5 },
       { type = "item", name = "kr-imersium-gear-wheel", amount = 20 },
       { type = "item", name = "kr-lithium-sulfur-battery", amount = 10 },
       { type = "item", name = "electric-engine-unit", amount = 5 },
@@ -39,7 +39,7 @@ data:extend({
     category = "kr-tech-cards",
     energy_required = 20,
     ingredients = {
-      { type = "item", name = "kr-blank-tech-card", amount = 15 },
+      { type = "item", name = "kr-blank-tech-card", amount = 5 },
       { type = "item", name = "kr-matter-research-data", amount = 5 },
       { type = "item", name = "processing-unit", amount = 5 },
     },
@@ -55,7 +55,7 @@ data:extend({
     category = "kr-tech-cards",
     energy_required = 20,
     ingredients = {
-      { type = "item", name = "kr-blank-tech-card", amount = 15 },
+      { type = "item", name = "kr-blank-tech-card", amount = 5 },
       { type = "item", name = "kr-charged-matter-stabilizer", amount = 5 },
       { type = "item", name = "kr-ai-core", amount = 5 },
       { type = "item", name = "biter-egg", amount = 1 },
@@ -72,7 +72,7 @@ data:extend({
     category = "kr-tech-cards",
     energy_required = 20,
     ingredients = {
-      { type = "item", name = "kr-blank-tech-card", amount = 10 },
+      { type = "item", name = "kr-blank-tech-card", amount = 5 },
       { type = "item", name = "kr-space-research-data", amount = 5 },
     },
     results = {
