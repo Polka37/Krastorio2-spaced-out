@@ -71,7 +71,7 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     collision_box = { { -2.8, -2.8 }, { 2.8, 2.8 } },
     selection_box = { { -2.95, -2.95 }, { 2.95, 2.95 } },
-    crafting_categories = { "kr-research-data", "kr-tech-cards" },
+    crafting_categories = { "kr-research-data", "kr-tech-cards", "kr-tech-cards-cooling" },
     heating_energy = "100kW",
     crafting_speed = 3,
     module_slots = 4,
@@ -82,7 +82,7 @@ data:extend({
         production_type = "input",
         pipe_picture = pipe_pictures,
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
+        volume = 100,
         pipe_connections = {
           { flow_direction = "input", direction = defines.direction.north, position = { -0.5, -2.5 } },
         },
@@ -92,7 +92,7 @@ data:extend({
         production_type = "output",
         pipe_picture = pipe_pictures,
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
+        volume = 100,
         pipe_connections = {
           { flow_direction = "output", direction = defines.direction.south, position = { 0.5, 2.5 } },
         },
