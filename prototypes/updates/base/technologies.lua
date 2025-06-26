@@ -113,6 +113,11 @@ data_util.add_recipe_unlock("railgun", "kr-basic-railgun-shell")
 data_util.add_recipe_unlock("railgun", "kr-explosive-railgun-shell")
 data_util.add_recipe_unlock("captivity", "kr-biter-biomass")
 data_util.add_recipe_unlock("fusion-reactor", "kr-high-fusion")
+data_util.add_recipe_unlock("electromagnetic-science-pack", "kr-electromagnetic-research-data")
+data_util.add_recipe_unlock("metallurgic-science-pack", "kr-metallurgic-research-data")
+data_util.add_recipe_unlock("agricultural-science-pack", "kr-agricultural-research-data")
+data_util.add_recipe_unlock("cryogenic-science-pack", "kr-cryogenic-research-data")
+data_util.add_recipe_unlock("promethium-science-pack", "kr-promethium-research-data")
 
 if settings.startup["kr-loaders"].value then
   data_util.add_recipe_unlock("logistics", "kr-loader")
@@ -198,6 +203,11 @@ data.raw.technology["utility-science-pack"].localised_name = { "item-name.utilit
 data.raw.technology[kr_optimization_tech_card_name].localised_name = { "item-name.optimization-tech-card" }
 data.raw.technology[kr_optimization_tech_card_name].localised_description =
   { "technology-description.optimization-tech-card" }
+data.raw.technology["electromagnetic-science-pack"].localised_name = { "item-name.kr-electromagnetic-tech-card" }
+data.raw.technology["metallurgic-science-pack"].localised_name = {"item-name.kr-metallurgic-tech-card"}
+data.raw.technology["agricultural-science-pack"].localised_name = {"item-name.kr-agricultural-tech-card"}
+data.raw.technology["cryogenic-science-pack"].localised_name = {"item-name.kr-cryogenic-tech-card"}
+data.raw.technology["promethium-science-pack"].localised_name = {"item-name.kr-promethium-tech-card"}
 
 --Remove once aai industry updates
 data.raw.technology["kr-automation-core"].unit = nil
@@ -231,5 +241,10 @@ data_util.set_icons(data.raw.technology["personal-laser-defense-equipment"], uti
 data_util.set_icon(data.raw.technology["production-science-pack"], "__Krastorio2Assets__/technologies/production-tech-card.png", 256)
 data_util.set_icon(data.raw.technology["steel-processing"], "__Krastorio2Assets__/technologies/steel-processing.png", 256)
 data_util.set_icon(data.raw.technology["utility-science-pack"], "__Krastorio2Assets__/technologies/utility-tech-card.png", 256)
+data_util.set_icon(data.raw.technology["metallurgic-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/metallurgy-tech-card.png",256)
+data_util.set_icon(data.raw.technology["electromagnetic-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/electromagnetic-tech-card.png",256)
+data_util.set_icon(data.raw.technology["agricultural-science-pack"],  "__Krastorio2-spaced-out__/graphics/technologies/agricultural-tech-card.png",256)
+data_util.set_icon(data.raw.technology["cryogenic-science-pack"],  "__Krastorio2-spaced-out__/graphics/technologies/cryogenic-tech-card.png",256)
+data_util.set_icon(data.raw.technology["promethium-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/promethium-tech-card.png",256)
 -- stylua: ignore end
 
