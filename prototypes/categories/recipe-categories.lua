@@ -17,5 +17,6 @@ data:extend({
   { type = "recipe-category", name = "kr-smelting-crafting" },
   { type = "recipe-category", name = "kr-stabilizer-charging" },
   { type = "recipe-category", name = "kr-tech-cards" },
+  { type = "recipe-category", name = "kr-tech-cards-cooling" },
   { type = "recipe-category", name = "kr-void-crushing" },
 })

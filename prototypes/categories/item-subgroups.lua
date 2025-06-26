@@ -49,6 +49,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "kr-tech-cards-cooling",
+    group = "intermediate-products",
+    order = "y1",
+  },
+  {
+    type = "item-subgroup",
     name = "kr-matter-deconversion",
     group = "intermediate-products",
     order = "m2",
