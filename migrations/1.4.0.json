@@ -1,0 +1,10 @@
+{
+"recipe": [
+ ["electromagnetic-science-pack", "kr-electromagnetic-research-data"],
+ ["metallurgic-science-pack", "kr-metallurgic-research-data"],
+ ["agricultural-science-pack", "kr-agricultural-research-data"],
+ ["cryogenic-science-pack", "kr-cryogenic-research-data"],
+ ["promethium-science-pack", "kr-promethium-research-data"]
+]
+}
+
