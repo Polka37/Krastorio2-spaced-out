@@ -68,7 +68,7 @@ data:extend({
         { "logistic-science-pack", 1 },
       },
     },
-    prerequisites = { "fluid-handling", "kr-fluids-chemistry" },
+    prerequisites = { "kr-steel-fluid-handling", "kr-fluids-chemistry" },
     effects = {
       { type = "unlock-recipe", recipe = "kr-mineral-water-pumpjack" },
     },

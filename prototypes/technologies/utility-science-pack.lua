@@ -126,7 +126,7 @@ data:extend({
         { "utility-science-pack", 1 },
       },
     },
-    prerequisites = {  },
+    prerequisites = { "production-science-pack", "utility-science-pack"  },
     effects = {
       { type = "unlock-recipe", recipe = "kr-matter-research-data" },
       { type = "unlock-recipe", recipe = "kr-matter-tech-card" },
