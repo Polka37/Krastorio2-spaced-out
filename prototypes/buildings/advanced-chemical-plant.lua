@@ -90,7 +90,7 @@ data:extend({
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "assembling-machine",
-    crafting_categories = { "chemistry", "kr-advanced-chemistry", "chemistry-or-cryogenics", "organic-or-chemistry" },
+    crafting_categories = { "chemistry", "kr-advanced-chemistry", "chemistry-or-cryogenics", "organic-or-chemistry", "kr-fluid-filtration", --[["oil-processing"]] },
     crafting_speed = 8,
     ingredient_count = 6,
     module_slots = 4,
