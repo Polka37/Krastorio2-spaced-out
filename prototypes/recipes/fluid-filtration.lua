@@ -17,6 +17,8 @@ data:extend({
     surface_conditions = { { property = "pressure", min = 1000 } },
     always_show_made_in = true,
     always_show_products = true,
+    allow_productivity = false,
+    maximum_productivity = 0,
     crafting_machine_tint = {
       primary = data.raw.fluid["heavy-oil"].base_color, -- Dirty
       secondary = { r = 0.64, g = 0.83, b = 0.93, a = 0.9 }, -- Clear
