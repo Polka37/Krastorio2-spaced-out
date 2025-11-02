@@ -112,7 +112,6 @@ data_util.add_recipe_unlock("foundry", "kr-molten-rare-metals")
 data_util.add_recipe_unlock("foundry", "kr-molten-enriched-rare-metals")
 data_util.add_recipe_unlock("foundry", "kr-molten-rare-metals-from-lava")
 data_util.add_recipe_unlock("foundry", "kr-casting-rare-metals")
-data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
 data_util.add_recipe_unlock("biochamber", "kr-bio-processing-circuit")
 data_util.add_recipe_unlock("bioflux-processing", "kr-spoilage-decomposition")
 data_util.add_recipe_unlock("rocket-turret", "kr-rocket-turret")
@@ -241,10 +240,6 @@ data.raw.technology["kr-automation-core"].research_trigger = {
 table.insert(
 	data.raw["technology"]["processing-unit-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 }
-)
-table.insert(
-	data.raw["technology"]["processing-unit-productivity"].effects,
-	{ type = "change-recipe-productivity", recipe = "kr-carbide-processing-circuit", change = 0.1 }
 )
 table.insert(
 	data.raw["technology"]["rocket-fuel-productivity"].effects,

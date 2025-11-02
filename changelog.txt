@@ -4,6 +4,7 @@ Date: 2025-11-2
   Changes:
     - Energy shield mk2 research no longer requires electromagnetic science pack
     - Added speed module 3 as prerequisites for exoskeleton mk3
+    - Removed carbide circuits recipe
   Bugfixes:
     - Fixed startup error with finite resources off
 ---------------------------------------------------------------------------------------------------
