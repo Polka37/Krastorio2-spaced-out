@@ -2,9 +2,11 @@
 Version: 1.4.33
 Date: 2025-11-2
   Changes:
+    - BREAKING CHANGES: PLEASE PARK YOUR SPACE PLATFORMS AND MAKE SURE TO PRODUCE RARE METALS ON VULCANUS
     - Energy shield mk2 research no longer requires electromagnetic science pack
     - Added speed module 3 as prerequisites for exoskeleton mk3
-    - Removed carbide circuits recipe
+    - !!Removed carbide circuits recipe
+    - !!Oxidizer and thruster fuel and requires oxygen and hydrogen respectively
   Bugfixes:
     - Fixed startup error with finite resources off
 ---------------------------------------------------------------------------------------------------
