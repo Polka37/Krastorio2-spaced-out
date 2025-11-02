@@ -49,6 +49,7 @@ data_util.add_prerequisite("energy-shield-mk2-equipment", "power-armor-mk2")
 data_util.add_prerequisite("big-mining-drill", "kr-electric-mining-drill-mk2")
 data_util.add_prerequisite("promethium-science-pack", "kr-singularity-tech-card")
 data_util.add_prerequisite("research-productivity", "kr-singularity-lab")
+data_util.add_prerequisite("kr-superior-exoskeleton-equipment", "speed-module-3")
 
 data_util.remove_prerequisite("spidertron", "fission-reactor-equipment")
 data_util.remove_prerequisite("atomic-bomb", "military-4")
@@ -73,6 +74,7 @@ data_util.remove_prerequisite("health", "military-science-pack")
 data_util.remove_prerequisite("research-productivity", "promethium-science-pack")
 
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
+data_util.remove_research_unit_ingredient("energy-shield-mk2-equipment", "electromagnetic-science-pack")
 
 data_util.add_research_unit_ingredient("promethium-science-pack", "kr-singularity-tech-card")
 data_util.add_research_unit_ingredient("research-productivity", "kr-matter-tech-card")

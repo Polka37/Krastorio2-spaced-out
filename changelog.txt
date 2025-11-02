@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.33
+Date: 2025-11-2
+  Changes:
+    - Energy shield mk2 research no longer requires electromagnetic science pack
+    - Added speed module 3 as prerequisites for exoskeleton mk3
+  Bugfixes:
+    - Fixed startup error with finite resources off
+---------------------------------------------------------------------------------------------------
 Version: 1.4.32
 Date: 2025-10-22
   Bugfixes:
