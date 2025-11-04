@@ -77,7 +77,7 @@ crushing_lib.make_recipe(data.raw.item["kr-imersite-crystal"], {
 	order = "e[ei-electronic-components]",
 	energy_required = 1,
 	results = {
-		{ type = "item", name = "kr-imersite-powder", amount_min = 2, amount_max = 3 },
+		{ type = "item", name = "kr-imersite-powder", amount_min = 1, amount_max = 2 },
 	},
 })
 data.raw.recipe["kr-crush-kr-imersite-crystal"].auto_recycle = false

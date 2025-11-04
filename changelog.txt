@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Date: 2025-11-4
+  Balancing:
+    - Nerfed imersite crystal crushing from 2-3 to 1-2 imersite powder
+  Bugfixes:
+    - Changed dependency for Krastorio2Assets from equal to greater than
+---------------------------------------------------------------------------------------------------
 Version: 1.5.1
 Date: 2025-11-4
   Compatibility:
