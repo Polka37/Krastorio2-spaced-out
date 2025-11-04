@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2025-11-4
+  Compatibility:
+    - Updated Moshine K2SO AI cores icons
+  Bugfixes:
+    - Fixed uncharged matter stabilizer recycled into charged version
+---------------------------------------------------------------------------------------------------
 Version: 1.5.0
 Date: 2025-11-2
   Changes:
