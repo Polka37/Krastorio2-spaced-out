@@ -13,7 +13,7 @@ data:extend({
 		auto_recycle = false,
 		ingredients = {
 			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
-			{ type = "item", name = "advanced-circuit", amount = 6 },
+			{ type = "item", name = "advanced-circuit", amount = 4 },
 			{ type = "item", name = "pentapod-egg", amount = 1 },
 		},
 		results = { { type = "item", name = "processing-unit", amount = 2 } },
