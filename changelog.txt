@@ -1,21 +1,24 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.4
 Date: 2025-11-14
+  Info:
+    - 1.5.x versions are object to major sometimes breaking changes, you may consider playing on 1.4.32 as stable version instead
   Locale:
     - Updated russian locale (#89 thanks to V1ncvega)
   Changes:
     - More fulgoran ruins drop bricks to make starting from Fulgora from scratch more obvious
+    - !! Wood growing requires tree seeds, but gives 1.25x wood
   Balancing:
-    - Bio processing units advanced circuits input 6 -> 4
-    - Compost spoilage biomethanol output 150 -> 250
+    - Bio processing units: advanced circuits input 6 -> 4
+    - Compost spoilage: biomethanol output 150 -> 250
     - Changed matter value of many items:
-      - Wood 2 -> 1, 0.5x
-      - Rare metal ore 8 -> 12, 1.5x
-      - Rare metals 14 -> 21, 1.5x
-      - Calcite 2 -> 20, 10x
-      - Tungsten 10 -> 30, 3x
-      - Quartz 1.84 -> 0.64, 0.35x
-      - Scrap 3 -> 1, 0.33x
+      - Wood: 2 -> 1, 0.5x
+      - Rare: metal ore 8 -> 12, 1.5x
+      - Rare: metals 14 -> 21, 1.5x
+      - Calcite: 2 -> 20, 10x
+      - Tungsten: 10 -> 30, 3x
+      - Quartz: 1.84 -> 0.64, 0.35x
+      - Scrap: 3 -> 1, 0.33x
   Bugfixes:
     - Fixed quantum computer couldn't be mirrored
 ---------------------------------------------------------------------------------------------------

@@ -8,9 +8,10 @@ data:extend({
 		energy_required = 60,
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 200 },
+			{ type = "item", name = "tree-seed", amount = 5 },
 		},
 		results = {
-			{ type = "item", name = "wood", amount = 40 },
+			{ type = "item", name = "wood", amount = 50 },
 		},
 		auto_recycle = false,
 		main_product = "wood",
@@ -27,9 +28,10 @@ data:extend({
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 200 },
 			{ type = "item", name = "kr-fertilizer", amount = 1 },
+			{ type = "item", name = "tree-seed", amount = 10 },
 		},
 		results = {
-			{ type = "item", name = "wood", amount = 80 },
+			{ type = "item", name = "wood", amount = 100 },
 		},
 		auto_recycle = false,
 		main_product = "wood",

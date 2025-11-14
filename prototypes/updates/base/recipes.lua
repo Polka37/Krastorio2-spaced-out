@@ -556,6 +556,8 @@ data.raw.recipe["rocket-fuel"].crafting_machine_tint = {
 	quaternary = { r = 0.462, g = 0.607, b = 0.839, a = 0.900 },
 }
 
+data.raw.recipe["wood-processing"].surface_conditions = nil
+
 data_util.add_or_replace_ingredient("shotgun", "wood", { type = "item", name = "wood", amount = 2 })
 data_util.add_or_replace_ingredient("shotgun", "iron-plate", { type = "item", name = "iron-plate", amount = 3 })
 data_util.add_or_replace_ingredient("shotgun", "copper-plate", { type = "item", name = "copper-plate", amount = 2 })
