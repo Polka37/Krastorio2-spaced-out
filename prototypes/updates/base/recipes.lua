@@ -859,170 +859,59 @@ data.raw.recipe["scrap-recycling"].results = {
 
 -- Science packs
 
-data.raw.recipe["automation-science-pack"] = {
-	type = "recipe",
-	name = "automation-science-pack",
-	enabled = false,
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-automation-core", amount = 1 },
-	},
-	results = { { type = "item", name = "automation-science-pack", amount = 5 } },
-	allow_productivity = true,
-}
+data_util.make_tech_card("automation-science-pack", {
+	{ type = "item", name = "kr-automation-core", amount = 1 },
+}, true)
 
-data.raw.recipe["logistic-science-pack"] = {
-	type = "recipe",
-	name = "logistic-science-pack",
-	enabled = false,
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "electronic-circuit", amount = 5 },
-		{ type = "item", name = "iron-gear-wheel", amount = 5 },
-	},
-	results = { { type = "item", name = "logistic-science-pack", amount = 5 } },
-	allow_productivity = true,
-}
+data_util.make_tech_card("logistic-science-pack", {
+	{ type = "item", name = "electronic-circuit", amount = 5 },
+	{ type = "item", name = "iron-gear-wheel", amount = 5 },
+}, true)
 
-data.raw.recipe["military-science-pack"] = {
-	type = "recipe",
-	name = "military-science-pack",
-	enabled = false,
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-biter-research-data", amount = 1 },
-		{ type = "item", name = "kr-electronic-components", amount = 5 },
-	},
-	results = { { type = "item", name = "military-science-pack", amount = 5 } },
-	allow_productivity = true,
-}
+data_util.make_tech_card("military-science-pack", {
+	{ type = "item", name = "kr-biter-research-data", amount = 1 },
+	{ type = "item", name = "kr-electronic-components", amount = 5 },
+}, true)
 
-data.raw.recipe["chemical-science-pack"] = {
-	type = "recipe",
-	name = "chemical-science-pack",
-	category = "crafting-with-fluid",
-	enabled = false,
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-glass", amount = 15 },
-		{ type = "item", name = "advanced-circuit", amount = 5 },
-		{ type = "fluid", name = "sulfuric-acid", amount = 50 },
-	},
-	results = { { type = "item", name = "chemical-science-pack", amount = 5 } },
-	allow_productivity = true,
-}
+data_util.make_tech_card("chemical-science-pack", {
+	{ type = "item", name = "kr-glass", amount = 15 },
+	{ type = "item", name = "advanced-circuit", amount = 5 },
+	{ type = "fluid", name = "sulfuric-acid", amount = 50 },
+}, true)
 
-data.raw.recipe["production-science-pack"] = {
-	type = "recipe",
-	name = "production-science-pack",
-	category = "kr-tech-cards",
-	enabled = false,
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "fast-transport-belt", amount = 10 },
-		{ type = "item", name = "productivity-module", amount = 5 },
-		{ type = "item", name = "uranium-238", amount = 5 },
-	},
-	results = { { type = "item", name = "production-science-pack", amount = 5 } },
-	allow_productivity = true,
-}
+data_util.make_tech_card("production-science-pack", {
+	{ type = "item", name = "fast-transport-belt", amount = 10 },
+	{ type = "item", name = "productivity-module", amount = 5 },
+	{ type = "item", name = "uranium-238", amount = 5 },
+})
 
-data.raw.recipe["utility-science-pack"] = {
-	type = "recipe",
-	name = "utility-science-pack",
-	category = "kr-tech-cards",
-	enabled = false,
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "processing-unit", amount = 5 },
-		{ type = "item", name = "rocket-fuel", amount = 5 },
-		{ type = "item", name = "low-density-structure", amount = 5 },
-	},
-	results = { { type = "item", name = "utility-science-pack", amount = 5 } },
-	allow_productivity = true,
-}
-data.raw.recipe["metallurgic-science-pack"] = {
-	type = "recipe",
-	name = "metallurgic-science-pack",
-	enabled = false,
-	category = "kr-tech-cards",
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-metallurgic-research-data", amount = 5 },
-		--{ type = "item", name = "kr-steel-beam", amount = 5 },
-	},
-	results = {
-		{ type = "item", name = "metallurgic-science-pack", amount = 5 },
-	},
-	allow_productivity = true,
-}
-data.raw.recipe["electromagnetic-science-pack"] = {
-	type = "recipe",
-	name = "electromagnetic-science-pack",
-	enabled = false,
-	category = "kr-tech-cards",
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-electromagnetic-research-data", amount = 5 },
-		--{ type = "item", name = "copper-cable", amount = 5 },
-	},
-	results = {
-		{ type = "item", name = "electromagnetic-science-pack", amount = 5 },
-	},
-	allow_productivity = true,
-}
-data.raw.recipe["agricultural-science-pack"] = {
-	type = "recipe",
-	name = "agricultural-science-pack",
-	enabled = false,
-	category = "kr-tech-cards",
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-agricultural-research-data", amount = 5 },
-	},
-	results = {
-		{ type = "item", name = "agricultural-science-pack", amount = 5 },
-	},
-	allow_productivity = true,
-	reset_freshness_on_craft = true,
-}
-data.raw.recipe["cryogenic-science-pack"] = {
-	type = "recipe",
-	name = "cryogenic-science-pack",
-	enabled = false,
-	category = "kr-tech-cards",
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-cryogenic-research-data", amount = 5 },
-	},
-	results = {
-		{ type = "item", name = "cryogenic-science-pack", amount = 5 },
-	},
-	allow_productivity = true,
-}
-data.raw.recipe["promethium-science-pack"] = {
-	type = "recipe",
-	name = "promethium-science-pack",
-	enabled = false,
-	category = "kr-tech-cards",
-	energy_required = 20,
-	ingredients = {
-		{ type = "item", name = "kr-blank-tech-card", amount = 5 },
-		{ type = "item", name = "kr-promethium-research-data", amount = 5 },
-		{ type = "item", name = "biter-egg", amount = 5 },
-	},
-	results = {
-		{ type = "item", name = "promethium-science-pack", amount = 5 },
-	},
-	allow_productivity = true,
-}
+data_util.make_tech_card("utility-science-pack", {
+	{ type = "item", name = "processing-unit", amount = 5 },
+	{ type = "item", name = "rocket-fuel", amount = 5 },
+	{ type = "item", name = "low-density-structure", amount = 5 },
+})
+
+data_util.make_tech_card("space-science-pack", {
+	{ type = "item", name = "kr-space-research-data", amount = 5 },
+})
+
+data_util.make_tech_card("metallurgic-science-pack", {
+	{ type = "item", name = "kr-metallurgic-research-data", amount = 5 },
+})
+
+data_util.make_tech_card("electromagnetic-science-pack", {
+	{ type = "item", name = "kr-electromagnetic-research-data", amount = 5 },
+})
+
+data_util.make_tech_card("agricultural-science-pack", {
+	{ type = "item", name = "kr-agricultural-research-data", amount = 5 },
+})
+
+data_util.make_tech_card("cryogenic-science-pack", {
+	{ type = "item", name = "kr-cryogenic-research-data", amount = 5 },
+})
+
+data_util.make_tech_card("promethium-science-pack", {
+	{ type = "item", name = "kr-promethium-research-data", amount = 5 },
+	{ type = "item", name = "biter-egg", amount = 5 },
+})

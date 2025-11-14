@@ -549,4 +549,24 @@ function data_util.add_fuel_category(energy_source, category_name)
 	table.insert(energy_source.fuel_categories, category_name)
 end
 
+--make a recipe tech card
+--provide ingredients for tech card, blank tech card is always included
+--no_server = true if tech card is supposed to be made in assembler
+function data_util.make_tech_card(science_pack, ingredients, no_server)
+	data.raw.recipe[science_pack] = {
+		type = "recipe",
+		name = science_pack,
+		enabled = false,
+		energy_required = 20,
+		ingredients = ingredients,
+		results = { { type = "item", name = science_pack, amount = 5 } },
+		allow_productivity = true,
+	}
+	local recipe = data.raw.recipe[science_pack]
+	table.insert(recipe.ingredients, 1, { type = "item", name = "kr-blank-tech-card", amount = 5 })
+	if not no_server then
+		recipe.category = "kr-tech-cards"
+	end
+end
+
 return data_util
