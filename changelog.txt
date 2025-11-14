@@ -1,6 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.4
 Date: 2025-11-14
+  Locale:
+    - Updated russian locale (#89 thanks to V1ncvega)
+  Changes:
+    - More fulgoran ruins drop bricks to make starting from Fulgora from scratch more obvious
   Bugfixes:
     - Fixed quantum computer couldn't be mirrored
 ---------------------------------------------------------------------------------------------------

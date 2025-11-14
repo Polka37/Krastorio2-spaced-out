@@ -500,3 +500,32 @@ data.raw["simple-entity"]["lithium-iceberg-huge"].minable.results = {
 	{ type = "item", name = "ice", amount_min = 6, amount_max = 1 },
 	{ type = "item", name = "kr-lithium", amount_min = 2, amount_max = 5 },
 }
+
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-small"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 3 }
+)
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-medium"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 5 }
+)
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-stonehenge"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 9 }
+)
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-big"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 11 }
+)
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-colossal"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 37 }
+)
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-huge"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 26 }
+)
+table.insert(
+	data.raw["simple-entity"]["fulgoran-ruin-vault"].minable.results,
+	{ type = "item", name = "stone-brick", amount = 111 }
+)
