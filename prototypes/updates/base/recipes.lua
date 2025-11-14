@@ -801,6 +801,7 @@ data_util.make_tech_card("chemical-science-pack", {
 	{ type = "item", name = "advanced-circuit", amount = 5 },
 	{ type = "fluid", name = "sulfuric-acid", amount = 50 },
 }, true)
+data.raw.recipe["chemical-science-pack"].category = "crafting-with-fluid"
 
 data_util.make_tech_card("production-science-pack", {
 	{ type = "item", name = "fast-transport-belt", amount = 10 },
