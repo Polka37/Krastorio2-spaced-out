@@ -16,14 +16,7 @@ for name, recipe in pairs(data.raw.recipe) do
 	recycling.generate_recycling_recipe(recipe)
 end
 
---The code below had been made by Johannes2070
---Fix: Ensure the recycler has enough result inventory slots to handle all recycling outputs.
-local recycler = data.raw["furnace"]["recycler"]
-if recycler then
-	if recycler.result_inventory_size < 13 then
-		recycler.result_inventory_size = 13
-	end
-end
+data.raw["furnace"]["recycler"].result_inventory_size = #data.raw.recipe["scrap-recycling"].results
 
 --The code below had been made by Quezler
 -- this file accomplishes the same as Krastroio 2's prototypes/final-fixes/steel-pipe-connectivity.lua file,
