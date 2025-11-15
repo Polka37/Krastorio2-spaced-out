@@ -557,7 +557,8 @@ data.raw.recipe["rocket-fuel"].crafting_machine_tint = {
 }
 
 data.raw.recipe["wood-processing"].surface_conditions = nil
-
+data.raw.recipe["pentapod-egg"].surface_conditions =
+	{ { property = "pressure", min = 1000, max = 2000 } }, 
 data_util.add_or_replace_ingredient("shotgun", "wood", { type = "item", name = "wood", amount = 2 })
 data_util.add_or_replace_ingredient("shotgun", "iron-plate", { type = "item", name = "iron-plate", amount = 3 })
 data_util.add_or_replace_ingredient("shotgun", "copper-plate", { type = "item", name = "copper-plate", amount = 2 })
