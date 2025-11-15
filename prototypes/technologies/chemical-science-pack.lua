@@ -16,7 +16,6 @@ data:extend({
 		},
 		prerequisites = { "kr-atmosphere-condensation" },
 		effects = {
-			{ type = "unlock-recipe", recipe = "kr-water" },
 			{ type = "unlock-recipe", recipe = "kr-water-separation" },
 			{ type = "unlock-recipe", recipe = "kr-ammonia" },
 			{ type = "unlock-recipe", recipe = "kr-nitric-acid" },

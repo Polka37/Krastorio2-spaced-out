@@ -5,6 +5,7 @@ Date: 2025-11-12
     - Moshine multi ore now gives rare metals ore
   Changes:
     - Removed tree seeding technology since tree seeds are already unlocked by greenhouse research
+    - Removed water from hydrogen and oxygen recipe, because it allowed for infinite water loop
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.5
 Date: 2025-11-11
