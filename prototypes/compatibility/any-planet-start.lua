@@ -4,6 +4,8 @@ end
 
 local data_util = require("data-util")
 
+data_util.add_prerequisite("fish-breeding", "planet-discovery-nauvis")
+
 if settings.startup["aps-planet"].value == "gleba" then
 	data.raw.technology["agriculture"].research_trigger = {
 		type = "craft-item",

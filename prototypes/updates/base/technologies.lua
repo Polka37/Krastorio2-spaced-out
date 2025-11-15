@@ -50,6 +50,7 @@ data_util.add_prerequisite("big-mining-drill", "kr-electric-mining-drill-mk2")
 data_util.add_prerequisite("promethium-science-pack", "kr-singularity-tech-card")
 data_util.add_prerequisite("research-productivity", "kr-singularity-lab")
 data_util.add_prerequisite("kr-superior-exoskeleton-equipment", "speed-module-3")
+data_util.add_prerequisite("fish-breeding", "agricultural-science-pack")
 
 data_util.remove_prerequisite("spidertron", "fission-reactor-equipment")
 data_util.remove_prerequisite("atomic-bomb", "military-4")
@@ -72,6 +73,7 @@ data_util.remove_prerequisite("energy-shield-mk2-equipment", "electromagnetic-sc
 data_util.remove_prerequisite("big-mining-drill", "electric-mining-drill")
 data_util.remove_prerequisite("health", "military-science-pack")
 data_util.remove_prerequisite("research-productivity", "promethium-science-pack")
+data_util.remove_prerequisite("fish-breeding", "tree-seeding")
 
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 data_util.remove_research_unit_ingredient("energy-shield-mk2-equipment", "electromagnetic-science-pack")
@@ -144,6 +146,8 @@ data_util.remove_recipe_unlock("electronics", "small-electric-pole")
 data_util.remove_recipe_unlock("kovarex-enrichment-process", "nuclear-fuel")
 data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
+
+data.raw.technology["tree-seeding"] = nil
 
 data.raw.technology["steel-plate-productivity"].max_level = 5
 data.raw.technology["mining-productivity-3"].max_level = 5

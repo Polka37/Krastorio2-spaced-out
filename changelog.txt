@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.6
+Date: 2025-11-12
+  Changes:
+    - Removed tree seeding technology since tree seeds are already unlocked by greenhouse research
+---------------------------------------------------------------------------------------------------
 Version: 1.5.5
-Date: 2025-11-6
+Date: 2025-11-11
   Bugfixes:
     - Fixed crush caused by chemical tech cards having wrong crafting category
 ---------------------------------------------------------------------------------------------------
