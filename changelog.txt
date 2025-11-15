@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.6
-Date: 2025-11-12
+Date: 2025-11-15
   Compatibility:
     - Moshine multi ore now gives rare metals ore
   Changes:
@@ -10,7 +10,7 @@ Date: 2025-11-12
     - !! Added new recipes for thruster fuel/oxidizer made in cryoplant
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.5
-Date: 2025-11-11
+Date: 2025-11-14
   Bugfixes:
     - Fixed crush caused by chemical tech cards having wrong crafting category
 ---------------------------------------------------------------------------------------------------

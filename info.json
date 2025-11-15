@@ -17,5 +17,6 @@
     "(?) aai-industry >= 0.6.10",
     "! factorioplus",
     "! Krastorio2"
-  ]
+  ],
+  "space_travel_required": true
 }
