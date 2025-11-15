@@ -10,31 +10,24 @@ local convert = {
 }
 
 for _, recipe in pairs(data.raw.recipe) do
-	if not recipe.ingredients then
-		goto next
-	end
-
-	for _, ingredient in pairs(recipe.ingredients) do
-		if convert[ingredient.name] then
-			data_util.convert_ingredient(recipe.name, ingredient.name, "kr-" .. ingredient.name)
-		end
-	end
-
-	::next::
-	if not recipe.results then
-		goto fin
-	end
-
-	for _, result in pairs(recipe.results) do
-		if convert[result.name] then
-			if recipe.main_product == result.name then
-				recipe.main_product = "kr-" .. result.name
+	if recipe.ingredients then
+		for _, ingredient in pairs(recipe.ingredients) do
+			if convert[ingredient.name] then
+				data_util.convert_ingredient(recipe.name, ingredient.name, "kr-" .. ingredient.name)
 			end
-			result.name = "kr-" .. result.name
 		end
 	end
 
-	::fin::
+	if recipe.results then
+		for _, result in pairs(recipe.results) do
+			if convert[result.name] then
+				if recipe.main_product == result.name then
+					recipe.main_product = "kr-" .. result.name
+				end
+				result.name = "kr-" .. result.name
+			end
+		end
+	end
 end
 
 for _, item in pairs(data.raw.item) do
@@ -57,5 +50,15 @@ end
 for _, tile in pairs(data.raw.tile) do
 	if convert[tile.fluid] then
 		tile.fluid = "kr-" .. tile.fluid
+	end
+end
+
+for _, ore in pairs(data.raw.resource) do
+	if ore.minable.results then
+		for _, item in pairs(ore.minable.results) do
+			if convert[item.name] then
+				item.name = "kr-" .. item.name
+			end
+		end
 	end
 end
