@@ -131,6 +131,8 @@ data_util.add_recipe_unlock("agricultural-science-pack", "kr-agricultural-resear
 data_util.add_recipe_unlock("cryogenic-science-pack", "kr-cryogenic-research-data")
 data_util.add_recipe_unlock("promethium-science-pack", "kr-promethium-research-data")
 data_util.add_recipe_unlock("electronics", "kr-electronic-circuit-wood")
+data_util.add_recipe_unlock("cryogenic-plant", "kr-liquid-hydrogen")
+data_util.add_recipe_unlock("cryogenic-plant", "kr-liquid-oxygen")
 
 if settings.startup["kr-loaders"].value then
 	data_util.add_recipe_unlock("logistics", "kr-loader")

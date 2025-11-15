@@ -7,6 +7,7 @@ Date: 2025-11-12
     - Removed tree seeding technology since tree seeds are already unlocked by greenhouse research
     - Removed water from hydrogen and oxygen recipe, because it allowed for infinite water loop
     - Pentapod eggs can also be made on Nauvis
+    - !! Added new recipes for thruster fuel/oxidizer made in cryoplant
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.5
 Date: 2025-11-11

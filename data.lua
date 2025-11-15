@@ -181,6 +181,7 @@ require("prototypes.recipes.oil-processing")
 require("prototypes.recipes.smelting")
 require("prototypes.recipes.stabilizer-charging")
 require("prototypes.recipes.tech-cards")
+require("prototypes.recipes.cryogenics")
 
 require("prototypes.resources.imersite")
 require("prototypes.resources.mineral-water")
