@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.8
+Date: 2025-11-16
+  Optimizations:
+    - Wind turbines are now O(1) instead of O(n).
+  Balancing:
+    - Wind turbines can no longer be placed within three tiles of another wind turbine.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.7
 Date: 2025-11-16
   Bugfixes:

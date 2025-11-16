@@ -31,7 +31,6 @@ data.raw["container"]["kr-shelter-container"].squeak_behavior = false
 
 data.raw["electric-energy-interface"]["kr-activated-intergalactic-transceiver"].squeak_behavior = false
 data.raw["electric-energy-interface"]["kr-shelter"].squeak_behavior = false
-data.raw["electric-energy-interface"]["kr-wind-turbine"].squeak_behavior = false
 
 data.raw["furnace"]["kr-air-purifier"].squeak_behavior = false
 data.raw["furnace"]["kr-crusher"].squeak_behavior = false
@@ -58,6 +57,7 @@ data.raw["simple-entity"]["kr-planetary-teleporter-collision-3"].squeak_behavior
 data.raw["simple-entity"]["kr-planetary-teleporter-front-layer"].squeak_behavior = false
 
 data.raw["solar-panel"]["kr-advanced-solar-panel"].squeak_behavior = false
+data.raw["solar-panel"]["kr-wind-turbine"].squeak_behavior = false
 
 data.raw["storage-tank"]["kr-big-storage-tank"].squeak_behavior = false
 data.raw["storage-tank"]["kr-huge-storage-tank"].squeak_behavior = false
