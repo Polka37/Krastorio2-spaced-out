@@ -21,5 +21,7 @@ data.raw.resource["crude-oil"].map_color = { 1, 0.6, 0 }
 increase_base_density("coal", 2)
 increase_base_density("copper-ore", 1.5)
 
-data.raw["planet"]["gleba"].map_gen_settings.autoplace_controls["gleba_stone"] =
-	{ size = 3, frequency = 1.5, richness = 2 }
+if data.raw["planet"]["gleba"].map_gen_settings then
+	data.raw["planet"]["gleba"].map_gen_settings.autoplace_controls["gleba_stone"] =
+		{ size = 3, frequency = 1.5, richness = 2 }
+end
