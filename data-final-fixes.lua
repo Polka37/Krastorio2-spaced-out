@@ -3,6 +3,7 @@ require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.biter-nests")
 require("prototypes.final-fixes.enforce-rifle-ammo")
 require("prototypes.final-fixes.enforce-k2-items")
+require("prototypes.compatibility.planets.muluna")
 
 --sync all labs inputs
 data.raw["lab"]["biolab"].inputs = data.raw["lab"]["lab"].inputs

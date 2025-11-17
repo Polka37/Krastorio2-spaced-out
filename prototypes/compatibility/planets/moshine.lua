@@ -13,13 +13,11 @@ if not mods["aai-industry"] then
 	data_util.remove_prerequisite("moshine-tech-data-extractor", "moshine-tech-glass")
 end
 
-data_util.add_prerequisite("planet-discovery-moshine", "kr-molten-rare-metals")
 data_util.add_prerequisite("big-solar-energy", "kr-advanced-solar-panel")
 data_util.add_prerequisite("snouz_better_substation_tech", "electric-energy-distribution-3")
 data_util.add_prerequisite("moshine-tech-silicon-cell", "planet-discovery-moshine")
 data_util.add_prerequisite("moshine-tech-silicon-carbide", "planet-discovery-moshine")
 
-data_util.remove_prerequisite("planet-discovery-moshine", "solar-energy")
 data_util.remove_prerequisite("snouz_better_substation_tech", "electric-energy-distribution-2")
 data_util.remove_prerequisite("moshine-tech-silicon-cell", "moshine-tech-silicon")
 data_util.remove_prerequisite("moshine-tech-silicon-carbide", "moshine-tech-silicon")

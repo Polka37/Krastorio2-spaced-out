@@ -1,14 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.9
+Date: 2025-11-17
+  Compatibility:
+    - Muluna thruster productivity research now applies to sub-zero thruster fuel/oxidizer
+  Changes:
+    - Moved assets into separate mod
+  Bugfixes:
+    - Fixed age of production startup error due to lack of tree seeding tech (#97 thanks to isd-1)
+---------------------------------------------------------------------------------------------------
 Version: 1.5.8
 Date: 2025-11-17
-  Changes:
-    - Place assets into separate mod
   Optimizations:
     - Wind turbines are now O(1) instead of O(n).
   Balancing:
     - Wind turbines can no longer be placed within three tiles of another wind turbine.
   Bugfixes:
-    - Fixed age of production startup error due to lack of tree seeding tech (#97 thanks to isd-1)
     - Fixed assembler 1 couldn't craft tree seeds
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.7
