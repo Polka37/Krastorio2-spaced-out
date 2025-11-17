@@ -470,6 +470,8 @@ data.raw["unit"]["medium-spitter"].max_health = 75
 
 data.raw["unit"]["behemoth-spitter"].absorptions_to_join_attack.pollution = 500
 
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-assembling")
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-hand-crafting")
 table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "kr-electrolysis")
 table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery")
 table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")

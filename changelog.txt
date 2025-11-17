@@ -5,6 +5,8 @@ Date: 2025-11-16
     - Wind turbines are now O(1) instead of O(n).
   Balancing:
     - Wind turbines can no longer be placed within three tiles of another wind turbine.
+  Bugfixes:
+    - Fixed assembler 1 couldn't craft tree seeds
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.7
 Date: 2025-11-16
