@@ -33,6 +33,7 @@ require("prototypes.compatibility.any-planet-start")
 require("prototypes.compatibility.planets.moshine")
 require("prototypes.compatibility.planets.castra")
 require("prototypes.compatibility.planets.muluna")
+require("prototypes.compatibility.Age-of-Production")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")
