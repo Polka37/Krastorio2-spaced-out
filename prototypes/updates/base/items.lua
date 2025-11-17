@@ -343,26 +343,14 @@ data.raw.tool[kr_optimization_tech_card_name].pictures = {
 	},
 }
 data.raw.tool["agricultural-science-pack"].spoil_result = "kr-blank-tech-card"
-data_util.set_icon(
-	data.raw.tool["metallurgic-science-pack"],
-	"__Krastorio2-spaced-out__/graphics/icons/metallurgy-tech-card.png"
-)
+data_util.set_icon(data.raw.tool["metallurgic-science-pack"], "__k2so-assets__/icons/cards/metallurgy-tech-card.png")
 data_util.set_icon(
 	data.raw.tool["electromagnetic-science-pack"],
-	"__Krastorio2-spaced-out__/graphics/icons/electromagnetic-tech-card.png"
+	"__k2so-assets__/icons/cards/electromagnetic-tech-card.png"
 )
-data_util.set_icon(
-	data.raw.tool["agricultural-science-pack"],
-	"__Krastorio2-spaced-out__/graphics/icons/agricultural-tech-card.png"
-)
-data_util.set_icon(
-	data.raw.tool["cryogenic-science-pack"],
-	"__Krastorio2-spaced-out__/graphics/icons/cryogenic-tech-card.png"
-)
-data_util.set_icon(
-	data.raw.tool["promethium-science-pack"],
-	"__Krastorio2-spaced-out__/graphics/icons/promethium-tech-card.png"
-)
+data_util.set_icon(data.raw.tool["agricultural-science-pack"], "__k2so-assets__/icons/cards/agricultural-tech-card.png")
+data_util.set_icon(data.raw.tool["cryogenic-science-pack"], "__k2so-assets__/icons/cards/cryogenic-tech-card.png")
+data_util.set_icon(data.raw.tool["promethium-science-pack"], "__k2so-assets__/icons/cards/promethium-tech-card.png")
 data.raw.tool["electromagnetic-science-pack"].localised_name = { "item-name.kr-electromagnetic-tech-card" }
 data.raw.tool["metallurgic-science-pack"].localised_name = { "item-name.kr-metallurgic-tech-card" }
 data.raw.tool["agricultural-science-pack"].localised_name = { "item-name.kr-agricultural-tech-card" }
@@ -379,7 +367,7 @@ local function add_light(item)
 				scale = 0.5,
 			},
 			{
-				filename = "__Krastorio2-spaced-out__/graphics/icons/tech-card-light.png",
+				filename = "__k2so-assets__/icons/cards/tech-card-light.png",
 				size = 64,
 				scale = 0.5,
 				draw_as_light = true,

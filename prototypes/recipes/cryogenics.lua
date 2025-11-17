@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-liquid-oxygen",
-		icon = "__Krastorio2-spaced-out__/graphics/icons/liquid-oxygen.png",
+		icon = "__k2so-assets__/icons/recipes/liquid-oxygen.png",
 		category = "cryogenics",
 		subgroup = "space-processing",
 		order = "e[liquid-oxygen]",
@@ -37,7 +37,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-liquid-hydrogen",
-		icon = "__Krastorio2-spaced-out__/graphics/icons/liquid-hydrogen.png",
+		icon = "__k2so-assets__/icons/recipes/liquid-hydrogen.png",
 		category = "cryogenics",
 		subgroup = "space-processing",
 		order = "bliquid-hydrogen]",

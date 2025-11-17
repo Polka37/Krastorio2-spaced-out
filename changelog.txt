@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.8
 Date: 2025-11-16
+  Changes:
+    - Place assets into separate mod
   Optimizations:
     - Wind turbines are now O(1) instead of O(n).
   Balancing:

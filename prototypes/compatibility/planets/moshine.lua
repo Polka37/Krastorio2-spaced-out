@@ -62,7 +62,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "kr-gamma-core",
-		icon = "__Krastorio2-spaced-out__/graphics/technologies/gamma-core.png",
+		icon = "__k2so-assets__/technologies/gamma-core.png",
 		icon_size = 256,
 		unit = {
 			time = 33000,
@@ -80,7 +80,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "kr-beta-core",
-		icon = "__Krastorio2-spaced-out__/graphics/technologies/beta-core.png",
+		icon = "__k2so-assets__/technologies/beta-core.png",
 		icon_size = 256,
 		unit = {
 			time = 330000,
@@ -98,7 +98,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "kr-alpha-core",
-		icon = "__Krastorio2-spaced-out__/graphics/technologies/alpha-core.png",
+		icon = "__k2so-assets__/technologies/alpha-core.png",
 		icon_size = 256,
 		unit = {
 			time = 829000,
@@ -118,7 +118,6 @@ data:extend({
 		name = "kr-gamma-core",
 		enabled = false,
 		energy_required = 120,
-		icon = "__Krastorio2-spaced-out__/graphics/icons/gamma-core.png",
 		category = "electronics",
 		auto_recycle = true,
 		ingredients = {
@@ -137,7 +136,6 @@ data:extend({
 		name = "kr-beta-core",
 		enabled = false,
 		energy_required = 240,
-		icon = "__Krastorio2-spaced-out__/graphics/icons/beta-core.png",
 		category = "electronics",
 		auto_recycle = true,
 		ingredients = {
@@ -157,7 +155,6 @@ data:extend({
 		name = "kr-alpha-core",
 		enabled = false,
 		energy_required = 600,
-		icon = "__Krastorio2-spaced-out__/graphics/icons/alpha-core.png",
 		category = "electronics",
 		auto_recycle = true,
 		ingredients = {
@@ -174,7 +171,7 @@ data:extend({
 	{
 		type = "module",
 		name = "kr-gamma-core",
-		icon = "__Krastorio2-spaced-out__/graphics/icons/gamma-core.png",
+		icon = "__k2so-assets__/icons/items/gamma-core.png",
 		subgroup = "module",
 		category = "kr-ai-core",
 		tier = 1,
@@ -186,7 +183,7 @@ data:extend({
 	{
 		type = "module",
 		name = "kr-beta-core",
-		icon = "__Krastorio2-spaced-out__/graphics/icons/beta-core.png",
+		icon = "__k2so-assets__/icons/items/beta-core.png",
 		subgroup = "module",
 		category = "kr-ai-core",
 		tier = 2,
@@ -198,7 +195,7 @@ data:extend({
 	{
 		type = "module",
 		name = "kr-alpha-core",
-		icon = "__Krastorio2-spaced-out__/graphics/icons/alpha-core.png",
+		icon = "__k2so-assets__/icons/items/alpha-core.png",
 		subgroup = "module",
 		category = "kr-ai-core",
 		tier = 3,

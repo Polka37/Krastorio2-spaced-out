@@ -278,9 +278,10 @@ data_util.set_icons(data.raw.technology["personal-laser-defense-equipment"], uti
 data_util.set_icon(data.raw.technology["production-science-pack"], "__Krastorio2Assets__/technologies/production-tech-card.png", 256)
 data_util.set_icon(data.raw.technology["steel-processing"], "__Krastorio2Assets__/technologies/steel-processing.png", 256)
 data_util.set_icon(data.raw.technology["utility-science-pack"], "__Krastorio2Assets__/technologies/utility-tech-card.png", 256)
-data_util.set_icon(data.raw.technology["metallurgic-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/metallurgy-tech-card.png",256)
-data_util.set_icon(data.raw.technology["electromagnetic-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/electromagnetic-tech-card.png",256)
-data_util.set_icon(data.raw.technology["agricultural-science-pack"],  "__Krastorio2-spaced-out__/graphics/technologies/agricultural-tech-card.png",256)
-data_util.set_icon(data.raw.technology["cryogenic-science-pack"],  "__Krastorio2-spaced-out__/graphics/technologies/cryogenic-tech-card.png",256)
-data_util.set_icon(data.raw.technology["promethium-science-pack"],"__Krastorio2-spaced-out__/graphics/technologies/promethium-tech-card.png",256)
+--Space Age
+data_util.set_icon(data.raw.technology["metallurgic-science-pack"],"__k2so-assets__/technologies/metallurgy-tech-card.png",256)
+data_util.set_icon(data.raw.technology["electromagnetic-science-pack"],"__k2so-assets__/technologies/electromagnetic-tech-card.png",256)
+data_util.set_icon(data.raw.technology["agricultural-science-pack"],  "__k2so-assets__/technologies/agricultural-tech-card.png",256)
+data_util.set_icon(data.raw.technology["cryogenic-science-pack"],  "__k2so-assets__/technologies/cryogenic-tech-card.png",256)
+data_util.set_icon(data.raw.technology["promethium-science-pack"],"__k2so-assets__/technologies/promethium-tech-card.png",256)
 -- stylua: ignore end

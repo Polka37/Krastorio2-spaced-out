@@ -215,7 +215,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "kr-gleba-greenhouse",
-		icon = "__Krastorio2-spaced-out__/graphics/technologies/gleba-greenhouse.png",
+		icon = "__k2so-assets__/technologies/gleba-greenhouse.png",
 		icon_size = 256,
 		unit = {
 			time = 45,
