@@ -149,7 +149,10 @@ data_util.remove_recipe_unlock("kovarex-enrichment-process", "nuclear-fuel")
 data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
 
-data.raw.technology["tree-seeding"] = nil
+-- if has mod,set nil after compatibility handled
+if not mods["Age-of-Production"] then
+	data.raw.technology["tree-seeding"] = nil
+end
 
 data.raw.technology["steel-plate-productivity"].max_level = 5
 data.raw.technology["mining-productivity-3"].max_level = 5
