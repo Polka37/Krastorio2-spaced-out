@@ -6,6 +6,7 @@ data:extend({
 		category = "cryogenics",
 		subgroup = "space-processing",
 		order = "e[liquid-oxygen]",
+		main_product = "thruster-oxidizer",
 		auto_recycle = false,
 		energy_required = 5,
 		ingredients = {
@@ -41,6 +42,7 @@ data:extend({
 		category = "cryogenics",
 		subgroup = "space-processing",
 		order = "bliquid-hydrogen]",
+		main_product = "thruster-fuel",
 		auto_recycle = false,
 		energy_required = 5,
 		ingredients = {

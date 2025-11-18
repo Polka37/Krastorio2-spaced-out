@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.11
+Date: 2025-11-18
+  Compatibility:
+    - Fixed startup error with Muluna when trying to add effects to thruster fuel productivity, now for sure 
+---------------------------------------------------------------------------------------------------
 Version: 1.5.10
 Date: 2025-11-18
   Compatibility:
