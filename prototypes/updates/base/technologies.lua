@@ -150,7 +150,7 @@ data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
 
 -- if has mod,set nil after compatibility handled
-if not mods["Age-of-Production"] then
+if not mods["Age-of-Production"] and not mods["lignumis"] then
 	data.raw.technology["tree-seeding"] = nil
 end
 

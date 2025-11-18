@@ -1,5 +1,5 @@
 if not mods["Age-of-Production"] then
-  return
+	return
 end
 local data_util = require("data-util")
 
@@ -10,4 +10,7 @@ data_util.remove_prerequisite("aop-woodworking", "tree-seeding")
 data_util.remove_prerequisite("aop-woodworking", "production-science-pack")
 data.raw.technology["aop-woodworking"].research_trigger = { type = "mine-entity", entity = "kr-greenhouse" }
 
-data.raw.technology["tree-seeding"] = nil
+if not mods["lignumis"] then
+	data.raw.technology["tree-seeding"] = nil
+end
+

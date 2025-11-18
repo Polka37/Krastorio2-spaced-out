@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.10
+Date: 2025-11-18
+  Compatibility:
+    - Fixed startup error with Muluna when trying to add effects to thruster fuel productivity, probably
+    - Fixed crash with Lignumis
+---------------------------------------------------------------------------------------------------
 Version: 1.5.9
 Date: 2025-11-17
   Compatibility:
