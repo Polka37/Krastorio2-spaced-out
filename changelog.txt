@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.12
+Date: 2025-11-19
+  Changes:
+    - Added advanced chemistry as prerequisite of thruster, to make sure it's possible to produce hydrogen/oxygen to make fuel
+---------------------------------------------------------------------------------------------------
 Version: 1.5.11
 Date: 2025-11-18
   Compatibility:

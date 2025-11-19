@@ -51,6 +51,7 @@ data_util.add_prerequisite("promethium-science-pack", "kr-singularity-tech-card"
 data_util.add_prerequisite("research-productivity", "kr-singularity-lab")
 data_util.add_prerequisite("kr-superior-exoskeleton-equipment", "speed-module-3")
 data_util.add_prerequisite("fish-breeding", "agricultural-science-pack")
+data_util.add_prerequisite("space-platform-thruster", "kr-advanced-chemistry")
 
 data_util.remove_prerequisite("spidertron", "fission-reactor-equipment")
 data_util.remove_prerequisite("atomic-bomb", "military-4")
