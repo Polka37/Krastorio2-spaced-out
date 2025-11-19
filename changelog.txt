@@ -1,8 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.12
 Date: 2025-11-19
+  Features:
+    - Each planet has wind property, uses the same values as Rubia
   Changes:
     - Added advanced chemistry as prerequisite of thruster, to make sure it's possible to produce hydrogen/oxygen to make fuel
+    - Wind turbines power output is dependant on wind
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.11
 Date: 2025-11-18

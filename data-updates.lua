@@ -27,6 +27,7 @@ require("prototypes.updates.generate-void-crushing-recipes")
 require("prototypes.updates.generate-tech-card-cooling")
 require("prototypes.updates.remove-nuclear-fuel")
 require("prototypes.updates.set-new-resource-autoplace")
+require("prototypes.updates.surface-conditions")
 
 require("prototypes.compatibility.aai-industry")
 require("prototypes.compatibility.any-planet-start")
