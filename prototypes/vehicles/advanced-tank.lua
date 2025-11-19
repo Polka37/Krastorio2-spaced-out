@@ -260,8 +260,7 @@ data:extend({
     turret_return_timeout = 300,
     track_particle_triggers = require("prototypes.buildings.advanced-tank-movement-triggers"),
     water_reflection = car_reflection(2.0),
-    alert_icon_shift = util.by_pixel(-4, -13),
-    allow_remote_driving = true,
+    alert_icon_shift = util.by_pixel(-4, -13)
   },
   {
     type = "gun",

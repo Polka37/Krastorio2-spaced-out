@@ -5,7 +5,6 @@ data:extend({
   {
     type = "recipe",
     name = "kr-advanced-solar-panel",
-    category = "crafting-with-fluid",
     energy_required = 10,
     category = "electronics-with-fluid",
     enabled = false,
