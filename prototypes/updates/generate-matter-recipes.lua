@@ -34,7 +34,9 @@ matter_lib.make_recipes({
 	unlocked_by = "kr-matter-minerals-processing",
 })
 data.raw.recipe["kr-matter-to-kr-imersite-powder"].surface_conditions =
-	{ { property = "pressure", min = 1000, max = 1000 } }, matter_lib.make_recipes({
+	{ { property = "pressure", min = 1000, max = 1000 } } 
+	
+matter_lib.make_recipes({
 		material = { type = "item", name = "iron-ore", amount = 10 },
 		matter_count = 5,
 		energy_required = 1,
@@ -76,19 +78,25 @@ matter_lib.make_recipes({
 	energy_required = 1,
 	unlocked_by = "kr-matter-uranium-processing",
 })
+
 data.raw.recipe["kr-matter-to-uranium-238"].surface_conditions =
-	{ { property = "pressure", min = 1000, max = 1000 } }, matter_lib.make_recipes({
-		material = { type = "item", name = "uranium-ore", amount = 10 },
-		matter_count = 8,
-		energy_required = 1,
-		unlocked_by = "kr-matter-uranium-processing",
-	})
+	{ { property = "pressure", min = 1000, max = 1000 } }
+	
+matter_lib.make_recipes({
+	material = { type = "item", name = "uranium-ore", amount = 10 },
+	matter_count = 8,
+	energy_required = 1,
+	unlocked_by = "kr-matter-uranium-processing",
+})
+
 data.raw.recipe["kr-matter-to-uranium-ore"].surface_conditions =
-	{ { property = "pressure", min = 1000, max = 1000 } }, matter_lib.make_recipes({
-		material = { type = "item", name = "wood", amount = 10 },
-		matter_count = 1,
-		energy_required = 1,
-	})
+	{ { property = "pressure", min = 1000, max = 1000 } }
+	
+matter_lib.make_recipes({
+	material = { type = "item", name = "wood", amount = 10 },
+	matter_count = 1,
+	energy_required = 1,
+})
 
 matter_lib.make_recipes({
 	material = { type = "item", name = "ice", amount = 10 },
@@ -110,41 +118,53 @@ matter_lib.make_recipes({
 	energy_required = 2,
 	unlocked_by = "kr-matter-calcite-processing",
 })
+
 data.raw.recipe["kr-matter-to-calcite"].surface_conditions =
-	{ { property = "pressure", min = 4000, max = 4000 } }, matter_lib.make_recipes({
-		material = { type = "item", name = "tungsten-ore", amount = 10 },
-		matter_count = 30,
-		energy_required = 2,
-		unlocked_by = "kr-matter-tungsten-processing",
-	})
+	{ { property = "pressure", min = 4000, max = 4000 } }
+	
+matter_lib.make_recipes({
+	material = { type = "item", name = "tungsten-ore", amount = 10 },
+	matter_count = 30,
+	energy_required = 2,
+	unlocked_by = "kr-matter-tungsten-processing",
+})
 data.raw.recipe["kr-matter-to-tungsten-ore"].surface_conditions =
-	{ { property = "pressure", min = 4000, max = 4000 } }, matter_lib.make_recipes({
-		material = { type = "item", name = "holmium-ore", amount = 10 },
-		matter_count = 30,
-		energy_required = 2,
-		unlocked_by = "kr-matter-holmium-processing",
-	})
+	{ { property = "pressure", min = 4000, max = 4000 } }
+	
+matter_lib.make_recipes({
+	material = { type = "item", name = "holmium-ore", amount = 10 },
+	matter_count = 30,
+	energy_required = 2,
+	unlocked_by = "kr-matter-holmium-processing",
+})
+
 data.raw.recipe["kr-matter-to-holmium-ore"].surface_conditions =
-	{ { property = "magnetic-field", min = 99, max = 99 } }, matter_lib.make_recipes({
-		material = { type = "fluid", name = "lithium-brine", amount = 100 },
-		matter_count = 10,
-		energy_required = 1,
-		unlocked_by = "kr-matter-lithium-brine-processing",
-	})
+	{ { property = "magnetic-field", min = 99, max = 99 } }
+	
+matter_lib.make_recipes({
+	material = { type = "fluid", name = "lithium-brine", amount = 100 },
+	matter_count = 10,
+	energy_required = 1,
+	unlocked_by = "kr-matter-lithium-brine-processing",
+})
 data.raw.recipe["kr-matter-to-lithium-brine"].surface_conditions =
-	{ { property = "pressure", min = 300, max = 300 } }, matter_lib.make_recipes({
-		material = { type = "fluid", name = "fluorine", amount = 100 },
-		matter_count = 12.5,
-		energy_required = 1,
-		unlocked_by = "kr-matter-fluorine-processing",
-	})
+	{ { property = "pressure", min = 300, max = 300 } }
+	
+matter_lib.make_recipes({
+	material = { type = "fluid", name = "fluorine", amount = 100 },
+	matter_count = 12.5,
+	energy_required = 1,
+	unlocked_by = "kr-matter-fluorine-processing",
+})
 data.raw.recipe["kr-matter-to-fluorine"].surface_conditions =
-	{ { property = "pressure", min = 300, max = 300 } }, matter_lib.make_conversion_recipe({
-		material = { type = "item", name = "kr-quartz", amount = 10 },
-		matter_count = 0.64,
-		energy_required = 1,
-		unlocked_by = "kr-matter-stone-processing",
-	})
+	{ { property = "pressure", min = 300, max = 300 } }
+	
+matter_lib.make_conversion_recipe({
+	material = { type = "item", name = "kr-quartz", amount = 10 },
+	matter_count = 0.64,
+	energy_required = 1,
+	unlocked_by = "kr-matter-stone-processing",
+})
 
 matter_lib.make_conversion_recipe({
 	material = { type = "item", name = "kr-imersite", amount = 10 },
@@ -239,33 +259,42 @@ matter_lib.make_deconversion_recipe({
 	unlocked_by = "kr-matter-holmium-processing",
 })
 data.raw.recipe["kr-matter-to-holmium-plate"].surface_conditions =
-	{ { property = "magnetic-field", min = 99, max = 99 } }, matter_lib.make_deconversion_recipe({
-		material = { type = "fluid", name = "electrolyte", amount = 100 },
-		matter_count = 10,
-		energy_required = 1,
-		needs_stabilizer = true,
-		unlocked_by = "kr-matter-holmium-processing",
-	})
+	{ { property = "magnetic-field", min = 99, max = 99 } }
+	
+matter_lib.make_deconversion_recipe({
+	material = { type = "fluid", name = "electrolyte", amount = 100 },
+	matter_count = 10,
+	energy_required = 1,
+	needs_stabilizer = true,
+	unlocked_by = "kr-matter-holmium-processing",
+})
 data.raw.recipe["kr-matter-to-electrolyte"].surface_conditions =
-	{ { property = "magnetic-field", min = 99, max = 99 } }, matter_lib.make_deconversion_recipe({
-		material = { type = "item", name = "tungsten-carbide", amount = 10 },
-		matter_count = 30,
-		energy_required = 2,
-		needs_stabilizer = true,
-		unlocked_by = "kr-matter-tungsten-processing",
-	})
+	{ { property = "magnetic-field", min = 99, max = 99 } }
+	
+matter_lib.make_deconversion_recipe({
+	material = { type = "item", name = "tungsten-carbide", amount = 10 },
+	matter_count = 30,
+	energy_required = 2,
+	needs_stabilizer = true,
+	unlocked_by = "kr-matter-tungsten-processing",
+})
 data.raw.recipe["kr-matter-to-tungsten-carbide"].surface_conditions =
-	{ { property = "pressure", min = 4000, max = 4000 } }, matter_lib.make_deconversion_recipe({
-		material = { type = "item", name = "tungsten-plate", amount = 10 },
-		matter_count = 40,
-		energy_required = 2,
-		needs_stabilizer = true,
-		unlocked_by = "kr-matter-tungsten-processing",
-	})
+	{ { property = "pressure", min = 4000, max = 4000 } }
+	
+matter_lib.make_deconversion_recipe({
+	material = { type = "item", name = "tungsten-plate", amount = 10 },
+	matter_count = 40,
+	energy_required = 2,
+	needs_stabilizer = true,
+	unlocked_by = "kr-matter-tungsten-processing",
+})
+
 data.raw.recipe["kr-matter-to-tungsten-plate"].surface_conditions =
-	{ { property = "pressure", min = 4000, max = 4000 } }, matter_lib.make_deconversion_recipe({
-		material = { type = "fluid", name = "water", amount = 100 },
-		matter_count = 2,
-		energy_required = 1,
-		unlocked_by = "kr-matter-water-processing",
-	})
+	{ { property = "pressure", min = 4000, max = 4000 } }
+	
+matter_lib.make_deconversion_recipe({
+	material = { type = "fluid", name = "water", amount = 100 },
+	matter_count = 2,
+	energy_required = 1,
+	unlocked_by = "kr-matter-water-processing",
+})
