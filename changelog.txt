@@ -3,6 +3,11 @@ Version: 1.5.13
 Date: 2025-11-22
   Changes:
     - Wind speed defaults to 15km/h, this means wind turbine multiplier for Nauvis is +0%
+    - Changed icon for coke from carbon to a more distinct one
+  Balancing:
+    - Buffed biofuel:
+      - Acceleration speed from 80% -> 110%
+      - Top Speed from 90% -> 110%
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.12
 Date: 2025-11-19
