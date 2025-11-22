@@ -4,7 +4,7 @@ data:extend({
 	{
 		type = "surface-property",
 		name = "rubia-wind-speed",
-		default_value = 6.9, --it would be better if this value was 15
+		default_value = 15,
 		order = "r[rubia]-a",
 	},
 })
@@ -41,4 +41,3 @@ set_wind_speed("rubia", 300)
 --set_wind_speed("secretas", 8)
 set_wind_speed("tenebris", 60)
 set_wind_speed("tiber", 12)
-
