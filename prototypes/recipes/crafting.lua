@@ -3,7 +3,6 @@ data:extend({
 		type = "recipe",
 		name = "kr-bio-processing-circuit",
 		enabled = false,
-		energy_required = 12,
 		icons = {
 			{ icon = "__base__/graphics/icons/processing-unit.png" },
 			{ icon = "__space-age__/graphics/icons/pentapod-egg.png", scale = 0.26, shift = { -8, -8 } },
