@@ -12,3 +12,10 @@ for _, effects in
 do
 	effects.allow_multiple_results = true
 end
+
+data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].effectivity = 0.95
+data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].max_fluid_usage = 100 / 60
+data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].input_fluid_box.maximum_temperature = nil
+data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].energy_source.output_flow_limit = "190MW"
+data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].localised_description =
+	{ "entity-description.muluna-cycling-steam-turbine-k2" }

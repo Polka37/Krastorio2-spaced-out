@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.14
 Date: 2025-12 
+  Compatibility:
+    - Cerys:
+      - Mixed oxide reactor now output 1GW of power and only has 25% neighbour bonus
+    - Muluna:
+      - Muluna condensation turbine has the same stats as advanced turbine, but only has 95% efficiency
   Changes:
     - Fluid mining is unlocked fluid chemistry to allow mining of rare metals before uranium
     - Uranium mining technology is now hidden
