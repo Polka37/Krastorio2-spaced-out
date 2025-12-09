@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.14
+Date: 2025-12 
+  Bugfixes:
+    - Fixed that the fluid burning recipes were grouped together under one circuit signal instead of being separate.-22
+---------------------------------------------------------------------------------------------------
 Version: 1.5.13
 Date: 2025-11-22
   Changes:
