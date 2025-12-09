@@ -24,7 +24,6 @@ require("prototypes.updates.generate-greenhouse-recipes")
 require("prototypes.updates.generate-matter-recipes")
 require("prototypes.updates.generate-roboport-variations")
 require("prototypes.updates.generate-void-crushing-recipes")
-require("prototypes.updates.generate-tech-card-cooling")
 require("prototypes.updates.remove-nuclear-fuel")
 require("prototypes.updates.set-new-resource-autoplace")
 require("prototypes.updates.surface-conditions")
@@ -36,6 +35,9 @@ require("prototypes.compatibility.planets.cerys")
 require("prototypes.compatibility.planets.moshine")
 require("prototypes.compatibility.planets.muluna")
 require("prototypes.compatibility.Age-of-Production")
+
+-- Must be after Muluna
+require("prototypes.updates.generate-tech-card-cooling")
 
 -- Has to be after base updates so it can use the updated icons
 require("prototypes.recipes.smelting-crafting")
