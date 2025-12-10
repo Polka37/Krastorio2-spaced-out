@@ -48,3 +48,52 @@ data_util.set_icon(
 	256
 )
 data.raw.technology["interstellar-science-pack"].localised_name = { "item-name.exploration-tech-card" }
+
+--Add pipe connections to research computers
+table.insert(data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes, 2, {
+	production_type = "input",
+	filter = "muluna-astronomical-data",
+	pipe_picture = nil,
+	pipe_covers = nil,
+	pipe_picture_frozen = nil,
+	pipe_covers_frozen = nil,
+	volume = 100,
+	pipe_connections = {
+		{
+			flow_direction = "input-output",
+			direction = defines.direction.west,
+			position = { -2.5, 0.5 },
+			connection_category = "data",
+		},
+		{
+			flow_direction = "input-output",
+			direction = defines.direction.east,
+			position = { 2.5, -0.5 },
+			connection_category = "data",
+		},
+	},
+	secondary_draw_orders = { north = -1 },
+})
+table.insert(data.raw["assembling-machine"]["kr-research-server"].fluid_boxes, 2, {
+	production_type = "input",
+	pipe_picture = nil,
+	pipe_covers = nil,
+	pipe_picture_frozen = nil,
+	pipe_covers_frozen = nil,
+	volume = 100,
+	pipe_connections = {
+		{
+			flow_direction = "input-output",
+			direction = defines.direction.east,
+			position = { 1, 0 },
+			connection_category = "data",
+		},
+		{
+			flow_direction = "input-output",
+			direction = defines.direction.west,
+			position = { -1, 0 },
+			connection_category = "data",
+		},
+	},
+	secondary_draw_orders = { north = -1 },
+})

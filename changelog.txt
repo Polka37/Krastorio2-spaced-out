@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.15
+Date: 2025-12-10
+  Bugfixes:
+    - Fixed Muluna data couldn't be used for crafting data cards
+---------------------------------------------------------------------------------------------------
 Version: 1.5.14
 Date: 2025-12-9 
   Compatibility:
@@ -8,7 +13,7 @@ Date: 2025-12-9
       - Muluna condensation turbine has the same stats as advanced turbine, but only has 95% efficiency
       - Muluna exploration science pack is now a tech card
   Changes:
-    - Fluid mining is unlocked fluid chemistry to allow mining of rare metals before uranium
+    - Fluid mining is unlocked with fluid chemistry to allow mining of rare metals before uranium
     - Uranium mining technology is now hidden
     - Updated minimum Factorio version to 2.0.72
   Bugfixes:

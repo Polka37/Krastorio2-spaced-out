@@ -90,17 +90,6 @@ data:extend({
 				secondary_draw_orders = { north = -1 },
 			},
 			{
-				production_type = "input",
-				pipe_picture = pipe_pictures,
-				pipe_covers = pipecoverspictures(),
-				volume = 100,
-				pipe_connections = {
-					{ flow_direction = "input-output", direction = defines.direction.west, position = { -2.5, 0.5 } },
-					{ flow_direction = "input-output", direction = defines.direction.east, position = { 2.5, -0.5 } },
-				},
-				secondary_draw_orders = { north = -1 },
-			},
-			{
 				production_type = "output",
 				pipe_picture = pipe_pictures,
 				pipe_covers = pipecoverspictures(),
