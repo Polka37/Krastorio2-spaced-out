@@ -2,6 +2,7 @@
 Version: 1.5.15
 Date: 2025-12-10
   Bugfixes:
+    - Fixed Muluna condensation turbine name was replaced instead of description
     - Fixed Muluna data couldn't be used for crafting data cards
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.14
