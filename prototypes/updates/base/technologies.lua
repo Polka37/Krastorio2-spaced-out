@@ -152,6 +152,7 @@ data_util.remove_recipe_unlock("electronics", "small-electric-pole")
 data_util.remove_recipe_unlock("kovarex-enrichment-process", "nuclear-fuel")
 data_util.remove_recipe_unlock("military-3", "slowdown-capsule")
 data_util.remove_recipe_unlock("oil-processing", "chemical-plant")
+data_util.remove_recipe_unlock("planet-discovery-aquilo", "ammonia-rocket-fuel")
 
 -- if has mod,set nil after compatibility handled
 if not mods["Age-of-Production"] and not mods["lignumis"] then
@@ -251,7 +252,6 @@ data.raw.technology["kr-automation-core"].research_trigger = {
 	item = "iron-gear-wheel",
 	count = 10,
 }
-
 table.insert(
 	data.raw["technology"]["processing-unit-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 }
@@ -264,6 +264,7 @@ table.insert(
 	data.raw["technology"]["rocket-fuel-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 }
 )
+table.remove(data.raw["technology"]["rocket-fuel-productivity"].effects, 3) --quite risky, but i don't know other mod deleting vannila recipes
 
 -- stylua: ignore start
 data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png"))

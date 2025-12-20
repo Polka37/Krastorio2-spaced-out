@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.16
-Date: 2025-12-14
+Date: 2025-12-20
   Changes:
-    - Atmospheric condensers pass through gases
+    - Atmospheric condensers use input-output pipes
+    - !! Removed duplicate rocket fuel from ammonia in favor of K2 recipe
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.15
 Date: 2025-12-10

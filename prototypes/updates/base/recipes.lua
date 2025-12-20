@@ -557,8 +557,7 @@ data.raw.recipe["rocket-fuel"].crafting_machine_tint = {
 }
 
 data.raw.recipe["wood-processing"].surface_conditions = nil
-data.raw.recipe["pentapod-egg"].surface_conditions =
-	{ { property = "pressure", min = 1000, max = 2000 } }
+data.raw.recipe["pentapod-egg"].surface_conditions = { { property = "pressure", min = 1000, max = 2000 } }
 data_util.add_or_replace_ingredient("shotgun", "wood", { type = "item", name = "wood", amount = 2 })
 data_util.add_or_replace_ingredient("shotgun", "iron-plate", { type = "item", name = "iron-plate", amount = 3 })
 data_util.add_or_replace_ingredient("shotgun", "copper-plate", { type = "item", name = "copper-plate", amount = 2 })
@@ -581,6 +580,8 @@ data_util.add_or_replace_product(
 	{ type = "item", name = "small-electric-pole", amount = 1 }
 )
 data.raw.recipe["small-electric-pole"].enabled = true
+
+data.raw.recipe["ammonia-rocket-fuel"] = nil
 
 -- data_util.add_or_replace_ingredient("small-lamp", { type = "item", name = "kr-glass", amount = 1 })
 data_util.convert_ingredient("small-lamp", "electronic-circuit", "kr-glass")
