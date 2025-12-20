@@ -102,3 +102,6 @@ if not mods["maraxsis"] then
 	data.raw.recipe["maraxsis-atmosphere"].category = "kr-atmosphere-condensation"
 	data.raw.recipe["maraxsis-atmosphere"].energy_required = data.raw.recipe["maraxsis-atmosphere"].energy_required / 2
 end
+
+data.raw.recipe["carbon-dioxide"].category = "kr-atmosphere-condensation"
+data.raw.recipe["carbon-dioxide"].energy_required = data.raw.recipe["maraxsis-atmosphere"].energy_required / 2
