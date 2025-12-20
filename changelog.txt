@@ -4,6 +4,8 @@ Date: 2025-12-20
   Changes:
     - Atmospheric condensers use input-output pipes
     - !! Removed duplicate rocket fuel from ammonia in favor of K2 recipe
+  Bugfixes:
+    - Fixed wind turbines could be placed in space
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.15
 Date: 2025-12-10

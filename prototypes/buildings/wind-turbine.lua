@@ -47,6 +47,12 @@ data:extend({
 		collision_mask = {
 			layers = { item = true, object = true, player = true, water_tile = true, kr_wind_turbine = true },
 		},
+		surface_conditions = {
+			{
+				property = "rubia-wind-speed",
+				min = 1,
+			},
+		},
 		drawing_box = { { -0.5, -2 }, { 0.5, 1 } },
 		energy_source = {
 			type = "electric",
