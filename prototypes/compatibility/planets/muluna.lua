@@ -97,3 +97,8 @@ table.insert(data.raw["assembling-machine"]["kr-research-server"].fluid_boxes, 2
 	},
 	secondary_draw_orders = { north = -1 },
 })
+
+if not mods["maraxsis"] then
+	data.raw.recipe["maraxsis-atmosphere"].category = "kr-atmosphere-condensation"
+	data.raw.recipe["maraxsis-atmosphere"].energy_required = data.raw.recipe["maraxsis-atmosphere"].energy_required / 2
+end

@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.16
 Date: 2025-12-20
+  Compatibility:
+    - Muluna and Maraxsis atmosphere is collected in atmosphere condensers
   Changes:
     - Atmospheric condensers use input-output pipes
     - !! Removed duplicate rocket fuel from ammonia in favor of K2 recipe
@@ -183,7 +185,7 @@ Date: 2025-10-13
     - Greenhouses products are always 100% fresh (yumako/jellynut)
     - Marked factorio+ as incompatible
   Bugfixes:
-    - Fixed electric mining drill mk2 colission box doesn't apply with maraxsis enabled
+    - Fixed electric mining drill mk2 colission box doesn't apply with Maraxsis enabled
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.27
 Date: 2025-10-12
@@ -484,7 +486,7 @@ Date: 2025-06-19
     - immersite solar panels rocket capacity is now 25
     - Change inserter drop lane is now optional
   Bugfixes:
-    - Fixed startup error when using maraxsis with mining drones or transport drones
+    - Fixed startup error when using Maraxsis with mining drones or transport drones
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.5
 Date: 2025-06-14
