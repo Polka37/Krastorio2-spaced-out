@@ -99,7 +99,7 @@ data_util.add_recipe_unlock("logistics", "long-handed-inserter")
 data_util.add_recipe_unlock("military-science-pack", "kr-biter-research-data")
 data_util.add_recipe_unlock("military", "slowdown-capsule")
 data_util.add_recipe_unlock("personal-roboport-equipment", "kr-vehicle-roboport-equipment")
-data_util.add_recipe_unlock("rocket-fuel", "kr-rocket-fuel-with-ammonia")
+data_util.add_recipe_unlock("rocket-fuel", "ammonia-rocket-fuel")
 data_util.add_recipe_unlock("rocket-fuel", "kr-rocket-fuel-with-hydrogen-chloride")
 data_util.add_recipe_unlock("solar-panel-equipment", "kr-big-solar-panel-equipment")
 data_util.add_recipe_unlock("steel-processing", "kr-coke")
@@ -258,13 +258,8 @@ table.insert(
 )
 table.insert(
 	data.raw["technology"]["rocket-fuel-productivity"].effects,
-	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-ammonia", change = 0.1 }
-)
-table.insert(
-	data.raw["technology"]["rocket-fuel-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 }
 )
-table.remove(data.raw["technology"]["rocket-fuel-productivity"].effects, 3) --quite risky, but i don't know other mod deleting vannila recipes
 
 -- stylua: ignore start
 data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png"))

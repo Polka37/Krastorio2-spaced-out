@@ -581,7 +581,34 @@ data_util.add_or_replace_product(
 )
 data.raw.recipe["small-electric-pole"].enabled = true
 
-data.raw.recipe["ammonia-rocket-fuel"] = nil
+data.raw.recipe["ammonia-rocket-fuel"] = {
+	type = "recipe",
+	name = "ammonia-rocket-fuel",
+	icons = {
+		{ icon = "__Krastorio2Assets__/icons/recipes/rocket-fuel.png" },
+		{ icon = "__Krastorio2Assets__/icons/fluids/ammonia.png", scale = 0.26, shift = { 8, -8 } },
+	},
+	enabled = false,
+	energy_required = 16,
+	category = "kr-fuel-refinery",
+	ingredients = {
+		{ type = "item", name = "iron-plate", amount = 1 },
+		{ type = "fluid", name = "ammonia", amount = 50 },
+		{ type = "fluid", name = "kr-oxygen", amount = 50 },
+	},
+	results = {
+		{ type = "item", name = "rocket-fuel", amount = 1 },
+	},
+	allow_productivity = true,
+	always_show_made_in = true,
+	crafting_machine_tint = {
+		primary = { r = 0.261, g = 0.200, b = 0.650, a = 0.100 },
+		secondary = { r = 0.211, g = 0.447, b = 0.670, a = 0.250 },
+		tertiary = { r = 0.204, g = 0.417, b = 0.529, a = 0.500 },
+		quaternary = { r = 0.312, g = 0.407, b = 0.739, a = 0.900 },
+	},
+	auto_recycle = false,
+}
 
 -- data_util.add_or_replace_ingredient("small-lamp", { type = "item", name = "kr-glass", amount = 1 })
 data_util.convert_ingredient("small-lamp", "electronic-circuit", "kr-glass")
