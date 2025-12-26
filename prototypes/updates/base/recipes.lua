@@ -569,6 +569,8 @@ data_util.add_or_replace_ingredient(
 
 data_util.remove_ingredient("slowdown-capsule", "electronic-circuit")
 
+data_util.remove_ingredient("lithium", "holmium-plate")
+
 data_util.add_or_replace_ingredient(
 	"small-electric-pole",
 	"copper-cable",
