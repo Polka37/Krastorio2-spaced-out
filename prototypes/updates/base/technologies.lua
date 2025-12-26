@@ -54,6 +54,7 @@ data_util.add_prerequisite("fish-breeding", "agricultural-science-pack")
 data_util.add_prerequisite("space-platform-thruster", "kr-advanced-chemistry")
 data_util.add_prerequisite("uranium-processing", "concrete")
 data_util.add_prerequisite("uranium-processing", "chemical-science-pack")
+data_util.add_prerequisite("planet-discovery-aquilo", "kr-advanced-tech-card")
 
 data_util.remove_prerequisite("spidertron", "fission-reactor-equipment")
 data_util.remove_prerequisite("atomic-bomb", "military-4")
@@ -186,6 +187,7 @@ data_util.add_research_unit_ingredient("scrap-recycling-productivity", kr_optimi
 data_util.add_research_unit_ingredient("processing-unit-productivity", kr_optimization_tech_card_name)
 data_util.add_research_unit_ingredient("rocket-part-productivity", kr_optimization_tech_card_name)
 data_util.add_research_unit_ingredient("health", kr_optimization_tech_card_name)
+data_util.add_research_unit_ingredient("planet-discovery-aquilo", "kr-advanced-tech-card")
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
 
 data.raw.technology["artillery"].unit.count = 1000

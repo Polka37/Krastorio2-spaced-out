@@ -2,7 +2,11 @@
 Version: 1.5.18
 Date: 2025-12-26
   Changes:
+    - Aquilo is now locked behind advanced tech card
     - Aquilo lithium recipe no longer needs holmium plate
+    - Energy storage is now Fulgora exclusive buildings unlocked with advanced tech card. Can only be crafted on Fulgora and needs super capacitors
+    - Removed matter tech card requirement from several technologies. Matter tech card is gonna soon become post Aquilo science
+    - Advanced tech card can be made before matter tech card and matter tech card must be made after advanced tech card
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.17
 Date: 2025-12-21
