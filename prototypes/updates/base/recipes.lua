@@ -539,7 +539,6 @@ data_util.add_or_replace_ingredient(
 	"electronic-circuit",
 	{ type = "item", name = "copper-plate", amount = 2 }
 )
-table.insert(data.raw.recipe["repair-pack"].ingredients, { type = "item", name = "stone", amount = 2 })
 
 data_util.add_or_replace_ingredient("roboport", "steel-plate", { type = "item", name = "kr-steel-beam", amount = 20 })
 

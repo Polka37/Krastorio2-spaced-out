@@ -7,6 +7,7 @@ Date: 2025-12-26
     - Energy storage is now Fulgora exclusive buildings unlocked with advanced tech card. Can only be crafted on Fulgora and needs super capacitors
     - Removed matter tech card requirement from several technologies. Matter tech card is gonna soon become post Aquilo science
     - Advanced tech card can be made before matter tech card and matter tech card must be made after advanced tech card
+    - Repair packs no longer require stone
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.17
 Date: 2025-12-21
