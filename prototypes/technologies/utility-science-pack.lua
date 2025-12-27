@@ -158,27 +158,6 @@ data:extend({
 	},
 	{
 		type = "technology",
-		name = "kr-matter-tech-card",
-		icon = "__Krastorio2Assets__/technologies/matter-tech-card.png",
-		icon_size = 256,
-		essential = true,
-		unit = {
-			time = 60,
-			count = 750,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ "kr-advanced-tech-card", 1 },
-			},
-		},
-		prerequisites = { "kr-advanced-tech-card" },
-		effects = {
-			{ type = "unlock-recipe", recipe = "kr-matter-research-data" },
-			{ type = "unlock-recipe", recipe = "kr-matter-tech-card" },
-		},
-	},
-	{
-		type = "technology",
 		name = "kr-military-5",
 		localised_description = { "technology-description.military" },
 		icon = "__Krastorio2Assets__/technologies/military-5.png",

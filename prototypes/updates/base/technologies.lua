@@ -187,7 +187,23 @@ data_util.add_research_unit_ingredient("scrap-recycling-productivity", kr_optimi
 data_util.add_research_unit_ingredient("processing-unit-productivity", kr_optimization_tech_card_name)
 data_util.add_research_unit_ingredient("rocket-part-productivity", kr_optimization_tech_card_name)
 data_util.add_research_unit_ingredient("health", kr_optimization_tech_card_name)
+
 data_util.add_research_unit_ingredient("planet-discovery-aquilo", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("legendary-quality", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("quantum-processor", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("foundation", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("captive-biter-spawner", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("railgun", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("fusion-reactor", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("fusion-reactor-equipment", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("rocket-fuel-productivity-1", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("railgun-damage-1", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("railgun-shooting-speed-1", "kr-advanced-tech-card")
+
+data_util.add_research_unit_ingredient("promethium-science-pack", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("promethium-science-pack", "kr-matter-tech-card")
+data_util.add_research_unit_ingredient("promethium-science-pack", "kr-singularity-tech-card")
+
 data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
 
 data.raw.technology["artillery"].unit.count = 1000
@@ -212,7 +228,7 @@ data.raw.technology["nuclear-power"].unit.count = 500
 data.raw.technology["production-science-pack"].unit.count = 250
 data.raw.technology["uranium-ammo"].unit.count = 300
 data.raw.technology["utility-science-pack"].unit.count = 250
-data.raw.technology["promethium-science-pack"].unit.count = 5000
+data.raw.technology["promethium-science-pack"].unit.count = 10000
 
 data_util.set_icons(
 	data.raw.technology["fission-reactor-equipment"],

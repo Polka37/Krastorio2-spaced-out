@@ -50,7 +50,7 @@ data_util.set_icon(
 data.raw.technology["interstellar-science-pack"].localised_name = { "item-name.exploration-tech-card" }
 
 --Add pipe connections to research computers
-table.insert(data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes, 2, {
+data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes[2] = {
 	production_type = "input",
 	filter = "muluna-astronomical-data",
 	pipe_picture = nil,
@@ -73,7 +73,7 @@ table.insert(data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes, 
 		},
 	},
 	secondary_draw_orders = { north = -1 },
-})
+}
 table.insert(data.raw["assembling-machine"]["kr-research-server"].fluid_boxes, 2, {
 	production_type = "input",
 	pipe_picture = nil,

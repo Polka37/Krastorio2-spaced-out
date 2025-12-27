@@ -561,6 +561,7 @@ function data_util.make_tech_card(science_pack, ingredients, no_server)
 		ingredients = ingredients,
 		results = { { type = "item", name = science_pack, amount = 5 } },
 		allow_productivity = true,
+		main_product = science_pack,
 	}
 	local recipe = data.raw.recipe[science_pack]
 	table.insert(recipe.ingredients, 1, { type = "item", name = "kr-blank-tech-card", amount = 5 })

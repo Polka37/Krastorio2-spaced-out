@@ -698,7 +698,7 @@ data:extend({
 		subgroup = "intermediate-product",
 		order = "q03[imersite-crystal]",
 		stack_size = 50,
-		weight = 5 * kg,
+		weight = 1 * kg,
 	},
 	{
 		type = "item",

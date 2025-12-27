@@ -1,4 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 2025-12-27
+  Features:
+    - WARNING: This is a major update, your matter and singularity tech card production will break if you don't want to deal with it now consider delaying the update
+  Changes:
+    - Post Aquilo technologies now require advanced tech card
+    - Increased cost of matter conversion technologies
+    - Imersite matter conversion now requires singularity tech card
+    - Carbon matter conversion has been merged into coal matter conversion
+    - Ice matter conversion has been merged into water matter conversion
+    - Increased cost of technology shield and laser mk4 from 500 -> 2000
+    - Increased cost of technology quantum computer from 750 -> 5000
+    - Increased cost of technology singularity tech card from 3000 -> 5000
+    - Increased cost of technology promethium science pack from 5000 -> 10000
+    - Advanced tech card:
+      - Imersium gear cost decreased from 20 -> 10
+      - Lithium-sulfur battery cost decreased from 10 -> 5
+    - Matter tech card:
+      - No longer needs processing units
+      - Matter research data:
+        - Must be crafted on Aquilo
+        - Needs 5 of plastic, rare metals, lithium, imersite crystals, tungsten plate, holmium, bioflux and 20 of fluorine 
+        - Gives 10 data per craft
+        - Takes 30 seconds per craft
+    - Singularity tech card:
+      - Needs 1 of each basic asteroid chunks
+      - Only 1 charged matter stabilizer and has 90% chance to give it back discharged
+      - Needs 20 matter
+      - Must be crafted in space
+    - Imersite crystals rocket payload increased to 1k or 10 stacks
+---------------------------------------------------------------------------------------------------
 Version: 1.5.18
 Date: 2025-12-26
   Changes:

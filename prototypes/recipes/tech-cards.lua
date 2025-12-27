@@ -3,15 +3,27 @@ data:extend({
 		type = "recipe",
 		name = "kr-matter-research-data",
 		enabled = false,
-		energy_required = 20,
+		category = "cryogenics",
+		energy_required = 30,
 		ingredients = {
 			{ type = "item", name = "kr-imersite-crystal", amount = 5 },
 			{ type = "item", name = "kr-rare-metals", amount = 5 },
 			{ type = "item", name = "kr-lithium", amount = 5 },
 			{ type = "item", name = "plastic-bar", amount = 5 },
+			{ type = "item", name = "tungsten-plate", amount = 5 },
+			{ type = "item", name = "holmium-plate", amount = 5 },
+			{ type = "item", name = "bioflux", amount = 5 },
+			{ type = "fluid", name = "fluorine", amount = 20 },
 		},
 		results = {
-			{ type = "item", name = "kr-matter-research-data", amount = 5 },
+			{ type = "item", name = "kr-matter-research-data", amount = 10 },
+		},
+		surface_conditions = {
+			{
+				property = "pressure",
+				min = 300,
+				max = 300,
+			},
 		},
 		allow_productivity = true,
 	},
@@ -176,19 +188,31 @@ data:extend({
 local data_util = require("data-util")
 
 data_util.make_tech_card("kr-singularity-tech-card", {
-	{ type = "item", name = "kr-charged-matter-stabilizer", amount = 5 },
-	{ type = "item", name = "tungsten-carbide", amount = 1 },
-	{ type = "item", name = "superconductor", amount = 2 },
-	{ type = "item", name = "bioflux", amount = 1 },
+	{ type = "item", name = "kr-charged-matter-stabilizer", amount = 1 },
+	{ type = "item", name = "metallic-asteroid-chunk", amount = 1 },
+	{ type = "item", name = "oxide-asteroid-chunk", amount = 1 },
+	{ type = "item", name = "carbonic-asteroid-chunk", amount = 1 },
+	{ type = "fluid", name = "kr-matter", amount = 20, fluidbox_index = 1 },
 })
+data.raw.recipe["kr-singularity-tech-card"].surface_conditions = {
+	{
+		property = "gravity",
+		min = 0,
+		max = 0,
+	},
+}
+data_util.add_or_replace_product(
+	"kr-singularity-tech-card",
+	"kr-matter-stabilizer",
+	{ type = "item", name = "kr-matter-stabilizer", amount = 1, probability = 0.9 }
+)
 
 data_util.make_tech_card("kr-matter-tech-card", {
 	{ type = "item", name = "kr-matter-research-data", amount = 5 },
-	{ type = "item", name = "processing-unit", amount = 5 },
 })
 
 data_util.make_tech_card("kr-advanced-tech-card", {
-	{ type = "item", name = "kr-imersium-gear-wheel", amount = 20 },
-	{ type = "item", name = "kr-lithium-sulfur-battery", amount = 10 },
+	{ type = "item", name = "kr-imersium-gear-wheel", amount = 10 },
+	{ type = "item", name = "kr-lithium-sulfur-battery", amount = 5 },
 	{ type = "item", name = "electric-engine-unit", amount = 5 },
 })

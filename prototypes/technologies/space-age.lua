@@ -23,52 +23,6 @@ data:extend({
 			{ type = "unlock-recipe", recipe = "kr-advanced-furnace" },
 		},
 	},
-	{
-		type = "technology",
-		name = "kr-matter-calcite-processing",
-		icons = {
-			{ icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
-			{ icon = "__space-age__/graphics/icons/calcite.png", scale = 0.85 },
-		},
-		icon_size = 256,
-		order = "g-e-e",
-		unit = {
-			time = 45,
-			count = 1000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "metallurgic-science-pack", 1 },
-			},
-		},
-		prerequisites = { "kr-matter-processing", "metallurgic-science-pack" },
-		effects = {},
-	},
-	{
-		type = "technology",
-		name = "kr-matter-tungsten-processing",
-		icons = {
-			{ icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
-			{ icon = "__space-age__/graphics/icons/tungsten-ore.png", scale = 0.85 },
-		},
-		icon_size = 256,
-		order = "g-e-e",
-		unit = {
-			time = 45,
-			count = 1000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "metallurgic-science-pack", 1 },
-			},
-		},
-		prerequisites = { "kr-matter-processing", "metallurgic-science-pack" },
-		effects = {},
-	},
 
 	--Fulgora
 
@@ -137,52 +91,6 @@ data:extend({
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-energy-storage" },
 		},
-	},
-	{
-		type = "technology",
-		name = "kr-matter-holmium-processing",
-		icons = {
-			{ icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
-			{ icon = "__space-age__/graphics/icons/holmium-ore.png", scale = 0.85 },
-		},
-		icon_size = 256,
-		order = "g-e-e",
-		unit = {
-			time = 45,
-			count = 1000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "electromagnetic-science-pack", 1 },
-			},
-		},
-		prerequisites = { "kr-matter-processing", "electromagnetic-science-pack" },
-		effects = {},
-	},
-	{
-		type = "technology",
-		name = "kr-matter-scrap-processing",
-		icons = {
-			{ icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
-			{ icon = "__space-age__/graphics/icons/scrap.png", scale = 0.85 },
-		},
-		icon_size = 256,
-		order = "g-e-e",
-		unit = {
-			time = 45,
-			count = 3000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "electromagnetic-science-pack", 1 },
-			},
-		},
-		prerequisites = { "kr-matter-processing", "electromagnetic-science-pack" },
-		effects = {},
 	},
 
 	--Gleba
@@ -263,7 +171,7 @@ data:extend({
 		essential = true,
 		unit = {
 			time = 45,
-			count = 3000,
+			count = 5000,
 			ingredients = {
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
@@ -275,13 +183,7 @@ data:extend({
 				{ "electromagnetic-science-pack", 1 },
 			},
 		},
-		prerequisites = {
-			"kr-advanced-tech-card",
-			"kr-matter-processing",
-			"electromagnetic-science-pack",
-			"metallurgic-science-pack",
-			"agricultural-science-pack",
-		},
+		prerequisites = { "kr-matter-processing" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-singularity-tech-card" },
 		},
@@ -321,18 +223,45 @@ data:extend({
 
 	{
 		type = "technology",
+		name = "kr-matter-tech-card",
+		icon = "__Krastorio2Assets__/technologies/matter-tech-card.png",
+		icon_size = 256,
+		essential = true,
+		unit = {
+			time = 60,
+			count = 3000,
+			ingredients = {
+				{ "production-science-pack", 1 },
+				{ "utility-science-pack", 1 },
+				{ kr_optimization_tech_card_name, 1 },
+				{ "kr-advanced-tech-card", 1 },
+				{ "kr-matter-tech-card", 1 },
+				{ "metallurgic-science-pack", 1 },
+				{ "agricultural-science-pack", 1 },
+				{ "electromagnetic-science-pack", 1 },
+			},
+		},
+		prerequisites = { "cryogenic-plant" },
+		effects = {
+			{ type = "unlock-recipe", recipe = "kr-matter-research-data" },
+			{ type = "unlock-recipe", recipe = "kr-matter-tech-card" },
+		},
+	},
+	{
+		type = "technology",
 		name = "kr-quantum-computer",
 		icon = "__Krastorio2Assets__/technologies/quantum-computer.png",
 		icon_size = 256,
 		unit = {
 			time = 60,
-			count = 750,
+			count = 5000,
 			ingredients = {
 				{ "automation-science-pack", 1 },
 				{ "logistic-science-pack", 1 },
 				{ "chemical-science-pack", 1 },
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
+				{ "kr-advanced-tech-card", 1 },
 				{ kr_optimization_tech_card_name, 1 },
 				{ "electromagnetic-science-pack", 1 },
 				{ "cryogenic-science-pack", 1 },
@@ -353,13 +282,14 @@ data:extend({
 		upgrade = false,
 		unit = {
 			time = 30,
-			count = 500,
+			count = 2000,
 			ingredients = {
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
 				{ "metallurgic-science-pack", 1 },
 				{ "agricultural-science-pack", 1 },
 				{ "electromagnetic-science-pack", 1 },
+				{ "kr-advanced-tech-card", 1 },
 				{ "cryogenic-science-pack", 1 },
 			},
 		},
@@ -378,7 +308,7 @@ data:extend({
 		order = "g-m",
 		unit = {
 			time = 90,
-			count = 500,
+			count = 2000,
 			ingredients = {
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
@@ -397,52 +327,6 @@ data:extend({
 			{ type = "unlock-recipe", recipe = "kr-personal-laser-defense-mk4-equipment" },
 		},
 	},
-	{
-		type = "technology",
-		name = "kr-matter-lithium-brine-processing",
-		icons = {
-			{ icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
-			{ icon = "__space-age__/graphics/icons/fluid/lithium-brine.png", scale = 0.85 },
-		},
-		icon_size = 256,
-		order = "g-e-e",
-		unit = {
-			time = 45,
-			count = 1000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "cryogenic-science-pack", 1 },
-			},
-		},
-		prerequisites = { "kr-matter-processing", "cryogenic-science-pack" },
-		effects = {},
-	},
-	{
-		type = "technology",
-		name = "kr-matter-fluorine-processing",
-		icons = {
-			{ icon = "__Krastorio2Assets__/icons/fluids/matter.png" },
-			{ icon = "__space-age__/graphics/icons/fluid/fluorine.png", scale = 0.85 },
-		},
-		icon_size = 256,
-		order = "g-e-e",
-		unit = {
-			time = 45,
-			count = 1000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "cryogenic-science-pack", 1 },
-			},
-		},
-		prerequisites = { "kr-matter-processing", "cryogenic-science-pack" },
-		effects = {},
-	},
 
 	--Shattered Planet
 
@@ -458,8 +342,8 @@ data:extend({
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
 				{ "kr-advanced-tech-card", 1 },
+				{ "kr-matter-tech-card", 1 },
 				{ "kr-singularity-tech-card", 1 },
 				{ "metallurgic-science-pack", 1 },
 				{ "agricultural-science-pack", 1 },
@@ -485,6 +369,10 @@ data:extend({
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
+				{ "metallurgic-science-pack", 1 },
+				{ "agricultural-science-pack", 1 },
+				{ "electromagnetic-science-pack", 1 },
+				{ "cryogenic-science-pack", 1 },
 				{ "kr-matter-tech-card", 1 },
 				{ "kr-advanced-tech-card", 1 },
 				{ "kr-singularity-tech-card", 1 },
@@ -512,6 +400,10 @@ data:extend({
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
+				{ "metallurgic-science-pack", 1 },
+				{ "agricultural-science-pack", 1 },
+				{ "electromagnetic-science-pack", 1 },
+				{ "cryogenic-science-pack", 1 },
 				{ "kr-matter-tech-card", 1 },
 				{ "kr-advanced-tech-card", 1 },
 				{ "kr-singularity-tech-card", 1 },
@@ -539,6 +431,10 @@ data:extend({
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
+				{ "metallurgic-science-pack", 1 },
+				{ "agricultural-science-pack", 1 },
+				{ "electromagnetic-science-pack", 1 },
+				{ "cryogenic-science-pack", 1 },
 				{ "kr-matter-tech-card", 1 },
 				{ "kr-advanced-tech-card", 1 },
 				{ "kr-singularity-tech-card", 1 },
@@ -562,6 +458,10 @@ data:extend({
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
+				{ "metallurgic-science-pack", 1 },
+				{ "agricultural-science-pack", 1 },
+				{ "electromagnetic-science-pack", 1 },
+				{ "cryogenic-science-pack", 1 },
 				{ "kr-matter-tech-card", 1 },
 				{ "kr-advanced-tech-card", 1 },
 				{ "kr-singularity-tech-card", 1 },
@@ -587,8 +487,8 @@ data:extend({
 				{ "production-science-pack", 1 },
 				{ "utility-science-pack", 1 },
 				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-matter-tech-card", 1 },
 				{ "kr-advanced-tech-card", 1 },
+				{ "kr-matter-tech-card", 1 },
 				{ "kr-singularity-tech-card", 1 },
 				{ "metallurgic-science-pack", 1 },
 				{ "agricultural-science-pack", 1 },
