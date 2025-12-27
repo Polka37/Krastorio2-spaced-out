@@ -29,6 +29,8 @@ Date: 2025-12-27
       - Needs 20 matter
       - Must be crafted in space
     - Imersite crystals rocket payload increased to 1k or 10 stacks
+  Bugfixes:
+    - Fixed item count was shown in tech cards recipes title
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.18
 Date: 2025-12-26

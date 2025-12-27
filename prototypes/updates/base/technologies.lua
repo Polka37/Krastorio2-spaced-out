@@ -83,7 +83,6 @@ data_util.remove_prerequisite("uranium-processing", "uranium-mining")
 data_util.remove_research_unit_ingredient("fission-reactor-equipment", "utility-science-pack")
 data_util.remove_research_unit_ingredient("energy-shield-mk2-equipment", "electromagnetic-science-pack")
 
-data_util.add_research_unit_ingredient("promethium-science-pack", "kr-singularity-tech-card")
 data_util.add_research_unit_ingredient("research-productivity", "kr-matter-tech-card")
 data_util.add_research_unit_ingredient("research-productivity", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("research-productivity", "kr-singularity-tech-card")
@@ -196,7 +195,7 @@ data_util.add_research_unit_ingredient("captive-biter-spawner", "kr-advanced-tec
 data_util.add_research_unit_ingredient("railgun", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("fusion-reactor", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("fusion-reactor-equipment", "kr-advanced-tech-card")
-data_util.add_research_unit_ingredient("rocket-fuel-productivity-1", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("rocket-part-productivity", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("railgun-damage-1", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("railgun-shooting-speed-1", "kr-advanced-tech-card")
 
