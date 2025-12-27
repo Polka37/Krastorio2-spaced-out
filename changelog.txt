@@ -4,6 +4,7 @@ Date: 2025-12-27
   Features:
     - WARNING: This is a major update, your matter and singularity tech card production will break if you don't want to deal with it now consider delaying the update
   Changes:
+    - Reworked intergalactic transceiver recipe
     - Post Aquilo technologies now require advanced tech card
     - Increased cost of matter conversion technologies
     - Imersite matter conversion now requires singularity tech card
