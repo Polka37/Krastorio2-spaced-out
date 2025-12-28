@@ -3,6 +3,7 @@ local data_util = require("data-util")
 data_util.add_prerequisite("advanced-circuit", "kr-silicon-processing")
 data_util.add_prerequisite("atomic-bomb", "kr-military-5")
 data_util.add_prerequisite("automation", "kr-automation-core")
+data_util.add_prerequisite("automation-science-pack", "automation")
 data_util.add_prerequisite("automation-science-pack", "kr-laboratory")
 data_util.add_prerequisite("automobilism", "kr-fuel")
 data_util.add_prerequisite("battery-equipment", "modular-armor")
@@ -262,11 +263,18 @@ data.raw.technology["agricultural-science-pack"].localised_name = { "item-name.k
 data.raw.technology["cryogenic-science-pack"].localised_name = { "item-name.kr-cryogenic-tech-card" }
 data.raw.technology["promethium-science-pack"].localised_name = { "item-name.kr-promethium-tech-card" }
 
---Remove once aai industry updates
+--Do AAI industry K2 compatibility code must not work with K2SO except this technology
 data.raw.technology["kr-automation-core"].unit = nil
 data.raw.technology["kr-automation-core"].research_trigger = {
 	type = "craft-item",
 	item = "iron-gear-wheel",
+	count = 10,
+}
+
+data.raw.technology["automation"].unit = nil
+data.raw.technology["automation"].research_trigger = {
+	type = "craft-item",
+	item = "kr-automation-core",
 	count = 10,
 }
 table.insert(
@@ -277,7 +285,6 @@ table.insert(
 	data.raw["technology"]["rocket-fuel-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 }
 )
-
 -- stylua: ignore start
 data_util.set_icons(data.raw.technology["battery-mk2-equipment"], util.technology_icon_constant_equipment("__Krastorio2Assets__/technologies/battery-mk2-equipment.png"))
 data_util.set_icon(data.raw.technology["chemical-science-pack"], "__Krastorio2Assets__/technologies/chemical-tech-card.png", 256)
