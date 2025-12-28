@@ -18,7 +18,6 @@ table.insert(
 	{ type = "kr-radioactive", decrease = 6, percent = 60 }
 )
 -- TODO: Redo equipment subgrouping
-
 data.raw.capsule["discharge-defense-remote"].order = "f[active-defense-equipment]-b[discharge-defense-remote]"
 data.raw.capsule["discharge-defense-remote"].subgroup = "equipment"
 
@@ -39,11 +38,35 @@ data.raw.item["battery-equipment"].subgroup = "equipment"
 data.raw.item["battery-mk2-equipment"].order = "b2[battery]-b3[battery-equipment]"
 data.raw.item["battery-mk2-equipment"].subgroup = "equipment"
 
-data.raw.item["coal"].fuel_category = "chemical"
-data.raw.item["coal"].fuel_value = "6MJ"
-data.raw.item["coal"].fuel_acceleration_multiplier = 0.5
-data.raw.item["coal"].fuel_top_speed_multiplier = 0.6
-data.raw.item["coal"].fuel_emissions_multiplier = 2.5
+--- @param item data.Item_Name
+--- @param fuel_value data.Fuel_Value
+--- @param fuel_acceleration_multiplier data.Acceleration_Multiplayer
+--- @param fuel_top_speed_multiplier data.Top_Speed_Multiplayer
+--- @param fuel_emissions_multiplier data.Fuel_Emissions_Multiplayer
+local function update_fuel(
+	item,
+	fuel_value,
+	fuel_acceleration_multiplier,
+	fuel_top_speed_multiplier,
+	fuel_emissions_multiplier
+)
+	local item = data.raw.item[item]
+	item.fuel_category = "chemical"
+	item.fuel_value = fuel_value
+	item.fuel_acceleration_multiplier = fuel_acceleration_multiplier
+	item.fuel_top_speed_multiplier = fuel_top_speed_multiplier
+	item.fuel_emissions_multiplier = fuel_emissions_multiplier
+end
+
+update_fuel("wood", "1.25MJ", 0.35, 0.5, 1)
+update_fuel("coal", "6MJ", 0.5, 0.6, 2.5)
+update_fuel("carbon", "3MJ", 0.5, 0.6, 2.5)
+update_fuel("rocket-fuel", "100MJ", 1, 1, 1.25)
+update_fuel("small-electric-pole", "1.5MJ", 0.35, 0.5, 1.25)
+update_fuel("solid-fuel", "20MJ", 0.75, 0.75, 1.5)
+update_fuel("wooden-chest", "3MJ", 0.35, 0.5, 1.25)
+
+data.raw.item["uranium-fuel-cell"].fuel_value = "50GJ" --  = 200s in reactor
 
 data.raw.item["solar-panel"].weight = 40 * kg
 data.raw.item["stone-wall"].weight = 5 * kg
@@ -119,42 +142,11 @@ data.raw.item["personal-laser-defense-equipment"].subgroup = "equipment"
 data.raw.item["radar"].subgroup = "kr-radar"
 data.raw.item["radar"].order = "02[radar]"
 
-data.raw.item["rocket-fuel"].fuel_category = "chemical"
-data.raw.item["rocket-fuel"].fuel_acceleration_multiplier = 1
-data.raw.item["rocket-fuel"].fuel_top_speed_multiplier = 1
-data.raw.item["rocket-fuel"].fuel_emissions_multiplier = 1.25
-
-data.raw.item["small-electric-pole"].fuel_value = "1.5MJ" --nil
-data.raw.item["small-electric-pole"].fuel_category = "chemical"
-data.raw.item["small-electric-pole"].fuel_acceleration_multiplier = 0.35
-data.raw.item["small-electric-pole"].fuel_top_speed_multiplier = 0.5
-data.raw.item["small-electric-pole"].fuel_emissions_multiplier = 1.25
-
 data.raw.item["solar-panel-equipment"].order = "a[energy-source]-a1[solar-panel]"
 data.raw.item["solar-panel-equipment"].subgroup = "equipment"
 
-data.raw.item["solid-fuel"].fuel_category = "chemical"
-data.raw.item["solid-fuel"].fuel_value = "20MJ" --12
-data.raw.item["solid-fuel"].fuel_acceleration_multiplier = 0.75
-data.raw.item["solid-fuel"].fuel_top_speed_multiplier = 0.75
-data.raw.item["solid-fuel"].fuel_emissions_multiplier = 1.5
-
 data.raw.item["stone-wall"].subgroup = "kr-vanilla-turret"
 data.raw.item["stone-wall"].order = "001[stone-wall]"
-
-data.raw.item["uranium-fuel-cell"].fuel_value = "50GJ" --  = 200s in reactor
-
-data.raw.item["wooden-chest"].fuel_category = "chemical"
-data.raw.item["wooden-chest"].fuel_value = "3MJ"
-data.raw.item["wooden-chest"].fuel_acceleration_multiplier = 0.35
-data.raw.item["wooden-chest"].fuel_top_speed_multiplier = 0.5
-data.raw.item["wooden-chest"].fuel_emissions_multiplier = 1.25
-
-data.raw.item["wood"].fuel_value = "1.25MJ"
-data.raw.item["wood"].fuel_category = "chemical"
-data.raw.item["wood"].fuel_acceleration_multiplier = 0.35
-data.raw.item["wood"].fuel_top_speed_multiplier = 0.5
-data.raw.item["wood"].fuel_emissions_multiplier = 1
 
 if settings.startup["kr-containers"].value and not mods["aai-containers"] then
 	data.raw.item["steel-chest"].subgroup = "kr-chest"

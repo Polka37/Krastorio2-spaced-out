@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Date: 2025-12-27
+  Changes:
+    - Increased carbon fuel value from 2MJ -> 3MJ
+    - Increased carbon pollution multiplier to 250%
+    - Changed carbon acceleration to 50% and top speed 60% the same as coal
+---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2025-12-27
   Features:
