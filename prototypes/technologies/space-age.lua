@@ -21,6 +21,9 @@ data:extend({
 		prerequisites = { "kr-energy-control-unit", "kr-advanced-tech-card", "metallurgic-science-pack" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-advanced-furnace" },
+			{ type = "unlock-recipe", recipe = "kr-casting-imersium-plate" },
+			{ type = "unlock-recipe", recipe = "kr-casting-imersium-beam" },
+			{ type = "unlock-recipe", recipe = "kr-casting-imersium-gear-wheel" },
 		},
 	},
 
