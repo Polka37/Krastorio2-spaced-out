@@ -230,21 +230,11 @@ data:extend({
 		icon = "__Krastorio2Assets__/technologies/matter-tech-card.png",
 		icon_size = 256,
 		essential = true,
-		unit = {
-			time = 60,
-			count = 3000,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ kr_optimization_tech_card_name, 1 },
-				{ "kr-advanced-tech-card", 1 },
-				{ "kr-matter-tech-card", 1 },
-				{ "metallurgic-science-pack", 1 },
-				{ "agricultural-science-pack", 1 },
-				{ "electromagnetic-science-pack", 1 },
-			},
-		},
 		prerequisites = { "cryogenic-plant" },
+		research_trigger = {
+			type = "craft-item",
+			item = "cryogenic-plant",
+		},
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-matter-research-data" },
 			{ type = "unlock-recipe", recipe = "kr-matter-tech-card" },

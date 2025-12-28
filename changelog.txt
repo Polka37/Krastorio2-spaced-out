@@ -8,6 +8,7 @@ Date: 2025-12-27
     - Increased carbon pollution multiplier to 250%
     - Changed carbon acceleration to 50% and top speed 60% the same as coal
     - Automation technology is now unlocked by technology trigger and is prerequisite to automation tech card
+    - Matter tech card is unlocked by crafting cryogenic plant
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2025-12-27
