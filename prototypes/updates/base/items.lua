@@ -71,12 +71,9 @@ data.raw.item["uranium-fuel-cell"].fuel_value = "50GJ" --  = 200s in reactor
 data.raw.item["solar-panel"].weight = 40 * kg
 data.raw.item["stone-wall"].weight = 5 * kg
 data.raw.item["pumpjack"].weight = 50 * kg
-
 data.raw.capsule["cliff-explosives"].weight = 5 * kg
-
 data.raw.item["uranium-235"].weight = 10 * kg
 data.raw.item["uranium-238"].weight = 10 * kg
-
 data.raw.item["beacon"].weight = 50 * kg
 
 data.raw.item["discharge-defense-equipment"].order = "f[active-defense-equipment]-a[discharge-defense-equipment]"

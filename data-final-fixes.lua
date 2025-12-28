@@ -5,14 +5,14 @@ require("prototypes.final-fixes.enforce-rifle-ammo")
 require("prototypes.final-fixes.enforce-k2-items")
 
 --sync all labs inputs
-data.raw["lab"]["biolab"].inputs = data.raw["lab"]["lab"].inputs
-data.raw["lab"]["kr-advanced-lab"].inputs = data.raw["lab"]["lab"].inputs
-data.raw["lab"]["kr-singularity-lab"].inputs = data.raw["lab"]["lab"].inputs
+data.raw.lab["biolab"].inputs = data.raw.lab["lab"].inputs
+data.raw.lab["kr-advanced-lab"].inputs = data.raw.lab["lab"].inputs
+data.raw.lab["kr-singularity-lab"].inputs = data.raw.lab["lab"].inputs
 
 --make sure rubia wind turbine uses K2SO default wind speed
 if mods["rubia"] then
-	data.raw["solar-panel"]["rubia-wind-turbine"].performance_at_day = 1 * 15 / 300
-	data.raw["solar-panel"]["rubia-wind-turbine"].performance_at_night = 1 * 15 / 300
+	data.raw["solar-panel"]["rubia-wind-turbine"].performance_at_day = 15 / 300
+	data.raw["solar-panel"]["rubia-wind-turbine"].performance_at_night = 15 / 300
 	data.raw["surface-property"]["rubia-wind-speed"].default_value = 15
 end
 

@@ -181,39 +181,31 @@ data_util.update_ammo_effects(data.raw["technology"]["weapon-shooting-speed-6"],
 
 ------------------------------------------------
 
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-1"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.2 } }
-)
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-2"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.2 } }
-)
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-3"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.15 } }
-)
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-4"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.15 } }
-)
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-5"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.1 } }
-)
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-6"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.1 } }
-)
-data_util.update_ammo_effects(
-	data.raw["technology"]["laser-shooting-speed-7"],
-	{ { type = "gun-speed", ammo_category = "laser", modifier = 0.1 } }
-)
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-1"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.2 },
+})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-2"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.2 },
+})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-3"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.15 },
+})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-4"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.15 },
+})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-5"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.1 },
+})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-6"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.1 },
+})
+data_util.update_ammo_effects(data.raw["technology"]["laser-shooting-speed-7"], {
+	{ type = "gun-speed", ammo_category = "laser", modifier = 0.1 },
+})
 
-data_util.update_ammo_effects(
-	data.raw["technology"]["artillery-shell-speed-1"],
-	{ { type = "gun-speed", ammo_category = "artillery-shell", modifier = 0.25 } }
-)
+data_util.update_ammo_effects(data.raw["technology"]["artillery-shell-speed-1"], {
+	{ type = "gun-speed", ammo_category = "artillery-shell", modifier = 0.25 },
+})
 
 -- -- -- Adding new Krastorio ammo damages effects in vanilla technologies
 
