@@ -248,6 +248,28 @@ data:extend({
 	},
 	{
 		type = "recipe",
+		name = "kr-refined-concrete-from-molten-iron",
+		category = "metallurgy",
+		subgroup = "vulcanus-processes",
+		order = "b[casting]-ga[refined-concrete]",
+		localised_name = { "", { "item-name.refined-concrete" }, " ", { "recipe-name.kr-from-molten-iron" } },
+		icons = {
+			{ icon = "__base__/graphics/icons/refined-concrete.png" },
+			{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
+		},
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "concrete", amount = 20, fluidbox_multiplier = 10 },
+			{ type = "fluid", name = "molten-iron", amount = 100, fluidbox_multiplier = 10 },
+			{ type = "fluid", name = "water", amount = 100, fluidbox_multiplier = 10 },
+		},
+		energy_required = 15,
+		allow_decomposition = false,
+		results = { { type = "item", name = "refined-concrete", amount = 10 } },
+		allow_productivity = true,
+	},
+	{
+		type = "recipe",
 		name = "kr-casting-imersium-plate",
 		category = "metallurgy",
 		subgroup = "vulcanus-processes",

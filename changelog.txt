@@ -3,6 +3,7 @@ Version: 1.6.1
 Date: 2025-12-27
   Features:
     - Added casting recipes for imersite products
+    - Added recipe for casting refined concrete
   Changes:
     - Increased carbon fuel value from 2MJ -> 3MJ
     - Increased carbon pollution multiplier to 250%
