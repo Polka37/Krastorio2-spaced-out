@@ -36,6 +36,7 @@ data:extend({
 			{ type = "item", name = "kr-coke", amount = 6 },
 		},
 		allow_productivity = true,
+		hide_from_signal_gui = false,
 	},
 	{
 		type = "recipe",

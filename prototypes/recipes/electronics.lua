@@ -3,6 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-bio-processing-circuit",
 		enabled = false,
+		order = "b[circuits]-c[processing-circuit-bio]",
 		icons = {
 			{ icon = "__base__/graphics/icons/processing-unit.png" },
 			{ icon = "__space-age__/graphics/icons/pentapod-egg.png", scale = 0.26, shift = { -8, -8 } },
