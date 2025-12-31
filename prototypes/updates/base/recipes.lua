@@ -157,6 +157,9 @@ data_util.add_or_replace_ingredient(
 recipe["electronic-circuit"].results = {
 	{ type = "item", name = "electronic-circuit", amount = 2 },
 }
+recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
+
+recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"
 
 data_util.add_or_replace_ingredient(
 	"energy-shield-mk2-equipment",
@@ -718,10 +721,12 @@ recipe["casting-steel"].icons = {
 	{ icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
 	{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
 }
+recipe["casting-steel"].hide_from_signal_gui = false
 recipe["casting-iron-gear-wheel"].icons = {
 	{ icon = "__Krastorio2Assets__/icons/items/iron-gear-wheel.png" },
 	{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
 }
+recipe["casting-iron-gear-wheel"].hide_from_signal_gui = false
 
 data_util.add_or_replace_ingredient(
 	"casting-iron-gear-wheel",

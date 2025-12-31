@@ -156,6 +156,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/items/iron-beam.png" },
 			{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		ingredients = {
 			{ type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10 },
@@ -176,6 +177,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/items/steel-beam.png" },
 			{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		ingredients = {
 			{ type = "fluid", name = "molten-iron", amount = 40, fluidbox_multiplier = 10 },
@@ -196,6 +198,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/items/steel-gear-wheel.png" },
 			{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		ingredients = {
 			{ type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10 },
@@ -216,6 +219,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/entities/steel-pipe.png", scale = 0.5, shift = { -8, 8 } },
 			{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.5, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		ingredients = {
 			{ type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10 },
@@ -236,6 +240,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/entities/steel-pipe-to-ground.png", scale = 0.5, shift = { -8, 8 } },
 			{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.5, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		ingredients = {
 			{ type = "item", name = "kr-steel-pipe", amount = 10, fluidbox_multiplier = 10 },
@@ -279,6 +284,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/items/imersium-plate.png" },
 			{ icon = "__k2so-assets__/icons/fluids/molten-rare-metals.png", scale = 0.33, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		energy_required = 32,
 		ingredients = {
@@ -300,6 +306,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/items/imersium-beam.png" },
 			{ icon = "__k2so-assets__/icons/fluids/molten-rare-metals.png", scale = 0.33, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		energy_required = 12,
 		ingredients = {
@@ -321,6 +328,7 @@ data:extend({
 			{ icon = "__Krastorio2Assets__/icons/items/imersium-gear-wheel.png" },
 			{ icon = "__k2so-assets__/icons/fluids/molten-rare-metals.png", scale = 0.33, shift = { 8, -8 } },
 		},
+		hide_from_signal_gui = false,
 		enabled = false,
 		energy_required = 2,
 		ingredients = {
