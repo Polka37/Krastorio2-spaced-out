@@ -270,6 +270,7 @@ data:extend({
 		},
 		energy_required = 15,
 		allow_decomposition = false,
+		hide_from_signal_gui = false,
 		results = { { type = "item", name = "refined-concrete", amount = 10 } },
 		allow_productivity = true,
 	},

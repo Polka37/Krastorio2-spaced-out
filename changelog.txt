@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.2
 Date: 2025-12-31
+  Compatibility:
+    - Moshine:
+      - Silicon cells technology is now a trigger tech like in original
+      - Fixed Wooden Moshine: Solaponics crash on startup
+      - Description for ai cores modules now explains where they can be used
   Bugfixes:
     - Fixed tech cards recipe didn't show products
+    - Fixed several alternative recipes weren't shown in signal gui (#112 thanks to bountygiver)
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.1
 Date: 2025-12-29

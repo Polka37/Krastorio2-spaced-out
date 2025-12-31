@@ -22,6 +22,26 @@ data_util.remove_prerequisite("snouz_better_substation_tech", "electric-energy-d
 data_util.remove_prerequisite("moshine-tech-silicon-cell", "moshine-tech-silicon")
 data_util.remove_prerequisite("moshine-tech-silicon-carbide", "moshine-tech-silicon")
 
+if mods["moshine-solaponics"] then
+	data_util.remove_prerequisite("moshine-solaponics", "moshine-tech-glass")
+end
+
+data.raw.technology["moshine-tech-glass"] = nil
+data.raw.technology["moshine-tech-silicon"] = nil
+
+data.raw.technology["moshine-tech-silicon-cell"].research_trigger = {
+	type = "craft-item",
+	item = "kr-silicon",
+	count = 60,
+}
+data.raw.technology["moshine-tech-magnet"].unit = {
+	time = 60,
+	count = 200,
+	ingredients = {
+		{ kr_optimization_tech_card_name, 1 },
+	},
+}
+
 data_util.add_or_replace_ingredient(
 	"big-solar-panel",
 	"solar-panel",
@@ -32,25 +52,6 @@ data_util.add_or_replace_ingredient(
 	"substation",
 	{ type = "item", name = "kr-superior-substation", amount = 2 }
 )
-
-data.raw.technology["moshine-tech-glass"] = nil
-data.raw.technology["moshine-tech-silicon"] = nil
-
-data.raw.technology["moshine-tech-silicon-cell"].research_trigger = nil
-data.raw.technology["moshine-tech-silicon-cell"].unit = {
-	time = 60,
-	count = 200,
-	ingredients = {
-		{ kr_optimization_tech_card_name, 1 },
-	},
-}
-data.raw.technology["moshine-tech-magnet"].unit = {
-	time = 60,
-	count = 200,
-	ingredients = {
-		{ kr_optimization_tech_card_name, 1 },
-	},
-}
 
 data:extend({
 	{
