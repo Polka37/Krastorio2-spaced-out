@@ -563,6 +563,7 @@ function data_util.make_tech_card(science_pack, ingredients, no_server)
 		results = { { type = "item", name = science_pack, amount = 5 } },
 		allow_productivity = true,
 		show_amount_in_title = false,
+		always_show_products = true,
 		main_product = science_pack,
 	}
 	local recipe = data.raw.recipe[science_pack]
