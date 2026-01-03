@@ -281,7 +281,7 @@ local function on_gui_opened(e)
 
   local destination_buttons = {}
   for unit_number, data in pairs(storage.planetary_teleporter) do
-    if unit_number == entity.unit_number or data.force ~= entity.force or data.surface ~= entity.surface then
+    if unit_number == entity.unit_number or data.force ~= entity.force then
       goto continue
     end
     destination_buttons[#destination_buttons + 1] = {
@@ -298,6 +298,7 @@ local function on_gui_opened(e)
           name = "minimap",
           style = "kr_planetary_teleporter_destination_minimap",
           position = data.entities.base.position,
+          surface_index = data.surface.index,
           {
             type = "button",
             name = "minimap_button",

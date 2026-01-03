@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.3
+Date: 2025-01-03
+  Ease of use:
+    - Planetary teleporter now called interplanetary teleporter can transport players across planets
+  Changes:
+    - Updated descriptions related to planetary teleporter
+    - GPS modules now have to be made in space and cost 1k space research data & 10 AI cores. Takes a hour to craft
+---------------------------------------------------------------------------------------------------
 Version: 1.6.2
 Date: 2025-12-31
   Compatibility:

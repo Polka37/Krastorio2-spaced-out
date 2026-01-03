@@ -43,7 +43,7 @@ data:extend({
 				{ "kr-singularity-tech-card", 1 },
 			},
 		},
-		prerequisites = { "effect-transmission", "kr-singularity-tech-card" },
+		prerequisites = { "effect-transmission", "kr-singularity-tech-card", "kr-ai-core" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-planetary-teleporter" },
 			{ type = "unlock-recipe", recipe = "kr-teleportation-gps-module" },
