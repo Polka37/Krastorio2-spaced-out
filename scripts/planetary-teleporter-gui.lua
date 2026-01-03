@@ -281,7 +281,7 @@ local function on_gui_opened(e)
 
   local destination_buttons = {}
   for unit_number, data in pairs(storage.planetary_teleporter) do
-    if unit_number == entity.unit_number or data.force ~= entity.force then
+    if unit_number == entity.unit_number or data.force ~= entity.force or data.surface.valid ~= true then
       goto continue
     end
     destination_buttons[#destination_buttons + 1] = {

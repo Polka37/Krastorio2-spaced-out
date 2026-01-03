@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.4
+Date: 2025-01-03
+  Bugfixes:
+    - Fixed game crashed when opening interplanetary teleporter gui after removing a planet from save 
+---------------------------------------------------------------------------------------------------
 Version: 1.6.3
 Date: 2025-01-03
   Ease of use:
