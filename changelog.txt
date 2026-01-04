@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.5
+Date: 2025-01-04
+  Changes:
+    - Quality teleporters only use 1 charge per trip instead of using all of it
+  Bugfixes:
+    - Fixed it wasn't possible to teleport if destination teleporter had charge over 100%
+---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2025-01-03
   Bugfixes:

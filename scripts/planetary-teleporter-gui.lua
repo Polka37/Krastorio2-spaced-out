@@ -16,8 +16,8 @@ local util = require("scripts.util")
 --- @param from LuaEntity
 --- @param to LuaEntity
 local function teleport_player(player, from, to)
-  from.energy = 0
-  to.energy = 0
+  from.energy = from.energy - 4e8
+  to.energy = to.energy - 4e8
   local position = to.position
   position.y = position.y + 1.1
   player.teleport(position, to.surface)
@@ -245,7 +245,7 @@ local function update_gui(self)
     end
     local dest_entity = dest_data.entities.base
     local dest_charge = dest_entity.energy / buffer_capacity
-    local dest_fully_charged = flib_math.round(dest_charge, 0.1) == 1
+    local dest_fully_charged = flib_math.round(dest_charge, 0.1) >= 1
     local minimap = frame.minimap_frame.minimap --[[@as LuaGuiElement]]
     minimap.progressbar.value = dest_charge
     minimap.progressbar.visible = not dest_fully_charged
