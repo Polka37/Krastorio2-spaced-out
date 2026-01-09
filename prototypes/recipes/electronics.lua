@@ -1,27 +1,6 @@
 data:extend({
 	{
 		type = "recipe",
-		name = "kr-bio-processing-circuit",
-		enabled = false,
-		order = "b[circuits]-c[processing-circuit-bio]",
-		icons = {
-			{ icon = "__base__/graphics/icons/processing-unit.png" },
-			{ icon = "__space-age__/graphics/icons/pentapod-egg.png", scale = 0.26, shift = { -8, -8 } },
-		},
-		category = "electronics",
-		energy_required = 6,
-		auto_recycle = false,
-		ingredients = {
-			{ type = "fluid", name = "sulfuric-acid", amount = 10 },
-			{ type = "item", name = "advanced-circuit", amount = 4 },
-			{ type = "item", name = "pentapod-egg", amount = 1 },
-		},
-		results = { { type = "item", name = "processing-unit", amount = 2 } },
-		allow_productivity = true,
-		hide_from_signal_gui = false,
-	},
-	{
-		type = "recipe",
 		name = "kr-automation-core",
 		enabled = false,
 		category = "electronics",

@@ -3,6 +3,8 @@ Version: 1.6.6
 Date: 2025-01-09
   Balancing:
     - Gleba heating power has been increased to 50MW to match heat exchanger
+    - Bio processing units now can be crafted in biochambers
+    - Bio processing units now again require 6 advanced circuits
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.5
 Date: 2025-01-04
