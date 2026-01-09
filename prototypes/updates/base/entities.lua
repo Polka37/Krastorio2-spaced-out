@@ -72,6 +72,8 @@ data.raw["boiler"]["boiler"].target_temperature = 165
 data.raw.boiler["boiler"].energy_source.emissions_per_minute = { pollution = 20 }
 data_util.add_fuel_category(data.raw.boiler["boiler"].energy_source, "kr-vehicle-fuel")
 
+data.raw.reactor["heating-tower"].consumption = "50MW"
+
 data.raw.boiler["heat-exchanger"].energy_consumption = "50MW"
 data.raw.boiler["heat-exchanger"].energy_source.max_transfer = "10GW"
 data.raw.boiler["heat-exchanger"].energy_source.min_working_temperature = 415
