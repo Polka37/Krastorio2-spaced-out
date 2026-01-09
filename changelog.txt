@@ -5,6 +5,8 @@ Date: 2025-01-09
     - Gleba heating power has been increased to 50MW to match heat exchanger
     - Bio processing units now can be crafted in biochambers
     - Bio processing units now again require 6 advanced circuits
+  Changes:
+    - Imersite powder recipe is now in the same raw as sand
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.5
 Date: 2025-01-04

@@ -145,6 +145,7 @@ data:extend({
 		},
 		main_product = "kr-imersite-powder",
 		allow_productivity = true,
+		subgroup = "raw-resource",
 	},
 	{
 		type = "recipe",
