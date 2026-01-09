@@ -3,8 +3,10 @@ Version: 1.6.6
 Date: 2025-01-09
   Balancing:
     - Gleba heating power has been increased to 50MW to match heat exchanger
-    - Bio processing units now can be crafted in biochambers
-    - Bio processing units now again require 6 advanced circuits
+    - Bio processing units:
+      - can be crafted in biochambers (can still be crafted in assemblers and EMP's but consider them deprecated)
+      - now again require 6 advanced circuits
+      - belongs to agriculture products subgroup with rest of biochamber recipes
   Changes:
     - Imersite powder recipe is now in the same raw as sand
     - Added missing recipe for stack inserter crushing
