@@ -95,18 +95,6 @@ data_util.add_or_replace_ingredient(
 
 recipe["boiler"].enabled = false
 
-recipe["bulk-inserter"].ingredients = {
-	{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	{ type = "item", name = "advanced-circuit", amount = 2 },
-	{ type = "item", name = "steel-plate", amount = 1 },
-	{ type = "item", name = "kr-steel-gear-wheel", amount = 2 },
-}
-
-recipe["burner-inserter"].ingredients = {
-	{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	{ type = "item", name = "iron-plate", amount = 1 },
-}
-
 recipe["car"].energy_required = 30
 
 recipe["cargo-wagon"].energy_required = 20
@@ -205,12 +193,6 @@ data_util.add_or_replace_ingredient(
 	{ type = "item", name = "tungsten-plate", amount = 10 }
 )
 
-recipe["fast-inserter"].ingredients = {
-	{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	{ type = "item", name = "electronic-circuit", amount = 2 },
-	{ type = "item", name = "steel-plate", amount = 1 },
-}
-
 data_util.add_or_replace_ingredient(
 	"fast-splitter",
 	"iron-gear-wheel",
@@ -275,13 +257,6 @@ data_util.convert_ingredient("heat-pipe", "steel-plate", "kr-quartz")
 data_util.add_or_replace_ingredient("heavy-armor", "light-armor", { type = "item", name = "light-armor", amount = 1 })
 data_util.remove_ingredient("heavy-armor", "copper-plate")
 
-recipe["inserter"].enabled = false
-recipe["inserter"].ingredients = {
-	{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	{ type = "item", name = "kr-automation-core", amount = 1 },
-	{ type = "item", name = "electronic-circuit", amount = 1 },
-}
-
 data_util.add_or_replace_ingredient("iron-plate", "iron-ore", { type = "item", name = "iron-ore", amount = 2 })
 
 data_util.add_or_replace_ingredient("iron-gear-wheel", "iron-plate", { type = "item", name = "iron-plate", amount = 1 })
@@ -330,10 +305,34 @@ data_util.add_or_replace_ingredient("locomotive", "steel-plate", { type = "item"
 
 recipe["light-armor"].enabled = false
 
+recipe["burner-inserter"].ingredients = {
+	{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	{ type = "item", name = "iron-plate", amount = 1 },
+}
+
+recipe["inserter"].ingredients = {
+	{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	{ type = "item", name = "kr-automation-core", amount = 1 },
+	{ type = "item", name = "electronic-circuit", amount = 1 },
+}
+
 recipe["long-handed-inserter"].ingredients = {
 	{ type = "item", name = "kr-inserter-parts", amount = 1 },
 	{ type = "item", name = "kr-automation-core", amount = 1 },
 	{ type = "item", name = "iron-stick", amount = 2 },
+}
+
+recipe["fast-inserter"].ingredients = {
+	{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	{ type = "item", name = "electronic-circuit", amount = 2 },
+	{ type = "item", name = "steel-plate", amount = 1 },
+}
+
+recipe["bulk-inserter"].ingredients = {
+	{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	{ type = "item", name = "advanced-circuit", amount = 2 },
+	{ type = "item", name = "steel-plate", amount = 1 },
+	{ type = "item", name = "kr-steel-gear-wheel", amount = 2 },
 }
 
 data_util.add_or_replace_ingredient(

@@ -7,6 +7,8 @@ Date: 2025-01-09
     - Bio processing units now again require 6 advanced circuits
   Changes:
     - Imersite powder recipe is now in the same raw as sand
+    - Added missing recipe for stack inserter crushing
+    - Reordered superior inserters to appear after stack inserters
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.5
 Date: 2025-01-04

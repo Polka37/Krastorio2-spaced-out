@@ -1,5 +1,41 @@
 local crushing_lib = require("prototypes.libraries.crushing")
 
+crushing_lib.make_recipe(data.raw.item["burner-inserter"], {
+	subgroup = "intermediate-product",
+	order = "e[ei-electronic-components]",
+	energy_required = 1,
+	results = {
+		{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	},
+})
+
+crushing_lib.make_recipe(data.raw.item["fast-inserter"], {
+	subgroup = "intermediate-product",
+	order = "e[ei-electronic-components]",
+	energy_required = 1,
+	results = {
+		{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	},
+})
+
+crushing_lib.make_recipe(data.raw.item["inserter"], {
+	subgroup = "intermediate-product",
+	order = "e[ei-electronic-components]",
+	energy_required = 1,
+	results = {
+		{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	},
+})
+
+crushing_lib.make_recipe(data.raw.item["long-handed-inserter"], {
+	subgroup = "intermediate-product",
+	order = "e[ei-electronic-components]",
+	energy_required = 1,
+	results = {
+		{ type = "item", name = "kr-inserter-parts", amount = 1 },
+	},
+})
+
 crushing_lib.make_recipe(data.raw.item["bulk-inserter"], {
 	subgroup = "intermediate-product",
 	order = "e[ei-electronic-components]",
@@ -10,45 +46,16 @@ crushing_lib.make_recipe(data.raw.item["bulk-inserter"], {
 	},
 })
 
-crushing_lib.make_recipe(data.raw.item["burner-inserter"], {
+crushing_lib.make_recipe(data.raw.item["stack-inserter"], {
 	subgroup = "intermediate-product",
 	order = "e[ei-electronic-components]",
 	energy_required = 1,
 	results = {
 		{ type = "item", name = "kr-inserter-parts", amount = 1 },
+		{ type = "item", name = "kr-electronic-components", amount = 4 },
+		{ type = "item", name = "carbon-fiber", amount = 1 },
 	},
 })
-data.raw.recipe["kr-crush-burner-inserter"].auto_recycle = false
-
-crushing_lib.make_recipe(data.raw.item["fast-inserter"], {
-	subgroup = "intermediate-product",
-	order = "e[ei-electronic-components]",
-	energy_required = 1,
-	results = {
-		{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	},
-})
-data.raw.recipe["kr-crush-fast-inserter"].auto_recycle = false
-
-crushing_lib.make_recipe(data.raw.item["inserter"], {
-	subgroup = "intermediate-product",
-	order = "e[ei-electronic-components]",
-	energy_required = 1,
-	results = {
-		{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	},
-})
-data.raw.recipe["kr-crush-inserter"].auto_recycle = false
-
-crushing_lib.make_recipe(data.raw.item["long-handed-inserter"], {
-	subgroup = "intermediate-product",
-	order = "e[ei-electronic-components]",
-	energy_required = 1,
-	results = {
-		{ type = "item", name = "kr-inserter-parts", amount = 1 },
-	},
-})
-data.raw.recipe["kr-crush-long-handed-inserter"].auto_recycle = false
 
 crushing_lib.make_recipe(data.raw.item["kr-superior-inserter"], {
 	subgroup = "intermediate-product",
@@ -80,7 +87,6 @@ crushing_lib.make_recipe(data.raw.item["kr-imersite-crystal"], {
 		{ type = "item", name = "kr-imersite-powder", amount_min = 1, amount_max = 2 },
 	},
 })
-data.raw.recipe["kr-crush-kr-imersite-crystal"].auto_recycle = false
 
 data:extend({
 	{
