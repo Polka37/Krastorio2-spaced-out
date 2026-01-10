@@ -73,6 +73,7 @@ data:extend({
 		},
 		results = { { type = "item", name = "electronic-circuit", amount = 2 } },
 		allow_productivity = true,
+		allow_as_intermediate = false,
 		hide_from_signal_gui = false,
 		auto_recycle = false,
 	},

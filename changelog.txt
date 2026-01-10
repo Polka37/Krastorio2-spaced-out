@@ -4,10 +4,12 @@ Date: 2025-01-11
   Changes:
     - Flare stack now can be mirrored
     - Now requires k2so-assets 1.0.2
+  Bugfixes:
+    - handcrafting total cost prioritised circuits with wood over basic ones
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.6
 Date: 2025-01-09
-  graphics:
+  Graphics:
     - Changed ammonia icon to K2 one
   Balancing:
     - Gleba heating power has been increased to 50MW to match heat exchanger
