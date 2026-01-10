@@ -9,8 +9,9 @@ Date: 2025-01-09
       - can be crafted in biochambers (can still be crafted in assemblers and EMP's but consider them deprecated)
       - now again require 6 advanced circuits
       - belongs to agriculture products subgroup with rest of biochamber recipes
+    - Increased compost spoilage biomethanol output from 250 -> 300
   Changes:
-    - Imersite powder recipe is now in the same raw as sand
+    - Imersite powder recipe is now in the same row as sand
     - Added missing recipe for stack inserter crushing
     - Reordered superior inserters to appear after stack inserters
 ---------------------------------------------------------------------------------------------------

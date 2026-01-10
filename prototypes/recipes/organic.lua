@@ -19,7 +19,7 @@ data:extend({
 			{ type = "item", name = "bioflux", amount = 2 },
 		},
 		results = {
-			{ type = "fluid", name = "kr-biomethanol", amount = 250 },
+			{ type = "fluid", name = "kr-biomethanol", amount = 300 },
 		},
 	},
 	{
