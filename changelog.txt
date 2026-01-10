@@ -4,6 +4,7 @@ Date: 2025-01-11
   Changes:
     - Flare stack now can be mirrored
     - Now requires k2so-assets 1.0.2
+    - Wooden electronic circuits now can be made in biochambers
   Bugfixes:
     - handcrafting total cost prioritised circuits with wood over basic ones
 ---------------------------------------------------------------------------------------------------

@@ -66,6 +66,7 @@ data:extend({
 		},
 		energy_required = 2,
 		category = "electronics",
+		additional_categories = { "organic" },
 		ingredients = {
 			{ type = "item", name = "iron-plate", amount = 1 },
 			{ type = "item", name = "wood", amount = 1 },
