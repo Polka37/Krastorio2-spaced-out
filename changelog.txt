@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.6
 Date: 2025-01-09
+  graphics:
+    - Changed ammonia icon to K2 one
   Balancing:
     - Gleba heating power has been increased to 50MW to match heat exchanger
     - Bio processing units:
