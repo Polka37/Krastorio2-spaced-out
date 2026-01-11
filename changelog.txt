@@ -2,12 +2,14 @@
 Version: 1.6.9
 Date: 2025-01-11
   Bugfixes:
-    - Fixed Pelagos titanium barrels recycled into ethanol barrels
+    - Fixed recipes with subgroup equal to nil couldn't have their recycling recipes updated
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.8
 Date: 2025-01-11
+  Changes:
+    - Rised required k2so-assets version to 1.0.3
   Bugfixes:
-    - Fixed recipes with subgroup equal to nil, couldn't have their recycling recipes updated
+    - Fixed Pelagos titanium barrels recycled into ethanol barrels
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.7
 Date: 2025-01-11
