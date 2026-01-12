@@ -117,6 +117,7 @@ require("prototypes.equipment.superior-exoskeleton-equipment")
 require("prototypes.equipment.superior-night-vision-equipment")
 require("prototypes.equipment.superior-solar-panel-equipment")
 require("prototypes.equipment.vehicle-roboport-equipment")
+require("prototypes.equipment.cargo-expansion")
 
 require("prototypes.explosions.beacon-matter-explosion")
 require("prototypes.explosions.impulse-rifle-beam")

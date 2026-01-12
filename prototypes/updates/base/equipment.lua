@@ -40,7 +40,6 @@ data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].attack_
 	},
 }
 
-table.insert(data.raw["inventory-bonus-equipment"]["toolbelt-equipment"].categories, "kr-vehicle")
 table.insert(data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].categories, "kr-vehicle")
 data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].energy_source.buffer_capacity = "20MJ"
 data.raw["active-defense-equipment"]["personal-laser-defense-equipment"].energy_source.input_flow_limit = "2MW"

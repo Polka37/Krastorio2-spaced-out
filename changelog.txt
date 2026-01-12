@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.11
-Date: 2025-01-12
+Date: 2025-01-13
+  Features:
+    - Added cargo expansion equipment adding additional inventory slots to vehicles including trains
   Changes:
     - Removed kr-explosion damage type and replaced all instances with normal explosions
 ---------------------------------------------------------------------------------------------------

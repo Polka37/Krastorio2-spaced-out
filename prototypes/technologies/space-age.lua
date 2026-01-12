@@ -163,6 +163,31 @@ data:extend({
 			{ type = "unlock-recipe", recipe = "kr-yumako" },
 		},
 	},
+	{
+		type = "technology",
+		name = "kr-cargo-expansion",
+		icons = util.technology_icon_constant_equipment("__k2so-assets__/equipment/cargo-expansion.png"),
+		order = "g-f-z",
+		unit = {
+			time = 30,
+			count = 2000,
+			ingredients = {
+				{ "military-science-pack", 1 },
+				{ "production-science-pack", 1 },
+				{ "utility-science-pack", 1 },
+				{ kr_optimization_tech_card_name, 1 },
+				{ "kr-advanced-tech-card", 1 },
+				{ "agricultural-science-pack", 1 },
+			},
+		},
+		prerequisites = {
+			"carbon-fiber",
+			"kr-advanced-tech-card",
+		},
+		effects = {
+			{ type = "unlock-recipe", recipe = "kr-cargo-expansion-equipment" },
+		},
+	},
 
 	--Multiplanetary
 
