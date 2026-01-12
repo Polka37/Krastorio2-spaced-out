@@ -45,6 +45,12 @@ for _, fluid in pairs(data.raw.fluid) do
 	if convert[fluid.name] then
 		fluid.hidden = true
 		fluid.hidden_in_factoriopedia = true
+		if not mods["nulls-k2so-tweaks"] and data.raw.item[fluid.name .. "-barrel"] then
+			data.raw.recipe[fluid.name .. "-barrel"].hidden = true
+			data.raw.recipe[fluid.name .. "-barrel"].hidden_in_factoriopedia = true
+			data.raw.recipe["empty-" .. fluid.name .. "-barrel"].hidden = true
+			data.raw.recipe["empty-" .. fluid.name .. "-barrel"].hidden_in_factoriopedia = true
+		end
 	end
 end
 

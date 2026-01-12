@@ -2,6 +2,7 @@
 Version: 1.6.10
 Date: 2025-01-12
   Compatibility:
+    - Barreling recipes with replaced gases are hidden
     - Unified chlorine added by Muria
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.9
