@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.11
+Date: 2025-01-12
+  Changes:
+    - Removed kr-explosion damage type and replaced all instances with normal explosions
+---------------------------------------------------------------------------------------------------
 Version: 1.6.10
 Date: 2025-01-12
   Compatibility:
