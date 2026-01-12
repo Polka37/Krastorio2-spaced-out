@@ -34,6 +34,7 @@ local auto_blacklist = {
 	["muluna-astronomical-data"] = true,
 	["oxygen"] = true, --duplicate
 	["hydrogen"] = true, --duplicate
+	["chlorine"] = true, --duplicate
 }
 
 --- Adds the given fluid to the auto-generation blacklist.

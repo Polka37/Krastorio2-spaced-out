@@ -3,6 +3,7 @@ local data_util = require("data-util")
 local convert = {
 	["oxygen"] = true,
 	["hydrogen"] = true,
+	["chlorine"] = true,
 	["sand"] = true,
 	["glass"] = true,
 	["silicon"] = true,
