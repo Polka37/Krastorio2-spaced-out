@@ -204,7 +204,7 @@ data.raw.recipe["kr-singularity-tech-card"].surface_conditions = {
 data_util.add_or_replace_product(
 	"kr-singularity-tech-card",
 	"kr-matter-stabilizer",
-	{ type = "item", name = "kr-matter-stabilizer", amount = 1, probability = 0.9 }
+	{ type = "item", name = "kr-matter-stabilizer", amount = 1, probability = 0.9, ignored_by_productivity = 1 }
 )
 
 data_util.make_tech_card("kr-matter-tech-card", {

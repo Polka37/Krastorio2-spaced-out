@@ -5,6 +5,8 @@ Date: 2025-01-13
     - Added cargo expansion equipment adding additional inventory slots to vehicles including trains
   Changes:
     - Removed kr-explosion damage type and replaced all instances with normal explosions
+  Bugfixes:
+    - Fixed singularity tech card gave additional matter stabilizers based on productivity
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.10
 Date: 2025-01-12
