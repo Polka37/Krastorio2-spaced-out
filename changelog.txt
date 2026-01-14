@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.12
+Date: 2025-01-14
+  Compatibility:
+    - Advanced assembler now can load/unload Muluna data page and datacells with Moshine installed
+---------------------------------------------------------------------------------------------------
 Version: 1.6.11
 Date: 2025-01-13
   Features:

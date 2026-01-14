@@ -97,6 +97,44 @@ table.insert(data.raw["assembling-machine"]["kr-research-server"].fluid_boxes, 2
 	},
 	secondary_draw_orders = { north = -1 },
 })
+table.insert(
+	data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories,
+	"crafting-with-fluid-and-data"
+)
+table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].fluid_boxes, 2, {
+	production_type = "input",
+	pipe_picture = nil,
+	pipe_covers = nil,
+	pipe_picture_frozen = nil,
+	pipe_covers_frozen = nil,
+	volume = 100,
+	pipe_connections = {
+		{
+			flow_direction = "input",
+			direction = defines.direction.east,
+			position = { 2, 0 },
+			connection_category = "data",
+		},
+	},
+	secondary_draw_orders = { north = -1 },
+})
+table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].fluid_boxes, 4, {
+	production_type = "output",
+	pipe_picture = nil,
+	pipe_covers = nil,
+	pipe_picture_frozen = nil,
+	pipe_covers_frozen = nil,
+	volume = 100,
+	pipe_connections = {
+		{
+			flow_direction = "output",
+			direction = defines.direction.west,
+			position = { -2, 0 },
+			connection_category = "data",
+		},
+	},
+	secondary_draw_orders = { north = -1 },
+})
 
 if not mods["maraxsis"] then
 	data.raw.recipe["maraxsis-atmosphere"].category = "kr-atmosphere-condensation"
