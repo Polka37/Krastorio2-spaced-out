@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-cargo-expansion-equipment",
 		energy_required = 20,
-		enabled = true,
+		enabled = false,
 		ingredients = {
 			{ type = "item", name = "carbon-fiber", amount = 50 },
 			{ type = "item", name = "low-density-structure", amount = 30 },
