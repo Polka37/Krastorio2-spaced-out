@@ -8,8 +8,8 @@
   "author": "Polka_37",
   "factorio_version": "2.0",
   "dependencies": [
-    "base >= 2.0.72",
-    "space-age >= 2.0.72",
+    "base >= 2.0.73",
+    "space-age >= 2.0.73",
     "Krastorio2Assets >= 2.0.3",
     "Krastorio2MenuSimulations >= 2.0.0",
     "k2so-assets >= 1.0.5",
