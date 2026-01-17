@@ -11,6 +11,7 @@ require("prototypes.shortcuts")
 require("prototypes.sounds")
 require("prototypes.tips-and-tricks")
 require("prototypes.virtual-signals")
+require("prototypes.menu-simulations")
 
 require("prototypes.buildings.active-provider-strongbox")
 require("prototypes.buildings.active-provider-warehouse")

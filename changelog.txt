@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.13
+Date: 2025-01-17
+  Features:
+    - Added menu simulations for Gleba, Vulcanus, Fulgora and Aquilo
+  Changes:
+    - Change inserter lane is now required dependency since it's required in menu simulations
+---------------------------------------------------------------------------------------------------
 Version: 1.6.12
 Date: 2025-01-14
   Compatibility:
