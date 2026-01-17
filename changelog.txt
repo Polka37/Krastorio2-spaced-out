@@ -5,6 +5,7 @@ Date: 2025-01-17
     - Added menu simulations for Gleba, Vulcanus, Fulgora and Aquilo
   Changes:
     - Change inserter lane is now required dependency since it's required in menu simulations
+    - Gleba greenhouse growing recipes use 6 fertilizer instead of 3 
   Bugfixes:
     - Fixed cargo expansion was available from start
 ---------------------------------------------------------------------------------------------------

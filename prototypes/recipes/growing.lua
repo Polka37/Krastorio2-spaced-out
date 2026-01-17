@@ -50,7 +50,7 @@ data:extend({
 		surface_conditions = { { property = "pressure", min = 2000, max = 2000 } },
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 3000 },
-			{ type = "item", name = "kr-fertilizer", amount = 3 },
+			{ type = "item", name = "kr-fertilizer", amount = 6 },
 			{ type = "item", name = "jellynut-seed", amount = 6 },
 		},
 		results = {
@@ -74,7 +74,7 @@ data:extend({
 		surface_conditions = { { property = "pressure", min = 2000, max = 2000 } },
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 3000 },
-			{ type = "item", name = "kr-fertilizer", amount = 3 },
+			{ type = "item", name = "kr-fertilizer", amount = 6 },
 			{ type = "item", name = "yumako-seed", amount = 6 },
 		},
 		results = {
