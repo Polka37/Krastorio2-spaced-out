@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.14
+Date: 2026-01-18
+  Graphics:
+    - All labs now support 24 science packs icons, with secondary mode allowing for 60 packs at once
+---------------------------------------------------------------------------------------------------
 Version: 1.6.13
-Date: 2025-01-17
+Date: 2026-01-17
   Features:
     - Added menu simulations for Gleba, Vulcanus, Fulgora and Aquilo
   Changes:
@@ -10,12 +15,12 @@ Date: 2025-01-17
     - Fixed cargo expansion was available from start
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.12
-Date: 2025-01-14
+Date: 2026-01-14
   Compatibility:
     - Advanced assembler now can load/unload Muluna data page and datacells with Moshine installed
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.11
-Date: 2025-01-13
+Date: 2026-01-13
   Features:
     - Added cargo expansion equipment adding additional inventory slots to vehicles including trains
   Changes:
@@ -24,25 +29,25 @@ Date: 2025-01-13
     - Fixed singularity tech card gave additional matter stabilizers based on productivity
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.10
-Date: 2025-01-12
+Date: 2026-01-12
   Compatibility:
     - Barreling recipes with replaced gases are hidden
     - Unified chlorine added by Muria
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.9
-Date: 2025-01-11
+Date: 2026-01-11
   Bugfixes:
     - Fixed recipes with subgroup equal to nil couldn't have their recycling recipes updated
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.8
-Date: 2025-01-11
+Date: 2026-01-11
   Changes:
     - Rised required k2so-assets version to 1.0.3
   Bugfixes:
     - Fixed Pelagos titanium barrels recycled into ethanol barrels
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.7
-Date: 2025-01-11
+Date: 2026-01-11
   Changes:
     - Flare stack now can be mirrored
     - Now requires k2so-assets 1.0.2
@@ -51,7 +56,7 @@ Date: 2025-01-11
     - handcrafting total cost prioritised circuits with wood over basic ones
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.6
-Date: 2025-01-09
+Date: 2026-01-09
   Graphics:
     - Changed ammonia icon to K2 one
   Balancing:
@@ -67,19 +72,19 @@ Date: 2025-01-09
     - Reordered superior inserters to appear after stack inserters
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.5
-Date: 2025-01-04
+Date: 2026-01-04
   Changes:
     - Quality teleporters only use 1 charge per trip instead of using all of it
   Bugfixes:
     - Fixed it wasn't possible to teleport if destination teleporter had charge over 100%
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.4
-Date: 2025-01-03
+Date: 2026-01-03
   Bugfixes:
     - Fixed game crashed when opening interplanetary teleporter gui after removing a planet from save 
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.3
-Date: 2025-01-03
+Date: 2026-01-03
   Ease of use:
     - Planetary teleporter now called interplanetary teleporter can transport players across planets
   Changes:
