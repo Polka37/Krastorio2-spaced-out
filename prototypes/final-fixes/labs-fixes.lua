@@ -37,7 +37,7 @@ local size3 = {
 		scale = 0.4,
 	},
 }
-local size4 = {
+local size5 = {
 	{
 		inventory_index = defines.inventory.lab_modules,
 		shift = { 0, 1.6 },
@@ -50,7 +50,7 @@ local size4 = {
 		scale = 0.5,
 	},
 }
-local size5 = {
+local size8 = {
 	{
 		inventory_index = defines.inventory.lab_modules,
 		shift = { 0, 1.6 },
@@ -66,5 +66,5 @@ local size5 = {
 
 data.raw.lab["lab"].icons_positioning = size3
 data.raw.lab["kr-advanced-lab"].icons_positioning = size3
-data.raw.lab["biolab"].icons_positioning = size4
-data.raw.lab["kr-singularity-lab"].icons_positioning = size5
+data.raw.lab["biolab"].icons_positioning = size5
+data.raw.lab["kr-singularity-lab"].icons_positioning = size8
