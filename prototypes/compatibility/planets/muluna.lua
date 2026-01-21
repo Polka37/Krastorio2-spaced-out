@@ -143,3 +143,11 @@ end
 
 data.raw.recipe["carbon-dioxide"].category = "kr-atmosphere-condensation"
 data.raw.recipe["carbon-dioxide"].energy_required = data.raw.recipe["maraxsis-atmosphere"].energy_required / 2
+
+data.raw.recipe["atmosphere-oxygen-separation"].surface_conditions = {
+	{
+		property = "pressure",
+		min = 1000,
+		max = 2000,
+	},
+}
