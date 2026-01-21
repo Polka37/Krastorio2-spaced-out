@@ -15,12 +15,6 @@ data:extend({
 			{ type = "item", name = "kr-energy-control-unit", amount = 50 },
 		},
 		results = { { type = "item", name = "kr-energy-storage", amount = 1 } },
-		surface_conditions = {
-			{
-				property = "magnetic-field",
-				min = 99,
-			},
-		},
 	},
 	{
 		type = "item",

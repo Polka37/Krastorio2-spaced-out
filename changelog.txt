@@ -3,6 +3,8 @@ Version: 1.6.15
 Date: 2026-01-21
   Compatibility:
     - Muluna oxygen from atmosphere separation can only be crafted on Nauvis/Gleba
+  Changes:
+    - Removed surface conditions requirements from energy storage recipe
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.14
 Date: 2026-01-18
