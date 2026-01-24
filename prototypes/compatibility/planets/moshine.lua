@@ -189,7 +189,7 @@ data:extend({
 		order = "e[core]-b[beta]",
 		stack_size = 10,
 		weight = 100 * kg,
-		effect = { speed = 0.5, consumption = -0.15, productivity = 0.25 },
+		effect = { speed = 0.5, consumption = -0.15, productivity = 0.15 },
 	},
 	{
 		type = "module",
@@ -201,7 +201,7 @@ data:extend({
 		order = "e[core]-c[alpha]",
 		stack_size = 10,
 		weight = 100 * kg,
-		effect = { speed = 1, consumption = -0.05, productivity = 0.5 },
+		effect = { speed = 1, consumption = -0.05, productivity = 0.2 },
 	},
 })
 

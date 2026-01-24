@@ -2,8 +2,9 @@
 Version: 1.6.15
 Date: 2026-01-21
   Compatibility:
-    - Tree seeding is now hidden instead of being removed for better mod compatability
+    - Tree seeding technology is now hidden instead of being removed for better mod compatability
     - Muluna oxygen from atmosphere separation can only be crafted on Nauvis/Gleba
+    - Moshine: Heavily nerfed beta and alpha core module productivity, since i didn't account for quality while designing them. Beta core 0.25 -> 0.15. Alpha core 0.5 -> 0.2
   Changes:
     - Removed surface conditions requirements from energy storage recipe
 ---------------------------------------------------------------------------------------------------
