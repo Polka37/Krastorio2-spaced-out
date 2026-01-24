@@ -158,7 +158,8 @@ data_util.remove_recipe_unlock("planet-discovery-aquilo", "ammonia-rocket-fuel")
 
 -- if has mod,set nil after compatibility handled
 if not mods["Age-of-Production"] and not mods["lignumis"] then
-	data.raw.technology["tree-seeding"] = nil
+	data.raw.technology["tree-seeding"].hidden = true
+	data.raw.technology["tree-seeding"].hidden_in_factoriopedia = true
 end
 
 data.raw.technology["uranium-mining"].hidden = true
