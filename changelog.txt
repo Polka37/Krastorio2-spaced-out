@@ -1,6 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.16
+Date: 2026-01-25
+  Changes:
+    - Advanced chemical plant can craft itself
+    - Reduced advanced furnace stack size to 20
+---------------------------------------------------------------------------------------------------
 Version: 1.6.15
-Date: 2026-01-21
+Date: 2026-01-24
   Compatibility:
     - Tree seeding technology is now hidden instead of being removed for better mod compatability
     - Muluna oxygen from atmosphere separation can only be crafted on Nauvis/Gleba
