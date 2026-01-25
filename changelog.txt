@@ -4,6 +4,8 @@ Date: 2026-01-25
   Changes:
     - Advanced chemical plant can craft itself
     - Reduced advanced furnace stack size to 20
+  Bugfixes:
+    - Fixed agricultural tech card recipe gave unfresh products
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.15
 Date: 2026-01-24
