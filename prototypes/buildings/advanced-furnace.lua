@@ -24,7 +24,7 @@ data:extend({
 		subgroup = "smelting-machine",
 		order = "d[foundry]-a[advanced-furnace]",
 		place_result = "kr-advanced-furnace",
-		stack_size = 50,
+		stack_size = 20,
 		weight = 500 * kg,
 	},
 	{
