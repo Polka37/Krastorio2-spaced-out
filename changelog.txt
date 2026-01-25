@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.16
 Date: 2026-01-25
+  Compatibility:
+    - Atmospheric condensers can be placed on Aquilo to allow crafting Maraxsis liquid atmosphere 
+    - Updated description for Maraxsis atmosphere
   Changes:
     - Advanced chemical plant can craft itself
     - Reduced advanced furnace stack size to 20

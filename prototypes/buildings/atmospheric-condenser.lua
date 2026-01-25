@@ -34,7 +34,7 @@ data:extend({
 		max_health = 500,
 		heating_energy = "100kW",
 		surface_conditions = {
-			{ property = "pressure", min = 500 },
+			{ property = "pressure", min = 300 },
 		},
 		corpse = "kr-medium-random-pipes-remnants",
 		dying_explosion = "big-explosion",
