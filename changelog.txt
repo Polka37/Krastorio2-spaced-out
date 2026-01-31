@@ -3,6 +3,8 @@ Version: 1.6.17
 Date: 2026-01-31
   Compatibility:
     - Castra recipes using pistol ammo, were converted to use rifle magazines instead. Only relevant with realistic weapons turned on.
+  Bugfixes:
+    - Fixed asteroids didn't have resistance against radioactive damage
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.16
 Date: 2026-01-25
