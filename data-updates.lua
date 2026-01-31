@@ -29,9 +29,11 @@ require("prototypes.updates.set-new-resource-autoplace")
 require("prototypes.updates.surface-conditions")
 
 require("prototypes.compatibility.aai-industry")
+
 require("prototypes.compatibility.any-planet-start")
 require("prototypes.compatibility.planets.castra")
 require("prototypes.compatibility.planets.cerys")
+require("prototypes.compatibility.planets.corrundum")
 require("prototypes.compatibility.planets.maraxsis")
 require("prototypes.compatibility.planets.moshine")
 require("prototypes.compatibility.planets.muluna")

@@ -3,6 +3,8 @@ Version: 1.6.17
 Date: 2026-01-31
   Compatibility:
     - Castra recipes using pistol ammo, were converted to use rifle magazines instead. Only relevant with realistic weapons turned on.
+    - Corrundum added recipe for rare metals
+    - Corrundum stone can be acquired earlier and doesn't require carbon
   Bugfixes:
     - Fixed asteroids didn't have resistance against radioactive damage
 ---------------------------------------------------------------------------------------------------
