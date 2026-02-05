@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.18
+Date: 2026-02-05
+  Bugfixes:
+    - Fixed french locale returned unknown key for enriched ores recipes and rare metals and imersite ore
+---------------------------------------------------------------------------------------------------
 Version: 1.6.17
 Date: 2026-01-31
   Compatibility:
