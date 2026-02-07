@@ -2,15 +2,7 @@ kr_adjust_stack_sizes = true
 kr_optimization_tech_card_name = "space-science-pack"
 
 require("util")
-require("prototypes.custom-inputs")
-require("prototypes.damage-types")
-require("prototypes.equipment-grids")
 require("prototypes.fluids")
-require("prototypes.gui-styles")
-require("prototypes.shortcuts")
-require("prototypes.sounds")
-require("prototypes.tips-and-tricks")
-require("prototypes.virtual-signals")
 require("prototypes.menu-simulations")
 
 require("prototypes.buildings.active-provider-strongbox")
