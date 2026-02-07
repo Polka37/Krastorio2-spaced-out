@@ -1,24 +1,6 @@
 data:extend({
 	{
 		type = "technology",
-		-- This cannot have a kr-prefix because tech upgrades rely on consistent naming.
-		name = "electric-energy-distribution-3",
-		icon = "__Krastorio2Assets__/technologies/electric-energy-distribution.png",
-		icon_size = 256,
-		unit = {
-			time = 45,
-			count = 300,
-			ingredients = {
-				{ "production-science-pack", 1 },
-				{ "utility-science-pack", 1 },
-				{ "kr-advanced-tech-card", 1 },
-			},
-		},
-		prerequisites = { "electric-energy-distribution-2", "kr-advanced-tech-card" },
-		effects = { { type = "unlock-recipe", recipe = "kr-superior-substation" } },
-	},
-	{
-		type = "technology",
 		name = "kr-advanced-pickaxe",
 		icon_size = 256,
 		icons = util.technology_icon_constant_mining("__Krastorio2Assets__/technologies/imersium-pickaxe.png"),
