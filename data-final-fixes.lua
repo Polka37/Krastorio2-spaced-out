@@ -1,10 +1,8 @@
 require("prototypes.final-fixes.asteroids")
 require("prototypes.final-fixes.enforce-science-tier-separation")
-require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.biter-nests")
 require("prototypes.final-fixes.enforce-rifle-ammo")
 require("prototypes.final-fixes.enforce-k2-items")
-
 require("prototypes.final-fixes.labs-fixes")
 
 --make sure rubia wind turbine uses K2SO default wind speed
@@ -24,10 +22,6 @@ for _, recipe in pairs(data.raw.recipe) do
 end
 
 data.raw["furnace"]["recycler"].result_inventory_size = #data.raw.recipe["scrap-recycling"].results
-
-data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "turbo-transport-belt"
-data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "turbo-underground-belt"
-data.raw["splitter"]["express-splitter"].next_upgrade = "turbo-splitter"
 
 local api = require("__Krastorio2__.prototypes.libraries.space-age-warning")
 api.disable_space_age_warning()
