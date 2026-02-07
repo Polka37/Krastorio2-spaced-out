@@ -101,6 +101,8 @@ generate_upgrade("steel-plate-productivity", "steel-plate-productivity-6", kr_op
 if not mods["planet_erimos_prime"] then
 	generate_upgrade("mining-productivity-3", "mining-productivity-6", kr_optimization_tech_card_name, "infinite")
 end
+data_util.add_research_unit_ingredient("military", "automation-science-pack")
+data_util.add_research_unit_ingredient("stone-wall", "automation-science-pack")
 
 data_util.add_research_unit_ingredient("plastic-bar-productivity", kr_optimization_tech_card_name)
 data_util.add_research_unit_ingredient("rocket-fuel-productivity", kr_optimization_tech_card_name)
@@ -148,8 +150,6 @@ table.insert(
 	{ type = "change-recipe-productivity", recipe = "kr-rocket-fuel-with-hydrogen-chloride", change = 0.1 }
 )
 -- stylua: ignore start
-data_util.set_icon(data.raw.technology["oil-processing"], "__Krastorio2Assets__/technologies/oil-gathering.png", 256)
---Space Age
 data_util.set_icon(data.raw.technology["metallurgic-science-pack"],"__k2so-assets__/technologies/metallurgy-tech-card.png",256)
 data_util.set_icon(data.raw.technology["electromagnetic-science-pack"],"__k2so-assets__/technologies/electromagnetic-tech-card.png",256)
 data_util.set_icon(data.raw.technology["agricultural-science-pack"],  "__k2so-assets__/technologies/agricultural-tech-card.png",256)
