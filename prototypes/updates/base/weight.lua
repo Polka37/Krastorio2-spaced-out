@@ -20,6 +20,7 @@ data_util.set_weight("kr-antimatter-turret-rocket", 1000)
 data_util.set_weight("kr-antimatter-artillery-shell", 1000)
 
 --capsules
+data_util.set_weight("cliff-explosives", 5)
 data_util.set_weight("kr-biter-virus", 10)
 data_util.set_weight("kr-first-aid-kit", 20)
 
@@ -65,6 +66,8 @@ data_util.set_weight("kr-ai-core", 5)
 data_util.set_weight("kr-pollution-filter", 5)
 data_util.set_weight("kr-used-pollution-filter", 5)
 data_util.set_weight("kr-tritium", 5)
+data_util.set_weight("uranium-235", 10)
+data_util.set_weight("uranium-238", 10)
 data_util.set_weight("kr-energy-control-unit", 10)
 data_util.set_weight("kr-matter-stabilizer", 10)
 data_util.set_weight("kr-charged-matter-stabilizer", 10)
@@ -74,3 +77,9 @@ data_util.set_weight("kr-empty-dt-fuel-cell", 100)
 data_util.set_weight("kr-empty-antimatter-fuel-cell", 100)
 data_util.set_weight("kr-charged-antimatter-fuel-cell", 100)
 data_util.set_weight("kr-teleportation-gps-module", 100)
+
+--buildings
+data_util.set_weight("stone-wall", 5)
+data_util.set_weight("solar-panel", 40)
+data_util.set_weight("pumpjack", 50)
+data_util.set_weight("beacon", 50)
