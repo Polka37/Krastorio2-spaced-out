@@ -218,9 +218,6 @@ require("prototypes.technologies.optional")
 require("prototypes.tiles.black-reinforced-plate")
 require("prototypes.tiles.white-reinforced-plate")
 
-require("prototypes.vehicles.advanced-tank")
-require("prototypes.vehicles.nuclear-locomotive")
-
 require("prototypes.compatibility.aircraft")
 require("prototypes.compatibility.early-electric-furnaces")
 require("prototypes.compatibility.squeak-through-2")
