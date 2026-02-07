@@ -81,12 +81,8 @@ require("prototypes.buildings.tesla-coil")
 require("prototypes.buildings.warehouse")
 require("prototypes.buildings.wind-turbine")
 
-require("prototypes.categories.ammo-categories")
-require("prototypes.categories.equipment-categories")
-require("prototypes.categories.fuel-categories")
 require("prototypes.categories.item-subgroups")
 require("prototypes.categories.recipe-categories")
-require("prototypes.categories.resource-categories")
 
 require("prototypes.equipment.additional-engine-equipment")
 require("prototypes.equipment.advanced-additional-engine-equipment")
