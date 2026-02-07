@@ -144,20 +144,20 @@ data.raw.technology["agricultural-science-pack"].localised_name = { "item-name.k
 data.raw.technology["cryogenic-science-pack"].localised_name = { "item-name.kr-cryogenic-tech-card" }
 data.raw.technology["promethium-science-pack"].localised_name = { "item-name.kr-promethium-tech-card" }
 
---Do AAI industry K2 compatibility code must not work with K2SO except this technology
-data.raw.technology["kr-automation-core"].unit = nil
-data.raw.technology["kr-automation-core"].research_trigger = {
-	type = "craft-item",
-	item = "iron-gear-wheel",
-	count = 10,
-}
-
-data.raw.technology["automation"].unit = nil
-data.raw.technology["automation"].research_trigger = {
-	type = "craft-item",
-	item = "kr-automation-core",
-	count = 10,
-}
+----Do AAI industry K2 compatibility code must not work with K2SO except this technology
+--data.raw.technology["kr-automation-core"].unit = nil
+--data.raw.technology["kr-automation-core"].research_trigger = {
+--	type = "craft-item",
+--	item = "iron-gear-wheel",
+--	count = 10,
+--}
+--
+--data.raw.technology["automation"].unit = nil
+--data.raw.technology["automation"].research_trigger = {
+--	type = "craft-item",
+--	item = "kr-automation-core",
+--	count = 10,
+--}
 table.insert(
 	data.raw["technology"]["processing-unit-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 }

@@ -12,7 +12,6 @@
     "space-age >= 2.0.73",
     "Krastorio2",
     "k2so-assets >= 1.0.5",
-    "(?) aai-industry >= 0.6.10",
     "! factorioplus"
   ],
   "space_travel_required": true

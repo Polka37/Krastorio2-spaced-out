@@ -156,7 +156,7 @@ require("prototypes.recipes.electronics")
 require("prototypes.recipes.metallurgy")
 require("prototypes.recipes.organic")
 
-require("prototypes.technologies.trigger-tech")
+--require("prototypes.technologies.trigger-tech")
 require("prototypes.technologies.automation-science-pack")
 require("prototypes.technologies.logistic-science-pack")
 require("prototypes.technologies.chemical-science-pack")
@@ -168,7 +168,3 @@ require("prototypes.technologies.singularity-tech-card")
 require("prototypes.technologies.space-age")
 
 require("prototypes.technologies.optional")
-
-require("prototypes.compatibility.aircraft")
-require("prototypes.compatibility.early-electric-furnaces")
-require("prototypes.compatibility.squeak-through-2")
