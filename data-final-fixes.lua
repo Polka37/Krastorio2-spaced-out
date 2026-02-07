@@ -36,6 +36,9 @@ data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "turbo-trans
 data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "turbo-underground-belt"
 data.raw["splitter"]["express-splitter"].next_upgrade = "turbo-splitter"
 
+local api = require("__Krastorio2__.prototypes.libraries.space-age-warning")
+api.disable_space_age_warning()
+
 --The code below had been made by Quezler
 -- this file accomplishes the same as Krastroio 2's prototypes/final-fixes/steel-pipe-connectivity.lua file,
 -- since there are only so many ways to write the same thing the code is earily similar,
