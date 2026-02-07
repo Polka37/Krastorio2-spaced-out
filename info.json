@@ -10,12 +10,8 @@
   "dependencies": [
     "base >= 2.0.73",
     "space-age >= 2.0.73",
-    "Krastorio2Assets >= 2.0.3",
-    "Krastorio2MenuSimulations >= 2.0.0",
-    "k2so-assets >= 1.0.5",
-    "flib >= 0.16.2",
     "Krastorio2",
-    "ChangeInserterDropLane >= 1.1.0",
+    "k2so-assets >= 1.0.5",
     "(?) aai-industry >= 0.6.10",
     "! factorioplus"
   ],
