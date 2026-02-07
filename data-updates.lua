@@ -12,8 +12,6 @@ require("prototypes.updates.adjust-stack-sizes")
 require("prototypes.updates.generate-matter-recipes")
 require("prototypes.updates.surface-conditions")
 
---require("prototypes.compatibility.aai-industry")
-
 require("prototypes.compatibility.any-planet-start")
 require("prototypes.compatibility.planets.castra")
 require("prototypes.compatibility.planets.cerys")
