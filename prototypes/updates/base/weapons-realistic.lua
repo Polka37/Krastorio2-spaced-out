@@ -1846,26 +1846,4 @@ data.raw.gun["kr-advanced-tank-machine-gun"].attack_parameters.sound = {
 	},
 }
 
--- Technologies
-
-data_util.remove_recipe_unlock("uranium-ammo", "uranium-rounds-magazine")
-data_util.remove_recipe_unlock("kr-military-5", "kr-imersite-rounds-magazine")
-
-data_util.add_recipe_unlock("military", "kr-rifle-magazine")
-
-data_util.add_recipe_unlock("military-2", "kr-armor-piercing-rifle-magazine")
-
-data_util.add_recipe_unlock("military-2", "kr-anti-materiel-rifle")
-data_util.add_recipe_unlock("military-2", "kr-anti-materiel-rifle-magazine")
-
-data_util.add_recipe_unlock("military-3", "kr-armor-piercing-anti-materiel-rifle-magazine")
-
-data_util.add_recipe_unlock("uranium-ammo", "kr-uranium-rifle-magazine")
-data_util.add_recipe_unlock("uranium-ammo", "kr-uranium-anti-materiel-rifle-magazine")
-
-data_util.add_recipe_unlock("kr-military-5", "kr-imersite-rifle-magazine")
-data_util.add_recipe_unlock("kr-military-5", "kr-imersite-anti-materiel-rifle-magazine")
-
-data_util.add_prerequisite("gun-turret", "military")
-
 data.raw.recipe["uranium-rounds-magazine-recycling"] = nil
