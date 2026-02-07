@@ -1,6 +1,6 @@
 require("prototypes.updates.base.ammo")
 require("prototypes.updates.base.autoplace-controls")
---require("prototypes.updates.base.entities")
+require("prototypes.updates.base.entities")
 require("prototypes.updates.base.equipment-grids")
 require("prototypes.updates.base.equipment")
 require("prototypes.updates.base.fluids")

@@ -248,13 +248,6 @@ data.raw["fluid-wagon"]["fluid-wagon"].max_health = 150
 data.raw["fluid-wagon"]["fluid-wagon"].minable = { mining_time = 0.5, result = "fluid-wagon" }
 data.raw["fluid-wagon"]["fluid-wagon"].weight = 2000
 
-data.raw.furnace["electric-furnace"].energy_source.emissions_per_minute = { pollution = 1 }
-data.raw.furnace["electric-furnace"].energy_usage = "350kW"
-
-data_util.add_fuel_category(data.raw.furnace["steel-furnace"].energy_source, "kr-vehicle-fuel")
-
-data_util.add_fuel_category(data.raw.furnace["stone-furnace"].energy_source, "kr-vehicle-fuel")
-
 data.raw.gate["gate"].resistances = {
 	{ type = "physical", decrease = 3, percent = 20 },
 	{ type = "impact", decrease = 45, percent = 60 },
@@ -288,6 +281,9 @@ data.raw["inserter"]["long-handed-inserter"].next_upgrade = "kr-superior-long-in
 data.raw.lab["lab"].energy_usage = "200kW"
 data.raw.lab["lab"].fast_replaceable_group = "lab"
 data.raw.lab["lab"].next_upgrade = "kr-advanced-lab"
+table.insert(data.raw.lab["lab"].inputs, "production-science-pack")
+table.insert(data.raw.lab["lab"].inputs, "utility-science-pack")
+table.insert(data.raw.lab["lab"].inputs, "space-science-pack")
 table.insert(data.raw.lab["lab"].inputs, "kr-matter-tech-card")
 table.insert(data.raw.lab["lab"].inputs, "kr-advanced-tech-card")
 table.insert(data.raw.lab["lab"].inputs, "kr-singularity-tech-card")

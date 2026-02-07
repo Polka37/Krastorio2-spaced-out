@@ -5,13 +5,6 @@ require("prototypes.final-fixes.biter-nests")
 require("prototypes.final-fixes.enforce-rifle-ammo")
 require("prototypes.final-fixes.enforce-k2-items")
 
-table.insert(data.raw.lab["lab"].inputs, "production-science-pack")
-table.insert(data.raw.lab["lab"].inputs, "utility-science-pack")
-table.insert(data.raw.lab["lab"].inputs, "space-science-pack")
-table.insert(data.raw.lab["lab"].inputs, "kr-matter-tech-card")
-table.insert(data.raw.lab["lab"].inputs, "kr-advanced-tech-card")
-table.insert(data.raw.lab["lab"].inputs, "kr-singularity-tech-card")
-
 require("prototypes.final-fixes.labs-fixes")
 
 --make sure rubia wind turbine uses K2SO default wind speed
