@@ -79,6 +79,7 @@ data.raw.technology["kr-rocket-turret"].hidden = true
 data.raw.technology["kr-rocket-turret"].hidden_in_factoriopedia = true
 data.raw.technology["kr-railgun-turret"].hidden = true
 data.raw.technology["kr-railgun-turret"].hidden_in_factoriopedia = true
+data.raw.technology["kr-logistic-4"] = nil
 
 -- if has mod,set nil after compatibility handled
 if not mods["Age-of-Production"] and not mods["lignumis"] then
