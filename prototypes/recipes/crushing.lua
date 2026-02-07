@@ -58,36 +58,4 @@ data:extend({
 		always_show_products = true,
 		hide_from_signal_gui = false,
 	},
-	{
-		type = "recipe",
-		name = "kr-imersite-powder",
-		icon = "__Krastorio2Assets__/icons/items/imersite-powder.png",
-		enabled = false,
-		category = "kr-crushing",
-		energy_required = 3,
-		ingredients = {
-			{ type = "item", name = "kr-imersite", amount = 3 },
-		},
-		results = {
-			{ type = "item", name = "kr-imersite-powder", amount = 3 },
-			{ type = "item", name = "kr-sand", amount = 3 },
-		},
-		main_product = "kr-imersite-powder",
-		allow_productivity = true,
-		subgroup = "raw-resource",
-	},
-	{
-		type = "recipe",
-		name = "kr-sand",
-		enabled = false,
-		category = "kr-crushing",
-		energy_required = 1,
-		ingredients = {
-			{ type = "item", name = "stone", amount = 3 },
-		},
-		results = {
-			{ type = "item", name = "kr-sand", amount_min = 7, amount_max = 8 },
-		},
-		allow_productivity = true,
-	},
 })

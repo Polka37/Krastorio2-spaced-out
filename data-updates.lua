@@ -25,6 +25,3 @@ require("prototypes.compatibility.Age-of-Production")
 
 -- Must be after Muluna
 require("prototypes.updates.generate-tech-card-cooling")
-
--- Has to be after base updates so it can use the updated icons
-require("prototypes.recipes.smelting-crafting")
