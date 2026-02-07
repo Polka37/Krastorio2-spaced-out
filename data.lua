@@ -2,15 +2,7 @@ kr_adjust_stack_sizes = true
 kr_optimization_tech_card_name = "space-science-pack"
 
 require("util")
-require("prototypes.custom-inputs")
-require("prototypes.damage-types")
-require("prototypes.equipment-grids")
 require("prototypes.fluids")
-require("prototypes.gui-styles")
-require("prototypes.shortcuts")
-require("prototypes.sounds")
-require("prototypes.tips-and-tricks")
-require("prototypes.virtual-signals")
 require("prototypes.menu-simulations")
 
 require("prototypes.buildings.active-provider-strongbox")
@@ -37,9 +29,6 @@ require("prototypes.buildings.electrolysis-plant")
 require("prototypes.buildings.energy-storage")
 require("prototypes.buildings.express-loader")
 require("prototypes.buildings.advanced-loader")
-require("prototypes.buildings.advanced-transport-belt")
-require("prototypes.buildings.advanced-underground-belt")
-require("prototypes.buildings.advanced-splitter")
 require("prototypes.buildings.fast-loader")
 require("prototypes.buildings.filtration-plant")
 require("prototypes.buildings.flare-stack")
@@ -120,28 +109,12 @@ require("prototypes.equipment.superior-solar-panel-equipment")
 require("prototypes.equipment.vehicle-roboport-equipment")
 require("prototypes.equipment.cargo-expansion")
 
-require("prototypes.explosions.beacon-matter-explosion")
-require("prototypes.explosions.impulse-rifle-beam")
-require("prototypes.explosions.large-matter-explosion")
-require("prototypes.explosions.laser-explosion")
-require("prototypes.explosions.laser-explosion-gunshot")
-require("prototypes.explosions.laser-explosion-gunshot-smoke-fast")
-require("prototypes.explosions.matter-explosion")
-require("prototypes.explosions.matter-fire-smoke")
-require("prototypes.explosions.matter-shockwave")
-require("prototypes.explosions.medium-matter-explosion")
-require("prototypes.explosions.rail-matter-explosion")
-require("prototypes.explosions.small-matter-explosion")
-
 require("prototypes.items.ammo")
 require("prototypes.items.capsules")
 require("prototypes.items.guns")
 require("prototypes.items.items")
 require("prototypes.items.jackhammer")
 require("prototypes.items.tech-cards")
-
-require("prototypes.particles.virus-capsule-metal-particle")
-require("prototypes.particles.welding-particle")
 
 require("prototypes.projectiles.antimatter-artillery-projectile")
 require("prototypes.projectiles.antimatter-bomb-wave")
@@ -187,32 +160,6 @@ require("prototypes.recipes.electronics")
 require("prototypes.recipes.metallurgy")
 require("prototypes.recipes.organic")
 
-require("prototypes.resources.imersite")
-require("prototypes.resources.mineral-water")
-require("prototypes.resources.rare-metals")
-
-require("prototypes.remnants.advanced-radar-remnants")
-require("prototypes.remnants.advanced-tank-remnants")
-require("prototypes.remnants.antimatter-reactor-remnants")
-require("prototypes.remnants.fusion-reactor-remnants")
-require("prototypes.remnants.kr-big-random-pipes-remnants")
-require("prototypes.remnants.kr-medium-random-pipes-remnants")
-require("prototypes.remnants.matter-plant-remnants")
-require("prototypes.remnants.advanced-transport-belt-remnants")
-require("prototypes.remnants.advanced-underground-belt-remnants")
-require("prototypes.remnants.advanced-splitter-remnants")
-require("prototypes.remnants.superior-inserter-remnants")
-require("prototypes.remnants.superior-splitter-remnants")
-require("prototypes.remnants.superior-transport-belt-remnants")
-require("prototypes.remnants.superior-underground-belt-remnants")
-require("prototypes.remnants.turret-remnants")
-
-require("prototypes.smokes.matter-smoke")
-require("prototypes.smokes.poison-capsule-particle-smoke")
-require("prototypes.smokes.virus-cloud")
-require("prototypes.smokes.virus-cloud-visual-dummy")
-require("prototypes.smokes.virus-particle-smoke")
-
 require("prototypes.technologies.trigger-tech")
 require("prototypes.technologies.automation-science-pack")
 require("prototypes.technologies.logistic-science-pack")
@@ -226,28 +173,6 @@ require("prototypes.technologies.space-age")
 
 require("prototypes.technologies.optional")
 
-require("prototypes.tiles.black-reinforced-plate")
-require("prototypes.tiles.white-reinforced-plate")
-
-require("prototypes.vehicles.advanced-tank")
-require("prototypes.vehicles.nuclear-locomotive")
-
 require("prototypes.compatibility.aircraft")
 require("prototypes.compatibility.early-electric-furnaces")
 require("prototypes.compatibility.squeak-through-2")
-
--- The code below has been made by Quezler Thanks
--- global table shared between all mods for compat
-names_ignored_by_steel_pipes = util.list_to_map({
-	"pipe",
-})
-
-data.raw["pipe-to-ground"]["kr-steel-pipe-to-ground"].fluid_box.pipe_connections[1].connection_category =
-	"kr-steel-pipe"
-
-for _, pipe_connection in ipairs(data.raw["pipe-to-ground"]["kr-steel-pipe-to-ground"].fluid_box.pipe_connections) do
-	if (pipe_connection.connection_type or "normal") == "normal" then
-		assert(pipe_connection.connection_category == "kr-steel-pipe")
-		pipe_connection.connection_category = { "default", "kr-steel-pipe" }
-	end
-end
