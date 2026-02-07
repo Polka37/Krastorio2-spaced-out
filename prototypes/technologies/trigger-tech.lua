@@ -4,22 +4,11 @@ data:extend({
 		name = "kr-automation-core",
 		icon = "__Krastorio2Assets__/technologies/automation-core.png",
 		icon_size = 256,
-		-- Only used to spoof aai industry. trigger one is true one. change it back later once it updates
-		unit = {
-			time = 10,
+		research_trigger = {
+			type = "craft-item",
+			item = "iron-gear-wheel",
 			count = 10,
-			ingredients = {
-				{ "automation-science-pack", 1 },
-			},
 		},
-		--[[
-      research_trigger = {
-      type = "craft-item",
-      item = "iron-gear-wheel",
-      count = 10
-    }, ]]
-		--
-		prerequisites = {},
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-automation-core" },
 		},
@@ -61,10 +50,10 @@ data:extend({
 		icon_size = 256,
 		research_trigger = {
 			type = "craft-item",
-			item = "electronic-circuit",
+			item = "copper-plate",
 			count = 20,
 		},
-		prerequisites = { "electronics" },
+		prerequisites = { "kr-automation-core" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "lab" },
 		},
@@ -133,3 +122,28 @@ data:extend({
 		},
 	},
 })
+
+data.raw.technology["automation"].unit = nil
+data.raw.technology["automation"].research_trigger = {
+	type = "craft-item",
+	item = "kr-automation-core",
+	count = 10,
+}
+data.raw.technology["automation-science-pack"].unit = nil
+data.raw.technology["automation-science-pack"].research_trigger = {
+	type = "craft-item",
+	item = "lab",
+	count = 1,
+}
+data.raw.technology["steam-power"].unit = nil
+data.raw.technology["steam-power"].research_trigger = {
+	type = "craft-item",
+	item = "iron-plate",
+	count = 50,
+}
+data.raw.technology["steel-axe"].unit = nil
+data.raw.technology["steel-axe"].research_trigger = {
+	type = "craft-item",
+	item = "steel-plate",
+	count = 50,
+}

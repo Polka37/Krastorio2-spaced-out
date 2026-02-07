@@ -1,9 +1,7 @@
 local data_util = require("data-util")
 
 data_util.add_prerequisite("automation-science-pack", "automation")
-data_util.add_prerequisite("electronics", "kr-automation-core")
-data_util.add_prerequisite("kr-iron-pickaxe", "kr-automation-core")
-data_util.add_prerequisite("military", "electronics")
+data_util.add_prerequisite("military", "automation-science-pack")
 data_util.add_prerequisite("rocket-fuel", "kr-atmosphere-condensation")
 data_util.add_prerequisite(kr_optimization_tech_card_name, "kr-research-server")
 data_util.add_prerequisite("energy-shield-mk2-equipment", "power-armor-mk2")
@@ -17,7 +15,6 @@ data_util.add_prerequisite("uranium-processing", "concrete")
 data_util.add_prerequisite("uranium-processing", "chemical-science-pack")
 data_util.add_prerequisite("planet-discovery-aquilo", "kr-advanced-tech-card")
 
-data_util.remove_prerequisite("automation-science-pack", "kr-laboratory")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "power-armor")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "military-4")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "electromagnetic-science-pack")
@@ -129,8 +126,6 @@ data_util.add_research_unit_ingredient("promethium-science-pack", "kr-advanced-t
 data_util.add_research_unit_ingredient("promethium-science-pack", "kr-matter-tech-card")
 data_util.add_research_unit_ingredient("promethium-science-pack", "kr-singularity-tech-card")
 
-data.raw.technology["automation-science-pack"].icon = "__Krastorio2Assets__/technologies/automation-tech-card.png"
-
 data.raw.technology["promethium-science-pack"].unit.count = 10000
 
 data_util.set_icons(
@@ -144,20 +139,6 @@ data.raw.technology["agricultural-science-pack"].localised_name = { "item-name.k
 data.raw.technology["cryogenic-science-pack"].localised_name = { "item-name.kr-cryogenic-tech-card" }
 data.raw.technology["promethium-science-pack"].localised_name = { "item-name.kr-promethium-tech-card" }
 
-----Do AAI industry K2 compatibility code must not work with K2SO except this technology
---data.raw.technology["kr-automation-core"].unit = nil
---data.raw.technology["kr-automation-core"].research_trigger = {
---	type = "craft-item",
---	item = "iron-gear-wheel",
---	count = 10,
---}
---
---data.raw.technology["automation"].unit = nil
---data.raw.technology["automation"].research_trigger = {
---	type = "craft-item",
---	item = "kr-automation-core",
---	count = 10,
---}
 table.insert(
 	data.raw["technology"]["processing-unit-productivity"].effects,
 	{ type = "change-recipe-productivity", recipe = "kr-bio-processing-circuit", change = 0.1 }

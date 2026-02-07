@@ -1,3 +1,4 @@
+require("prototypes.technologies.trigger-tech")
 require("prototypes.final-fixes.asteroids")
 require("prototypes.final-fixes.biter-nests")
 require("prototypes.final-fixes.enforce-rifle-ammo")
