@@ -20,6 +20,7 @@ local flare_stack_lib = {}
 
 --- Fluids in this blacklist will not have auto-generated flare stack recipes.
 --- @type table<data.FluidID, boolean>
+--- TODO: Include blacklist in base K2
 local auto_blacklist = {
 	["kr-matter"] = true,
 	["kr-molten-rare-metals"] = true,
