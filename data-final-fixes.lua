@@ -4,6 +4,14 @@ require("prototypes.final-fixes.internal-turret-logic")
 require("prototypes.final-fixes.biter-nests")
 require("prototypes.final-fixes.enforce-rifle-ammo")
 require("prototypes.final-fixes.enforce-k2-items")
+
+table.insert(data.raw.lab["lab"].inputs, "production-science-pack")
+table.insert(data.raw.lab["lab"].inputs, "utility-science-pack")
+table.insert(data.raw.lab["lab"].inputs, "space-science-pack")
+table.insert(data.raw.lab["lab"].inputs, "kr-matter-tech-card")
+table.insert(data.raw.lab["lab"].inputs, "kr-advanced-tech-card")
+table.insert(data.raw.lab["lab"].inputs, "kr-singularity-tech-card")
+
 require("prototypes.final-fixes.labs-fixes")
 
 --make sure rubia wind turbine uses K2SO default wind speed
@@ -23,6 +31,10 @@ for _, recipe in pairs(data.raw.recipe) do
 end
 
 data.raw["furnace"]["recycler"].result_inventory_size = #data.raw.recipe["scrap-recycling"].results
+
+data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "turbo-transport-belt"
+data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "turbo-underground-belt"
+data.raw["splitter"]["express-splitter"].next_upgrade = "turbo-splitter"
 
 --The code below had been made by Quezler
 -- this file accomplishes the same as Krastroio 2's prototypes/final-fixes/steel-pipe-connectivity.lua file,

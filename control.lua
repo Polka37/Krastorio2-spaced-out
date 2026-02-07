@@ -13,8 +13,8 @@ handler.add_libraries({
 	require("scripts.loader-snapping"),
 	require("scripts.planetary-teleporter-gui"), -- Must be before planetary-teleporter
 	require("scripts.planetary-teleporter"),
-	require("scripts.radioactivity"),
-	require("scripts.roboport"),
+	--require("scripts.radioactivity"),
+	--require("scripts.roboport"),
 	require("scripts.shelter"),
 	require("scripts.tesla-coil"),
 	require("scripts.wind-turbine"),
