@@ -17,6 +17,7 @@ require("prototypes.updates.base.weapons-realistic")
 require("prototypes.updates.adjust-stack-sizes")
 require("prototypes.updates.generate-matter-recipes")
 require("prototypes.updates.surface-conditions")
+require("prototypes.updates.base.weight")
 
 --require("prototypes.compatibility.aai-industry")
 

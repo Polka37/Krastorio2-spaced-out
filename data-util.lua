@@ -42,6 +42,19 @@ function data_util.add_or_replace_product(recipe_name, old_product_name, new_pro
 	table.insert(recipe.results, new_product)
 end
 
+---Set item weight
+---@param Item String
+---@param Weight Double_in_kg
+function data_util.set_weight(item, weight)
+	local types = { "item", "tool", "ammo", "gun", "capsule" }
+	for _, type in pairs(types) do
+		if data.raw[type][item] then
+			data.raw[type][item].weight = weight * kg
+			return
+		end
+	end
+end
+
 --Make a recipe tech card
 --- @param science_pack data.Name
 --- @param ingredients data.Ingredients

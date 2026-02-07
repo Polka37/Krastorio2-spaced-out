@@ -105,11 +105,6 @@ require("prototypes.equipment.superior-solar-panel-equipment")
 require("prototypes.equipment.vehicle-roboport-equipment")
 require("prototypes.equipment.cargo-expansion")
 
-require("prototypes.items.ammo")
-require("prototypes.items.capsules")
-require("prototypes.items.guns")
-require("prototypes.items.items")
-require("prototypes.items.jackhammer")
 require("prototypes.items.tech-cards")
 
 require("prototypes.projectiles.antimatter-artillery-projectile")
