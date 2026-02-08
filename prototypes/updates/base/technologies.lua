@@ -101,6 +101,7 @@ data.raw.technology["kr-rocket-turret"].hidden_in_factoriopedia = true
 data.raw.technology["kr-railgun-turret"].hidden = true
 data.raw.technology["kr-railgun-turret"].hidden_in_factoriopedia = true
 data.raw.technology["kr-logistic-4"] = nil
+data.raw.technology["kr-electric-mining-drill-mk3"] = nil
 data.raw.technology["kr-power-armor-mk3"] = nil
 data.raw.technology["kr-power-armor-mk4"] = nil
 data.raw.technology["kr-battery-mk3-equipment"] = nil

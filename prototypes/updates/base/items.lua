@@ -47,6 +47,7 @@ data_util.hide("kr-advanced-underground-belt")
 data_util.hide("kr-advanced-splitter")
 data_util.hide("kr-legacy-steel-pipe-to-ground")
 data_util.hide("kr-gps-satellite")
+data_util.hide("kr-electric-mining-drill-mk3")
 
 data.raw.tool["agricultural-science-pack"].spoil_result = "kr-blank-tech-card"
 

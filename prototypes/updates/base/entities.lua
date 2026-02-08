@@ -151,6 +151,9 @@ data.raw["solar-panel"]["kr-wind-turbine"].surface_conditions = {
 	},
 }
 
+--drain
+data.raw["mining-drill"]["kr-electric-mining-drill-mk2"].resource_drain_rate_percent = 75
+
 --reactor consumption
 data.raw.reactor["heating-tower"].consumption = "50MW"
 
