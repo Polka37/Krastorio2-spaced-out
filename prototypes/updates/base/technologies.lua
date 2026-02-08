@@ -67,6 +67,7 @@ data_util.add_recipe_unlock("cryogenic-plant", "kr-liquid-oxygen")
 
 if settings.startup["kr-loaders"].value then
 	data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
+	data_util.add_recipe_unlock("kr-logistic-5", "kr-superior-loader")
 end
 
 data_util.remove_recipe_unlock("rocket-fuel", "kr-rocket-fuel-with-ammonia")
