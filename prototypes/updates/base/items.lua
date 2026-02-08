@@ -36,6 +36,18 @@ update_fuel("kr-biofuel", "15MJ", 1.1, 1.1, 0.5)
 
 data.raw.item["lithium"].hidden = true
 
+data_util.hide("kr-power-armor-mk3")
+data_util.hide("kr-power-armor-mk4")
+data_util.hide("kr-big-battery-equipment")
+data_util.hide("kr-big-battery-mk2-equipment")
+data_util.hide("kr-big-battery-mk3-equipment")
+data_util.hide("kr-battery-mk3-equipment")
+data_util.hide("kr-advanced-transport-belt")
+data_util.hide("kr-advanced-underground-belt")
+data_util.hide("kr-advanced-splitter")
+data_util.hide("kr-legacy-steel-pipe-to-ground")
+data_util.hide("kr-gps-satellite")
+
 data.raw.tool["agricultural-science-pack"].spoil_result = "kr-blank-tech-card"
 
 --order

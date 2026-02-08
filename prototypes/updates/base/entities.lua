@@ -1,7 +1,5 @@
 local data_util = require("data-util")
 
-data.raw.reactor["heating-tower"].consumption = "50MW"
-
 table.remove(data.raw.lab["lab"].inputs, 1)
 table.insert(data.raw.lab["lab"].inputs, "production-science-pack")
 table.insert(data.raw.lab["lab"].inputs, "utility-science-pack")
@@ -13,32 +11,13 @@ if mods["rubia"] then
 	table.insert(data.raw.lab["lab"].inputs, "rubia-biofusion-science-pack")
 end
 
-data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "turbo-transport-belt"
-data.raw["transport-belt"]["turbo-transport-belt"].next_upgrade = "kr-superior-transport-belt"
-
-data.raw["underground-belt"]["express-underground-belt"].max_distance = 15
-data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "turbo-underground-belt"
-
-data.raw["underground-belt"]["turbo-underground-belt"].next_upgrade = "kr-superior-underground-belt"
-data.raw["underground-belt"]["turbo-underground-belt"].max_distance = 20
-
-data.raw["splitter"]["express-splitter"].next_upgrade = "turbo-splitter"
-data.raw["splitter"]["turbo-splitter"].next_upgrade = "kr-superior-splitter"
-
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-assembling")
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-hand-crafting")
-table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "kr-electrolysis")
-table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery")
-table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")
-data.raw["assembling-machine"]["crusher"].surface_conditions = nil
-
 table.insert(
 	data.raw["tree"]["ashland-lichen-tree"].minable.results,
-	{ type = "item", name = "wood", amount_min = 4, amount_max = 4 }
+	{ type = "item", name = "wood", amount_min = 3, amount_max = 5 }
 )
 table.insert(
 	data.raw["tree"]["ashland-lichen-tree-flaming"].minable.results,
-	{ type = "item", name = "wood", amount_min = 4, amount_max = 4 }
+	{ type = "item", name = "wood", amount_min = 3, amount_max = 5 }
 )
 table.insert(
 	data.raw["simple-entity"]["fulgoran-ruin-small"].minable.results,
@@ -119,6 +98,7 @@ data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
 data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 
 --surface conditions
+data.raw["assembling-machine"]["crusher"].surface_conditions = nil
 data.raw["assembling-machine"]["kr-atmospheric-condenser"].surface_conditions = {
 	{ property = "pressure", min = 300 },
 }
@@ -165,6 +145,9 @@ data.raw["solar-panel"]["kr-wind-turbine"].surface_conditions = {
 	},
 }
 
+--reactor consumption
+data.raw.reactor["heating-tower"].consumption = "50MW"
+
 --wind turbine
 data.raw["solar-panel"]["kr-wind-turbine"].solar_coefficient_property = "rubia-wind-speed"
 
@@ -177,6 +160,11 @@ data.raw["assembling-machine"]["kr-advanced-furnace"].energy_source.emissions_pe
 table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "quality")
 
 --crafting catefories
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-assembling")
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-hand-crafting")
+table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "kr-electrolysis")
+table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery")
+table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")
 data.raw["assembling-machine"]["kr-research-server"].crafting_categories = { "kr-research-data", "kr-tech-cards" }
 data.raw["assembling-machine"]["kr-quantum-computer"].crafting_categories =
 	{ "kr-research-data", "kr-tech-cards", "kr-tech-cards-cooling" }
@@ -216,7 +204,23 @@ data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories = {
 data.raw["beacon"]["kr-singularity-beacon"].distribution_effectivity_bonus_per_quality_level = 0.25
 
 --next upgrade
+data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "turbo-transport-belt"
+data.raw["transport-belt"]["turbo-transport-belt"].next_upgrade = "kr-superior-transport-belt"
+
+data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "turbo-underground-belt"
+data.raw["underground-belt"]["turbo-underground-belt"].next_upgrade = "kr-superior-underground-belt"
+
+data.raw["splitter"]["express-splitter"].next_upgrade = "turbo-splitter"
+data.raw["splitter"]["turbo-splitter"].next_upgrade = "kr-superior-splitter"
+
+data.raw["transport-belt"]["kr-advanced-transport-belt"].next_upgrade = nil
+data.raw["underground-belt"]["kr-advanced-underground-belt"].next_upgrade = nil
+data.raw["splitter"]["kr-advanced-splitter"].next_upgrade = nil
 data.raw["mining-drill"]["kr-electric-mining-drill-mk2"].next_upgrade = nil
+
+--underground belt max distance
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 15
+data.raw["underground-belt"]["turbo-underground-belt"].max_distance = 20
 
 --energy usage
 data.raw["assembling-machine"]["kr-advanced-chemical-plant"].energy_usage = "4MW"

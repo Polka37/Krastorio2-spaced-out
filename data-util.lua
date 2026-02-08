@@ -88,4 +88,37 @@ function data_util.make_tech_card(science_pack, ingredients, no_server)
 	end
 end
 
+local types = {
+	"technology",
+	"recipe",
+	"item",
+	"assembling-machine",
+	"unit",
+	"item-with-entity-data",
+	"capsule",
+	"fish",
+	"turret",
+	"locomotive",
+	"unit-spawner",
+	"corpse",
+	"ammo",
+	"armor",
+	"reactor",
+	"resource",
+	"pipe-to-ground",
+	"splitter",
+	"underground-belt",
+	"transport-belt",
+}
+--- @param prototype Name
+function data_util.hide(prototype)
+	for _, type in pairs(types) do
+		local prototype = data.raw[type][prototype]
+		if prototype then
+			prototype.hidden = true
+			prototype.hidden_in_factoriopedia = true
+		end
+	end
+end
+
 return data_util
