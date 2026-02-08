@@ -1,15 +1,5 @@
 local data_util = require("data-util")
 
-data.raw.gate["gate"].resistances = {
-	{ type = "physical", decrease = 3, percent = 20 },
-	{ type = "impact", decrease = 45, percent = 60 },
-	{ type = "explosion", decrease = 50, percent = 80 },
-	{ type = "kr-radioactive", percent = 100 },
-	{ type = "fire", percent = 100 },
-	{ type = "acid", percent = 80 },
-	{ type = "laser", percent = 70 },
-}
-
 data.raw.reactor["heating-tower"].consumption = "50MW"
 
 table.insert(data.raw.lab["lab"].inputs, "production-science-pack")
@@ -41,32 +31,14 @@ table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categori
 table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")
 data.raw["assembling-machine"]["crusher"].surface_conditions = nil
 
-data.raw["tree"]["ashland-lichen-tree"].minable = {
-	mining_time = 0.5,
-	results = {
-		{ type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
-		{ type = "item", name = "wood", amount_min = 4, amount_max = 4 },
-	},
-}
-data.raw["tree"]["ashland-lichen-tree-flaming"].minable = {
-	mining_time = 0.5,
-	results = {
-		{ type = "item", name = "carbon", amount_min = 2, amount_max = 2 },
-		{ type = "item", name = "wood", amount_min = 4, amount_max = 4 },
-	},
-}
-
-data.raw["simple-entity"]["lithium-iceberg-big"].minable.results = {
-	{ type = "item", name = "ice-platform", amount = 1 },
-	{ type = "item", name = "ice", amount_min = 3, amount_max = 7 },
-	{ type = "item", name = "kr-lithium", amount_min = 1, amount_max = 3 },
-}
-data.raw["simple-entity"]["lithium-iceberg-huge"].minable.results = {
-	{ type = "item", name = "ice-platform", amount_min = 2, amount_max = 4 },
-	{ type = "item", name = "ice", amount_min = 6, amount_max = 1 },
-	{ type = "item", name = "kr-lithium", amount_min = 2, amount_max = 5 },
-}
-
+table.insert(
+	data.raw["tree"]["ashland-lichen-tree"].minable.results,
+	{ type = "item", name = "wood", amount_min = 4, amount_max = 4 }
+)
+table.insert(
+	data.raw["tree"]["ashland-lichen-tree-flaming"].minable.results,
+	{ type = "item", name = "wood", amount_min = 4, amount_max = 4 }
+)
 table.insert(
 	data.raw["simple-entity"]["fulgoran-ruin-small"].minable.results,
 	{ type = "item", name = "stone-brick", amount = 3 }
