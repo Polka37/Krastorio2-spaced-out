@@ -2,6 +2,9 @@ local data_util = require("data-util")
 
 local recipe = data.raw.recipe
 
+data.raw["item-group"]["kr-smelting-crafting"] = nil
+data.raw["item-subgroup"]["kr-smelting-crafting"].group = "intermediate-products"
+
 data_util.add_or_replace_ingredient(
 	"big-mining-drill",
 	"electric-mining-drill",
