@@ -1,4 +1,3 @@
-data.raw["assembling-machine"]["kr-atmospheric-condenser"].heating_energy = "100kW"
 data.raw["assembling-machine"]["kr-atmospheric-condenser"].fluid_boxes = {
 	{
 		production_type = "output",

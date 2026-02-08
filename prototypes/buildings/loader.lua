@@ -12,6 +12,7 @@ data.raw["loader-1x1"]["kr-fast-loader"].max_belt_stack_size = 4
 data.raw["loader-1x1"]["kr-fast-loader"].heating_energy = "50kW"
 data.raw["loader-1x1"]["kr-loader"].max_belt_stack_size = 4
 data.raw["loader-1x1"]["kr-loader"].heating_energy = "50kW"
+
 data:extend({
 	{
 		type = "recipe",

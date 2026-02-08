@@ -1,4 +1,3 @@
-data.raw.splitter["kr-superior-splitter"].heating_energy = "40kW"
 data:extend({
 	{
 		type = "recipe",

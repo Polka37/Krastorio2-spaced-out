@@ -1,4 +1,3 @@
-data.raw["assembling-machine"]["kr-advanced-chemical-plant"].heating_energy = "100kW"
 data.raw["assembling-machine"]["kr-advanced-chemical-plant"].crafting_categories = {
 	"chemistry",
 	"kr-advanced-chemistry",

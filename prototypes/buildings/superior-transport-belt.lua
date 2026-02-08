@@ -1,5 +1,3 @@
-local sounds = require("__base__.prototypes.entity.sounds")
-data.raw["transport-belt"]["kr-superior-transport-belt"].heating_energy = "10kW"
 data:extend({
 	{
 		type = "recipe",

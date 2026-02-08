@@ -13,4 +13,3 @@ data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_catego
 	"cryogenics-or-assembling",
 	"crafting-with-fluid-or-metallurgy",
 }
-data.raw["assembling-machine"]["kr-advanced-assembling-machine"].heating_energy = "400kW"

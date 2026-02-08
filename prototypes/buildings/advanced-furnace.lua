@@ -1,7 +1,6 @@
 local pipe_pictures = require("__Krastorio2__.prototypes.buildings.advanced-furnace-pipe-pictures")
 data.raw.item["kr-advanced-furnace"].stack_size = 20
 data.raw.item["kr-advanced-furnace"].order = "d[foundry]-a[advanced-furnace]"
-data.raw["assembling-machine"]["kr-advanced-furnace"].heating_energy = "400kW"
 data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories = {
 	"smelting",
 	"kr-advanced-smelting",

@@ -1,4 +1,3 @@
-data.raw["assembling-machine"]["kr-quantum-computer"].heating_energy = "100kW"
 data.raw["assembling-machine"]["kr-quantum-computer"].energy_usage = "5MW"
 data.raw["assembling-machine"]["kr-quantum-computer"].crafting_categories =
 	{ "kr-research-data", "kr-tech-cards", "kr-tech-cards-cooling" }

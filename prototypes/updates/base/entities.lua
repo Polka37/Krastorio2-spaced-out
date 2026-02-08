@@ -2,6 +2,7 @@ local data_util = require("data-util")
 
 data.raw.reactor["heating-tower"].consumption = "50MW"
 
+table.remove(data.raw.lab["lab"].inputs, 1)
 table.insert(data.raw.lab["lab"].inputs, "production-science-pack")
 table.insert(data.raw.lab["lab"].inputs, "utility-science-pack")
 table.insert(data.raw.lab["lab"].inputs, "space-science-pack")
@@ -67,3 +68,111 @@ table.insert(
 	data.raw["simple-entity"]["fulgoran-ruin-vault"].minable.results,
 	{ type = "item", name = "stone-brick", amount = 111 }
 )
+
+--Add heat dissipations
+
+data.raw["assembling-machine"]["kr-advanced-chemical-plant"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-electrolysis-plant"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-filtration-plant"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-fuel-refinery"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-atmospheric-condenser"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-matter-associator"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-quantum-computer"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-research-server"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-matter-plant"].heating_energy = "100kW"
+data.raw["assembling-machine"]["kr-fusion-reactor"].heating_energy = "400kW"
+data.raw["assembling-machine"]["kr-advanced-furnace"].heating_energy = "400kW"
+data.raw["assembling-machine"]["kr-advanced-assembling-machine"].heating_energy = "400kW"
+data.raw["assembling-machine"]["kr-greenhouse"].heating_energy = "1000kW"
+data.raw["assembling-machine"]["kr-bio-lab"].heating_energy = "1000kW"
+
+data.raw.generator["kr-gas-power-station"].heating_energy = "100kW"
+data.raw.generator["kr-advanced-steam-turbine"].max_power_output = "200MW"
+data.raw["burner-generator"]["kr-antimatter-reactor"].heating_energy = "1000kW"
+
+data.raw.lab["kr-advanced-lab"].heating_energy = "100kW"
+
+data.raw.furnace["kr-air-purifier"].heating_energy = "100kW"
+data.raw.furnace["kr-crusher"].heating_energy = "100kW"
+data.raw.furnace["kr-stabilizer-charging-station"].heating_energy = "50kW"
+
+data.raw["mining-drill"]["kr-electric-mining-drill-mk2"].heating_energy = "100kW"
+
+data.raw["beacon"]["kr-singularity-beacon"].heating_energy = "400kW"
+
+data.raw.roboport["kr-big-roboport"].heating_energy = "300kW"
+data.raw.roboport["kr-small-roboport"].heating_energy = "300kW"
+
+data.raw["pipe-to-ground"]["kr-steel-pipe-to-ground"].heating_energy = "150kW"
+data.raw.pipe["kr-steel-pipe"].heating_energy = "1kW"
+data.raw.pump["kr-steel-pump"].heating_energy = "30kW"
+
+data.raw.inserter["kr-superior-inserter"].heating_energy = "40kW"
+data.raw.inserter["kr-superior-long-inserter"].heating_energy = "50kW"
+
+data.raw["transport-belt"]["kr-superior-transport-belt"].heating_energy = "10kW"
+data.raw.splitter["kr-superior-splitter"].heating_energy = "40kW"
+data.raw["underground-belt"]["kr-superior-underground-belt"].heating_energy = "250kW"
+
+--Add stacking to superior inserters
+
+data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
+data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
+
+--surface conditions
+
+data.raw["assembling-machine"]["kr-atmospheric-condenser"].surface_conditions = {
+	{ property = "pressure", min = 300 },
+}
+data.raw.roboport["kr-big-roboport"].surface_conditions = {
+	{ property = "pressure", min = 10 },
+}
+data.raw["assembling-machine"]["kr-bio-lab"].surface_conditions = {
+	{ property = "pressure", min = 1000, max = 1000 },
+}
+data.raw["assembling-machine"]["kr-greenhouse"].surface_conditions = {
+	{ property = "pressure", min = 1000, max = 2000 },
+}
+data.raw["accumulator"]["kr-planetary-teleporter"].surface_conditions = {
+	{ property = "pressure", min = 0.1 },
+}
+data.raw.lab["kr-singularity-lab"].surface_conditions = {
+	{
+		property = "gravity",
+		min = 0,
+		max = 0,
+	},
+}
+data.raw["electric-energy-interface"]["kr-tesla-coil"].surface_conditions = {
+	{ property = "pressure", min = 0.1 },
+}
+data.raw["container"]["kr-strongbox"].surface_conditions = {
+	{ property = "gravity", min = 0.1 },
+}
+data.raw["container"]["kr-warehouse"].surface_conditions = {
+	{ property = "gravity", min = 0.1 },
+}
+for _, container in pairs(data.raw["logistic-container"]) do
+	container.surface_conditions = {
+		{ property = "gravity", min = 0.1 },
+	}
+end
+
+--emissions
+
+data.raw.furnace["kr-air-purifier"].energy_source.emissions_per_minute = { pollution = -50, spores = -5 }
+data.raw["assembling-machine"]["kr-greenhouse"].energy_source.emissions_per_minute = { pollution = -5, spores = 3 }
+
+--module effects
+
+table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "quality")
+
+--crafting catefories
+
+data.raw["assembling-machine"]["kr-research-server"].crafting_categories = { "kr-research-data", "kr-tech-cards" }
+data.raw["assembling-machine"]["kr-quantum-computer"].crafting_categories =
+	{ "kr-research-data", "kr-tech-cards", "kr-tech-cards-cooling" }
+
+--quality effects
+
+data.raw["beacon"]["kr-singularity-beacon"].distribution_effectivity_bonus_per_quality_level = 0.25

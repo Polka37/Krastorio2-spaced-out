@@ -1,4 +1,3 @@
-data.raw["underground-belt"]["kr-superior-underground-belt"].heating_energy = "250kW"
 data:extend({
 	{
 		type = "recipe",
