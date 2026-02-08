@@ -30,8 +30,6 @@ require("prototypes.recipes.metallurgy")
 require("prototypes.recipes.organic")
 require("prototypes.recipes.buildings")
 
-require("prototypes.technologies.utility-science-pack")
-require("prototypes.technologies.advanced-tech-card")
 require("prototypes.technologies.matter-tech-card")
 require("prototypes.technologies.singularity-tech-card")
 require("prototypes.technologies.space-age")

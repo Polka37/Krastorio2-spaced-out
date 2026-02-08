@@ -122,6 +122,9 @@ data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 data.raw["assembling-machine"]["kr-atmospheric-condenser"].surface_conditions = {
 	{ property = "pressure", min = 300 },
 }
+data.raw.roboport["kr-small-roboport"].surface_conditions = {
+	{ property = "pressure", min = 10 },
+}
 data.raw.roboport["kr-big-roboport"].surface_conditions = {
 	{ property = "pressure", min = 10 },
 }
