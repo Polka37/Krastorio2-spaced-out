@@ -15,81 +15,26 @@ data_util.add_or_replace_ingredient(
 	"iron-plate",
 	{ type = "item", name = "iron-plate", amount = 2 }
 )
-data_util.remove_ingredient("electronic-circuit", "wood")
-data_util.remove_ingredient("repair-pack", "stone")
-
-recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
-recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"
-
 data_util.add_or_replace_ingredient(
 	"turbo-underground-belt",
 	"turbo-transport-belt",
 	{ type = "item", name = "turbo-transport-belt", amount = 20 }
 )
-
 data_util.add_or_replace_ingredient(
 	"turbo-underground-belt",
 	"tungsten-plate",
 	{ type = "item", name = "tungsten-plate", amount = 10 }
 )
-
-data_util.add_or_replace_product("molten-iron", "molten-iron", { type = "fluid", name = "molten-iron", amount = 300 })
-data_util.add_or_replace_product(
-	"molten-copper",
-	"molten-copper",
-	{ type = "fluid", name = "molten-copper", amount = 300 }
-)
-
-recipe["wood-processing"].surface_conditions = nil
-recipe["pentapod-egg"].surface_conditions = { { property = "pressure", min = 1000, max = 2000 } }
-
-data_util.remove_ingredient("lithium", "holmium-plate")
-data_util.remove_ingredient("kr-logo", "kr-poop")
-
-local ammonia_fuel = table.deepcopy(recipe["kr-rocket-fuel-with-ammonia"])
-ammonia_fuel.name = "ammonia-rocket-fuel"
-recipe["ammonia-rocket-fuel"] = ammonia_fuel
-recipe["kr-rocket-fuel-with-ammonia"] = nil
-
---update modules recipes
-modules = { "efficiency-module", "speed-module", "productivity-module", "quality-module" }
-for _, module in pairs(modules) do
-	recipe[module].energy_required = 15
-	recipe[module].ingredients = {
-		{ type = "item", name = "electronic-circuit", amount = 5 },
-		{ type = "item", name = "kr-electronic-components", amount = 10 },
-	}
-	recipe[module .. "-2"].energy_required = 15
-	recipe[module .. "-2"].ingredients = {
-		{ type = "item", name = "advanced-circuit", amount = 5 },
-		{ type = "item", name = "electronic-circuit", amount = 5 },
-		{ type = "item", name = module, amount = 5 },
-	}
-end
-
 data_util.add_or_replace_ingredient(
 	"splitter",
 	"kr-automation-core",
 	{ type = "item", name = "kr-automation-core", amount = 1 }
 )
-
 data_util.add_or_replace_ingredient(
 	"fusion-power-cell",
 	"kr-tritium",
 	{ type = "item", name = "kr-tritium", amount = 4 }
 )
-
-recipe["casting-steel"].icons = {
-	{ icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
-	{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
-}
-recipe["casting-steel"].hide_from_signal_gui = false
-recipe["casting-iron-gear-wheel"].icons = {
-	{ icon = "__Krastorio2Assets__/icons/items/iron-gear-wheel.png" },
-	{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
-}
-recipe["casting-iron-gear-wheel"].hide_from_signal_gui = false
-
 data_util.add_or_replace_ingredient(
 	"casting-iron-gear-wheel",
 	"molten-iron",
@@ -123,13 +68,6 @@ data_util.add_or_replace_ingredient(
 	{ type = "fluid", name = "kr-oxygen", amount = 40 }
 )
 
-data_util.add_or_replace_product("scrap-recycling", "solid-fuel", {
-	type = "item",
-	name = "electronic-circuit",
-	amount = 1,
-	probability = 0.10,
-	show_details_in_recipe_tooltip = false,
-})
 table.insert(recipe["scrap-recycling"].results, 8, {
 	type = "item",
 	name = "kr-electronic-components",
@@ -137,6 +75,60 @@ table.insert(recipe["scrap-recycling"].results, 8, {
 	probability = 0.04,
 	show_details_in_recipe_tooltip = false,
 })
+
+data_util.add_or_replace_product("scrap-recycling", "solid-fuel", {
+	type = "item",
+	name = "electronic-circuit",
+	amount = 1,
+	probability = 0.10,
+	show_details_in_recipe_tooltip = false,
+})
+data_util.add_or_replace_product("molten-iron", "molten-iron", { type = "fluid", name = "molten-iron", amount = 300 })
+data_util.add_or_replace_product(
+	"molten-copper",
+	"molten-copper",
+	{ type = "fluid", name = "molten-copper", amount = 300 }
+)
+data_util.add_or_replace_product(
+	"express-underground-belt",
+	"lubricant",
+	{ type = "fluid", name = "lubricant", amount = 40 }
+)
+data_util.add_or_replace_product("express-splitter", "lubricant", { type = "fluid", name = "lubricant", amount = 80 })
+
+recipe["express-underground-belt"].category = "pressing"
+recipe["express-splitter"].category = "pressing"
+
+recipe["express-underground-belt"].main_product = "express-underground-belt"
+recipe["express-splitter"].main_product = "express-splitter"
+
+data_util.remove_ingredient("electronic-circuit", "wood")
+data_util.remove_ingredient("repair-pack", "stone")
+data_util.remove_ingredient("lithium", "holmium-plate")
+data_util.remove_ingredient("kr-logo", "kr-poop")
+
+recipe["wood-processing"].surface_conditions = nil
+recipe["pentapod-egg"].surface_conditions = { { property = "pressure", min = 1000, max = 2000 } }
+
+recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
+recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"
+
+--replace vanilla ammonia fuel with K2 one while retaining prototype name
+local ammonia_fuel = table.deepcopy(recipe["kr-rocket-fuel-with-ammonia"])
+ammonia_fuel.name = "ammonia-rocket-fuel"
+recipe["ammonia-rocket-fuel"] = ammonia_fuel
+recipe["kr-rocket-fuel-with-ammonia"] = nil
+
+recipe["casting-steel"].icons = {
+	{ icon = "__Krastorio2Assets__/icons/items/steel-plate.png" },
+	{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
+}
+recipe["casting-iron-gear-wheel"].icons = {
+	{ icon = "__Krastorio2Assets__/icons/items/iron-gear-wheel.png" },
+	{ icon = "__space-age__/graphics/icons/fluid/molten-iron.png", scale = 0.33, shift = { 8, -8 } },
+}
+recipe["casting-iron-gear-wheel"].hide_from_signal_gui = false
+recipe["casting-steel"].hide_from_signal_gui = false
 
 -- Science packs
 
