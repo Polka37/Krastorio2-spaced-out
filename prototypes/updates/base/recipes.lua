@@ -41,6 +41,7 @@ recipe["wood-processing"].surface_conditions = nil
 recipe["pentapod-egg"].surface_conditions = { { property = "pressure", min = 1000, max = 2000 } }
 
 data_util.remove_ingredient("lithium", "holmium-plate")
+data_util.remove_ingredient("kr-logo", "kr-poop")
 
 local ammonia_fuel = table.deepcopy(recipe["kr-rocket-fuel-with-ammonia"])
 ammonia_fuel.name = "ammonia-rocket-fuel"
