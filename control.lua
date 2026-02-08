@@ -3,14 +3,8 @@ local handler = require("__core__.lualib.event_handler")
 handler.add_libraries({
 	require("__flib__.gui"),
 
-	--require("scripts.energy-absorber"),
 	require("scripts.freeplay"),
-	--require("scripts.intergalactic-transceiver"),
-	--require("scripts.planetary-teleporter-gui"), -- Must be before planetary-teleporter
-	--require("scripts.planetary-teleporter"),
-	--require("scripts.radioactivity"),
 	require("scripts.roboport"),
-	--require("scripts.tesla-coil"),
 })
 
 require("scripts.milestones")
