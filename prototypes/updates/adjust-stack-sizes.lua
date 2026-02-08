@@ -39,3 +39,4 @@ data.raw.item["foundation"].stack_size = kr_stack_size_value
 data.raw.item["ice-platform"].stack_size = kr_stack_size_value
 data.raw.item["foundation"].stack_size = kr_stack_size_value
 data.raw.item["scrap"].stack_size = kr_stack_size_value
+data.raw.item["kr-advanced-furnace"].stack_size = 20

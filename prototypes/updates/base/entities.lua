@@ -70,7 +70,6 @@ table.insert(
 )
 
 --Add heat dissipations
-
 data.raw["assembling-machine"]["kr-advanced-chemical-plant"].heating_energy = "100kW"
 data.raw["assembling-machine"]["kr-electrolysis-plant"].heating_energy = "100kW"
 data.raw["assembling-machine"]["kr-filtration-plant"].heating_energy = "100kW"
@@ -115,12 +114,10 @@ data.raw.splitter["kr-superior-splitter"].heating_energy = "40kW"
 data.raw["underground-belt"]["kr-superior-underground-belt"].heating_energy = "250kW"
 
 --Add stacking to superior inserters
-
 data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
 data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 
 --surface conditions
-
 data.raw["assembling-machine"]["kr-atmospheric-condenser"].surface_conditions = {
 	{ property = "pressure", min = 300 },
 }
@@ -157,22 +154,220 @@ for _, container in pairs(data.raw["logistic-container"]) do
 		{ property = "gravity", min = 0.1 },
 	}
 end
+data.raw["solar-panel"]["kr-wind-turbine"].surface_conditions = {
+	{
+		property = "rubia-wind-speed",
+		min = 1,
+	},
+}
+
+--wind turbine
+data.raw["solar-panel"]["kr-wind-turbine"].solar_coefficient_property = "rubia-wind-speed"
 
 --emissions
-
 data.raw.furnace["kr-air-purifier"].energy_source.emissions_per_minute = { pollution = -50, spores = -5 }
 data.raw["assembling-machine"]["kr-greenhouse"].energy_source.emissions_per_minute = { pollution = -5, spores = 3 }
+data.raw["assembling-machine"]["kr-advanced-furnace"].energy_source.emissions_per_minute = { pollution = 30 }
 
 --module effects
-
 table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "quality")
 
 --crafting catefories
-
 data.raw["assembling-machine"]["kr-research-server"].crafting_categories = { "kr-research-data", "kr-tech-cards" }
 data.raw["assembling-machine"]["kr-quantum-computer"].crafting_categories =
 	{ "kr-research-data", "kr-tech-cards", "kr-tech-cards-cooling" }
+data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories = {
+	"crafting",
+	"advanced-crafting",
+	"crafting-with-fluid",
+	"electronics",
+	"electronics-with-fluid",
+	"kr-smelting-crafting",
+	"pressing",
+	"metallurgy-or-assembling",
+	"organic-or-hand-crafting",
+	"organic-or-assembling",
+	"electronics-or-assembling",
+	"cryogenics-or-assembling",
+	"crafting-with-fluid-or-metallurgy",
+}
+data.raw["assembling-machine"]["kr-advanced-chemical-plant"].crafting_categories = {
+	"chemistry",
+	"kr-advanced-chemistry",
+	"chemistry-or-cryogenics",
+	"organic-or-chemistry",
+	"kr-fluid-filtration",
+	--"oil-processing",
+}
+data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories = {
+	"smelting",
+	"kr-advanced-smelting",
+	"metallurgy",
+	"pressing",
+	"crafting-with-fluid-or-metallurgy",
+	"metallurgy-or-assembling",
+}
 
 --quality effects
-
 data.raw["beacon"]["kr-singularity-beacon"].distribution_effectivity_bonus_per_quality_level = 0.25
+
+--next upgrade
+data.raw["mining-drill"]["kr-electric-mining-drill-mk2"].next_upgrade = nil
+
+--energy usage
+data.raw["assembling-machine"]["kr-advanced-chemical-plant"].energy_usage = "4MW"
+data.raw["assembling-machine"]["kr-quantum-computer"].energy_usage = "5MW"
+data.raw.lab["kr-singularity-lab"].energy_usage = "100MW"
+data.raw["assembling-machine"]["kr-advanced-furnace"].energy_usage = "10MW"
+
+--base effects
+data.raw["assembling-machine"]["kr-advanced-chemical-plant"].effect_receiver = { base_effect = { productivity = 0.5 } }
+data.raw["assembling-machine"]["kr-quantum-computer"].effect_receiver = { base_effect = { productivity = 0.5 } }
+data.raw["assembling-machine"]["kr-advanced-furnace"].effect_receiver = { base_effect = { productivity = 0.5 } }
+
+--fixed recipe
+data.raw["assembling-machine"]["kr-fusion-reactor"].fixed_recipe = nil
+
+--fluid boxes
+data.raw["assembling-machine"]["kr-atmospheric-condenser"].fluid_boxes = {
+	{
+		production_type = "output",
+		pipe_covers = pipecoverspictures(),
+		pipe_picture = require("__Krastorio2__.prototypes.buildings.pipe-picture"),
+		volume = 100,
+		pipe_connections = {
+			{ flow_direction = "input-output", direction = defines.direction.east, position = { 2, -1 } },
+			{ flow_direction = "input-output", direction = defines.direction.east, position = { 2, 1 } },
+			{ flow_direction = "input-output", direction = defines.direction.west, position = { -2, -1 } },
+			{ flow_direction = "input-output", direction = defines.direction.west, position = { -2, 1 } },
+			{ flow_direction = "input-output", direction = defines.direction.north, position = { 1, -2 } },
+			{ flow_direction = "input-output", direction = defines.direction.north, position = { -1, -2 } },
+			{ flow_direction = "input-output", direction = defines.direction.south, position = { 1, 2 } },
+			{ flow_direction = "input-output", direction = defines.direction.south, position = { -1, 2 } },
+		},
+	},
+}
+data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes = {
+	{
+		production_type = "input",
+		pipe_picture = pipe_pictures,
+		pipe_covers = pipecoverspictures(),
+		volume = 100,
+		pipe_connections = {
+			{ flow_direction = "input", direction = defines.direction.north, position = { -0.5, -2.5 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		--reserved for muluna data wire
+		production_type = "input",
+		volume = 1,
+		pipe_connections = {
+			{ flow_direction = "input", direction = defines.direction.north, position = { 0, 0 } },
+		},
+	},
+	{
+		production_type = "input",
+		pipe_picture = pipe_pictures,
+		pipe_covers = pipecoverspictures(),
+		volume = 100,
+		pipe_connections = {
+			{ flow_direction = "input-output", direction = defines.direction.west, position = { -2.5, -0.5 } },
+			{ flow_direction = "input-output", direction = defines.direction.east, position = { 2.5, 0.5 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "output",
+		pipe_picture = pipe_pictures,
+		pipe_covers = pipecoverspictures(),
+		volume = 100,
+		pipe_connections = {
+			{ flow_direction = "output", direction = defines.direction.south, position = { 0.5, 2.5 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+}
+local pipe_pictures = require("__Krastorio2__.prototypes.buildings.advanced-furnace-pipe-pictures")
+data.raw["assembling-machine"]["kr-advanced-furnace"].fluid_boxes = {
+	{
+		production_type = "input",
+		pipe_picture = pipe_pictures.a,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "input", direction = defines.direction.north, position = { -1, -3 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "input",
+		pipe_picture = pipe_pictures.b,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "input", direction = defines.direction.north, position = { 1, -3 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "input",
+		pipe_picture = pipe_pictures.b,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "input-output", direction = defines.direction.west, position = { -3, -1 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "input",
+		pipe_picture = pipe_pictures.a,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "input-output", direction = defines.direction.east, position = { 3, -1 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "output",
+		pipe_picture = pipe_pictures.b,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "output", direction = defines.direction.south, position = { -1, 3 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "output",
+		pipe_picture = pipe_pictures.a,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "output", direction = defines.direction.south, position = { 1, 3 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "output",
+		pipe_picture = pipe_pictures.a,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "input-output", direction = defines.direction.west, position = { -3, 1 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+	{
+		production_type = "output",
+		pipe_picture = pipe_pictures.b,
+		pipe_covers = pipecoverspictures(),
+		volume = 1000,
+		pipe_connections = {
+			{ flow_direction = "input-output", direction = defines.direction.east, position = { 3, 1 } },
+		},
+		secondary_draw_orders = { north = -1 },
+	},
+}

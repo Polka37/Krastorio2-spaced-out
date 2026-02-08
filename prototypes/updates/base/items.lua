@@ -38,6 +38,10 @@ data.raw.item["lithium"].hidden = true
 
 data.raw.tool["agricultural-science-pack"].spoil_result = "kr-blank-tech-card"
 
+--order
+data.raw.item["kr-advanced-furnace"].order = "d[foundry]-a[advanced-furnace]"
+data.raw.item["kr-electric-mining-drill-mk2"].order = "a[items]-ba[electric-mining-drill-mk2]"
+
 -- stylua: ignore start
 data_util.set_icon(data.raw.tool["metallurgic-science-pack"], "__k2so-assets__/icons/cards/metallurgy-tech-card.png")
 data_util.set_icon(data.raw.tool["electromagnetic-science-pack"],"__k2so-assets__/icons/cards/electromagnetic-tech-card.png")
