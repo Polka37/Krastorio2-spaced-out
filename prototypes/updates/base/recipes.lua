@@ -45,6 +45,7 @@ data_util.remove_ingredient("lithium", "holmium-plate")
 local ammonia_fuel = table.deepcopy(recipe["kr-rocket-fuel-with-ammonia"])
 ammonia_fuel.name = "ammonia-rocket-fuel"
 recipe["ammonia-rocket-fuel"] = ammonia_fuel
+recipe["kr-rocket-fuel-with-ammonia"] = nil
 
 --update modules recipes
 modules = { "efficiency-module", "speed-module", "productivity-module", "quality-module" }

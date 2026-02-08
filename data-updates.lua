@@ -1,5 +1,4 @@
 require("prototypes.updates.base.entities")
-require("prototypes.updates.base.fluids")
 require("prototypes.updates.base.items")
 require("prototypes.updates.base.projectiles")
 require("prototypes.updates.base.recipes")

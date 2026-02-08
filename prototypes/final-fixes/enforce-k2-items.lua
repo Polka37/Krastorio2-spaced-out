@@ -8,6 +8,7 @@ local convert = {
 	["glass"] = true,
 	["silicon"] = true,
 	["lithium"] = true,
+	["ammonia"] = true,
 }
 
 for _, recipe in pairs(data.raw.recipe) do
