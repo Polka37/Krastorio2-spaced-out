@@ -93,6 +93,7 @@ data.raw.lab["kr-advanced-lab"].heating_energy = "100kW"
 
 data.raw.furnace["kr-air-purifier"].heating_energy = "100kW"
 data.raw.furnace["kr-crusher"].heating_energy = "100kW"
+data.raw.furnace["kr-flare-stack"].heating_energy = "100kW"
 data.raw.furnace["kr-stabilizer-charging-station"].heating_energy = "50kW"
 
 data.raw["mining-drill"]["kr-electric-mining-drill-mk2"].heating_energy = "100kW"
@@ -369,5 +370,137 @@ data.raw["assembling-machine"]["kr-advanced-furnace"].fluid_boxes = {
 			{ flow_direction = "input-output", direction = defines.direction.east, position = { 3, 1 } },
 		},
 		secondary_draw_orders = { north = -1 },
+	},
+}
+
+--flare stack
+data.raw.furnace["kr-flare-stack"].forced_symmetry = "diagonal-pos"
+data.raw.furnace["kr-flare-stack"].graphics_set_flipped = {
+	animation = {
+		north = {
+			layers = {
+				{
+					filename = "__k2so-assets__/buildings/flare-stack/flare-stack-n.png",
+					width = 150,
+					height = 300,
+					scale = 0.5,
+					frame_count = 1,
+					shift = { 0, -1 },
+				},
+				{
+					filename = "__Krastorio2Assets__/buildings/flare-stack/flare-stack-sh.png",
+					priority = "high",
+					width = 258,
+					height = 94,
+					shift = { 1.1, 0.25 },
+					frame_count = 1,
+					draw_as_shadow = true,
+					scale = 0.5,
+				},
+			},
+		},
+		east = {
+			layers = {
+				{
+					filename = "__k2so-assets__/buildings/flare-stack/flare-stack-w.png",
+					width = 150,
+					height = 300,
+					scale = 0.5,
+					frame_count = 1,
+					shift = { 0, -1 },
+				},
+				{
+					filename = "__Krastorio2Assets__/buildings/flare-stack/flare-stack-sh.png",
+					priority = "high",
+					width = 258,
+					height = 94,
+					shift = { 1.1, 0.25 },
+					frame_count = 1,
+					draw_as_shadow = true,
+					scale = 0.5,
+				},
+			},
+		},
+		south = {
+			layers = {
+				{
+					filename = "__k2so-assets__/buildings/flare-stack/flare-stack-s.png",
+					width = 150,
+					height = 300,
+					scale = 0.5,
+					frame_count = 1,
+					shift = { 0, -1 },
+				},
+				{
+					filename = "__Krastorio2Assets__/buildings/flare-stack/flare-stack-sh.png",
+					priority = "high",
+					width = 258,
+					height = 94,
+					shift = { 1.1, 0.25 },
+					frame_count = 1,
+					draw_as_shadow = true,
+					scale = 0.5,
+				},
+			},
+		},
+		west = {
+			layers = {
+				{
+					filename = "__k2so-assets__/buildings/flare-stack/flare-stack-e.png",
+					width = 150,
+					height = 300,
+					scale = 0.5,
+					frame_count = 1,
+					shift = { 0, -1 },
+				},
+				{
+					filename = "__Krastorio2Assets__/buildings/flare-stack/flare-stack-sh.png",
+					priority = "high",
+					width = 258,
+					height = 94,
+					shift = { 1.1, 0.25 },
+					frame_count = 1,
+					draw_as_shadow = true,
+					scale = 0.5,
+				},
+			},
+		},
+	},
+	working_visualisations = {
+		{
+			apply_recipe_tint = "quaternary",
+			fadeout = true,
+			animation = {
+				filename = "__Krastorio2Assets__/buildings/flare-stack/flare-stack-fire.png",
+				line_length = 10,
+				width = 40,
+				height = 81,
+				frame_count = 60,
+				animation_speed = 0.75,
+				scale = 0.50,
+				shift = { 0, -3.25 },
+			},
+		},
+		{
+			light = {
+				intensity = 0.75,
+				size = 25,
+				shift = { 0, 0 },
+				color = { r = 1, g = 0.95, b = 0.75 },
+			},
+		},
+	},
+	water_reflection = {
+		pictures = {
+			filename = "__Krastorio2Assets__/buildings/flare-stack/flare-stack-reflection.png",
+			priority = "extra-high",
+			width = 20,
+			height = 30,
+			shift = util.by_pixel(0, 40),
+			variation_count = 1,
+			scale = 5,
+		},
+		rotate = false,
+		orientation_to_variation = false,
 	},
 }
