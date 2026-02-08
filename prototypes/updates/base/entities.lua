@@ -127,6 +127,12 @@ data.raw.lab["kr-singularity-lab"].surface_conditions = {
 data.raw["electric-energy-interface"]["kr-tesla-coil"].surface_conditions = {
 	{ property = "pressure", min = 0.1 },
 }
+data.raw["electric-energy-interface"]["kr-activated-intergalactic-transceiver"].surface_conditions = {
+	{ property = "gravity", min = 0.1 },
+}
+data.raw["accumulator"]["kr-intergalactic-transceiver"].surface_conditions = {
+	{ property = "gravity", min = 0.1 },
+}
 data.raw["container"]["kr-strongbox"].surface_conditions = {
 	{ property = "gravity", min = 0.1 },
 }

@@ -7,7 +7,6 @@ require("prototypes.menu-simulations")
 
 require("prototypes.buildings.advanced-steam-turbine")
 require("prototypes.buildings.loader")
-require("prototypes.buildings.intergalactic-transceiver")
 require("prototypes.buildings.labs")
 
 require("prototypes.categories.item-subgroups")

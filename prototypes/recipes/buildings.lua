@@ -60,6 +60,20 @@ data:extend({
 	},
 	{
 		type = "recipe",
+		name = "kr-intergalactic-transceiver",
+		energy_required = 600,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "promethium-asteroid-chunk", amount = 1000 },
+			{ type = "item", name = "kr-antimatter-reactor", amount = 4 },
+			{ type = "item", name = "kr-energy-storage", amount = 100 },
+			{ type = "item", name = "kr-quantum-computer", amount = 10 },
+			{ type = "item", name = "foundation", amount = 500 },
+		},
+		results = { { type = "item", name = "kr-intergalactic-transceiver", amount = 1 } },
+	},
+	{
+		type = "recipe",
 		name = "kr-rocket-turret",
 		enabled = false,
 		energy_required = 20,
