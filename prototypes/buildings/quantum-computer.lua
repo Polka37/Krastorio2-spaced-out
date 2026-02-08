@@ -1,6 +1,4 @@
 data.raw["assembling-machine"]["kr-quantum-computer"].energy_usage = "5MW"
-data.raw["assembling-machine"]["kr-quantum-computer"].crafting_categories =
-	{ "kr-research-data", "kr-tech-cards", "kr-tech-cards-cooling" }
 data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes = {
 	{
 		production_type = "input",
@@ -42,20 +40,3 @@ data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes = {
 		secondary_draw_orders = { north = -1 },
 	},
 }
-data:extend({
-	{
-		type = "recipe",
-		name = "kr-quantum-computer",
-		energy_required = 120,
-		enabled = false,
-		category = "cryogenics",
-		ingredients = {
-			{ type = "item", name = "kr-rare-metals", amount = 50 },
-			{ type = "item", name = "kr-ai-core", amount = 50 },
-			{ type = "item", name = "steel-plate", amount = 100 },
-			{ type = "item", name = "quantum-processor", amount = 100 },
-			{ type = "fluid", name = "fluoroketone-cold", amount = 100 },
-		},
-		results = { { type = "item", name = "kr-quantum-computer", amount = 1 } },
-	},
-})

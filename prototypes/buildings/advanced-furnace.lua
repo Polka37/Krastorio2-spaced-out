@@ -94,19 +94,3 @@ data.raw["assembling-machine"]["kr-advanced-furnace"].fluid_boxes = {
 		secondary_draw_orders = { north = -1 },
 	},
 }
-data:extend({
-	{
-		type = "recipe",
-		name = "kr-advanced-furnace",
-		category = "metallurgy-or-assembling",
-		energy_required = 30,
-		enabled = false,
-		ingredients = {
-			{ type = "item", name = "kr-imersium-beam", amount = 40 },
-			{ type = "item", name = "tungsten-plate", amount = 40 },
-			{ type = "item", name = "foundry", amount = 3 },
-			{ type = "item", name = "kr-energy-control-unit", amount = 10 },
-		},
-		results = { { type = "item", name = "kr-advanced-furnace", amount = 1 } },
-	},
-})

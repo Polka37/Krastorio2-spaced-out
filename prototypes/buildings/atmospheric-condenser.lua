@@ -16,6 +16,3 @@ data.raw["assembling-machine"]["kr-atmospheric-condenser"].fluid_boxes = {
 		},
 	},
 }
-data.raw["assembling-machine"]["kr-atmospheric-condenser"].surface_conditions = {
-	{ property = "pressure", min = 300 },
-}
