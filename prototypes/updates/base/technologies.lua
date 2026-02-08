@@ -18,6 +18,7 @@ data_util.add_prerequisite("kr-advanced-tank", "kr-military-5")
 data_util.add_prerequisite("kr-imersium-processing", "kr-quarry-minerals-extraction")
 data_util.add_prerequisite("kr-advanced-tech-card", "utility-science-pack")
 data_util.add_prerequisite("kr-energy-control-unit", "kr-advanced-tech-card")
+data_util.add_prerequisite("worker-robots-speed-7", "electromagnetic-science-pack")
 
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "power-armor")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "military-4")
@@ -30,6 +31,7 @@ data_util.remove_prerequisite("space-science-pack", "kr-singularity-lab")
 data_util.remove_prerequisite("kr-advanced-tank", "kr-railgun-turret")
 data_util.remove_prerequisite("kr-imersium-processing", "kr-matter-tech-card")
 data_util.remove_prerequisite("kr-energy-control-unit", "kr-matter-tech-card")
+data_util.remove_prerequisite("worker-robots-speed-7", "kr-advanced-tech-card")
 
 data_util.remove_research_unit_ingredient("energy-shield-mk2-equipment", "electromagnetic-science-pack")
 data_util.remove_research_unit_ingredient("kr-advanced-pickaxe", "kr-matter-tech-card")
@@ -39,12 +41,15 @@ data_util.remove_research_unit_ingredient("kr-automation", "kr-matter-tech-card"
 data_util.remove_research_unit_ingredient("kr-robot-battery-plus", "kr-matter-tech-card")
 data_util.remove_research_unit_ingredient("kr-imersium-processing", "kr-matter-tech-card")
 data_util.remove_research_unit_ingredient("kr-advanced-tech-card", "kr-matter-tech-card")
+data_util.remove_research_unit_ingredient("worker-robots-speed-7", "kr-advanced-tech-card")
+data_util.remove_research_unit_ingredient("worker-robots-speed-7", "kr-matter-tech-card")
 
 data_util.add_research_unit_ingredient("research-productivity", "kr-matter-tech-card")
 data_util.add_research_unit_ingredient("research-productivity", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("research-productivity", "kr-singularity-tech-card")
 data_util.add_research_unit_ingredient("kr-energy-control-unit", "kr-advanced-tech-card")
 data_util.add_research_unit_ingredient("kr-robot-battery-plus", "kr-advanced-tech-card")
+data_util.add_research_unit_ingredient("worker-robots-speed-7", "electromagnetic-science-pack")
 
 data_util.add_recipe_unlock("electronics", "kr-electronic-circuit-wood")
 data_util.add_recipe_unlock(kr_optimization_tech_card_name, "kr-space-research-data")
@@ -99,6 +104,39 @@ data.raw.technology["kr-logistic-4"] = nil
 data.raw.technology["kr-power-armor-mk3"] = nil
 data.raw.technology["kr-power-armor-mk4"] = nil
 data.raw.technology["kr-battery-mk3-equipment"] = nil
+data.raw.technology["laser-weapons-damage-16"] = nil
+data.raw.technology["laser-weapons-damage-11"] = nil
+data.raw.technology["physical-projectile-damage-16"] = nil
+data.raw.technology["physical-projectile-damage-11"] = nil
+data.raw.technology["refined-flammables-16"] = nil
+data.raw.technology["refined-flammables-11"] = nil
+data.raw.technology["stronger-explosives-16"] = nil
+data.raw.technology["stronger-explosives-11"] = nil
+data.raw.technology["artillery-shell-range-3"] = nil
+data.raw.technology["artillery-shell-range-5"] = nil
+data.raw.technology["artillery-shell-speed-3"] = nil
+data.raw.technology["artillery-shell-speed-5"] = nil
+data.raw.technology["follower-robot-count-9"] = nil
+data.raw.technology["follower-robot-count-6"] = nil
+data.raw.technology["worker-robots-speed-9"] = nil
+
+data.raw.technology["follower-robot-count-5"].max_level = "infinite"
+data.raw.technology["worker-robots-speed-7"].max_level = "infinite"
+data.raw.technology["laser-weapons-damage-7"].max_level = "infinite"
+data.raw.technology["stronger-explosives-7"].max_level = "infinite"
+data.raw.technology["refined-flammables-7"].max_level = "infinite"
+data.raw.technology["physical-projectile-damage-7"].max_level = "infinite"
+data.raw.technology["artillery-shell-range-1"].max_level = "infinite"
+data.raw.technology["artillery-shell-speed-1"].max_level = "infinite"
+
+data.raw.technology["follower-robot-count-5"].unit.count_formula = "1000*(L-4)"
+data.raw.technology["worker-robots-speed-7"].unit.count_formula = "2^(L-6)*1000"
+data.raw.technology["laser-weapons-damage-7"].unit.count_formula = "2^(L-7)*1000"
+data.raw.technology["stronger-explosives-7"].unit.count_formula = "2^(L-7)*1000"
+data.raw.technology["refined-flammables-7"].unit.count_formula = "2^(L-7)*1000"
+data.raw.technology["physical-projectile-damage-7"].unit.count_formula = "2^(L-7)*1000"
+data.raw.technology["artillery-shell-range-1"].unit.count_formula = "2^(L-1)*1000"
+data.raw.technology["artillery-shell-speed-1"].unit.count_formula = "2^(L-1)*1000"
 
 -- if has mod,set nil after compatibility handled
 if not mods["Age-of-Production"] and not mods["lignumis"] then
