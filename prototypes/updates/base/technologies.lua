@@ -88,12 +88,17 @@ end
 
 data_util.remove_recipe_unlock("rocket-fuel", "kr-rocket-fuel-with-ammonia")
 data_util.remove_recipe_unlock("planet-discovery-aquilo", "ammonia-rocket-fuel")
+data_util.remove_recipe_unlock("battery-equipment", "kr-big-battery-equipment")
+data_util.remove_recipe_unlock("battery-mk2-equipment", "kr-big-battery-mk2-equipment")
 
 data.raw.technology["kr-rocket-turret"].hidden = true
 data.raw.technology["kr-rocket-turret"].hidden_in_factoriopedia = true
 data.raw.technology["kr-railgun-turret"].hidden = true
 data.raw.technology["kr-railgun-turret"].hidden_in_factoriopedia = true
 data.raw.technology["kr-logistic-4"] = nil
+data.raw.technology["kr-power-armor-mk3"] = nil
+data.raw.technology["kr-power-armor-mk4"] = nil
+data.raw.technology["kr-battery-mk3-equipment"] = nil
 
 -- if has mod,set nil after compatibility handled
 if not mods["Age-of-Production"] and not mods["lignumis"] then
