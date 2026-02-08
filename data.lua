@@ -88,13 +88,6 @@ require("prototypes.equipment.cargo-expansion")
 
 require("prototypes.items.tech-cards")
 
-require("prototypes.projectiles.antimatter-bomb-wave")
-require("prototypes.projectiles.beacon-wave")
-require("prototypes.projectiles.basic-railgun-projectile")
-require("prototypes.projectiles.explosion-railgun-projectile")
-require("prototypes.projectiles.explosion-turret-rocket-projectile")
-require("prototypes.projectiles.laser-projectile")
-
 require("prototypes.recipes.atmosphere-condensation")
 require("prototypes.recipes.crafting")
 require("prototypes.recipes.crushing")
