@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2026-02-15
+  Info:
+    - This updates changes K2SO to dependent on K2 directly instead of being a fork. This shouldn't affect gameplay in any major way, but makes sure it's always on par with bugfixes with K2 and makes mod maintenance easier. Your game saves should be save, but i haven't tested it with K2SO Nulls Tweaks or modded planets outside recommended.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.18
 Date: 2026-02-05
   Bugfixes:
