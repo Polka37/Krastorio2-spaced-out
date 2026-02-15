@@ -202,7 +202,7 @@ data.raw["assembling-machine"]["kr-advanced-chemical-plant"].crafting_categories
 	"chemistry-or-cryogenics",
 	"organic-or-chemistry",
 	"kr-fluid-filtration",
-	--"oil-processing",
+	"oil-processing",
 }
 data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories = {
 	"smelting",
