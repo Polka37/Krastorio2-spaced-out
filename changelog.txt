@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2026-02-15
+  Changes:  
+    - Coal filtration now uses 400 heavy oil, to make sure it never causes infinite loop. It's now intended to be used on Fulgora
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 2026-02-15
   Info:

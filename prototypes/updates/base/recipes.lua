@@ -5,6 +5,8 @@ local recipe = data.raw.recipe
 data.raw["item-group"]["kr-smelting-crafting"] = nil
 data.raw["item-subgroup"]["kr-smelting-crafting"].group = "intermediate-products"
 
+data_util.hide("kr-water-from-atmosphere")
+
 data_util.add_or_replace_ingredient(
 	"big-mining-drill",
 	"electric-mining-drill",
@@ -67,6 +69,16 @@ data_util.add_or_replace_ingredient(
 	"water",
 	{ type = "fluid", name = "kr-oxygen", amount = 40 }
 )
+data_util.add_or_replace_ingredient(
+	"kr-coal-filtration",
+	"heavy-oil",
+	{ type = "fluid", name = "heavy-oil", amount = 400 }
+)
+data_util.add_or_replace_ingredient(
+	"express-splitter",
+	"lubricant",
+	{ type = "fluid", name = "lubricant", amount = 80 }
+)
 
 table.insert(recipe["scrap-recycling"].results, 8, {
 	type = "item",
@@ -94,7 +106,6 @@ data_util.add_or_replace_product(
 	"lubricant",
 	{ type = "fluid", name = "lubricant", amount = 40 }
 )
-data_util.add_or_replace_product("express-splitter", "lubricant", { type = "fluid", name = "lubricant", amount = 80 })
 
 recipe["express-underground-belt"].category = "pressing"
 recipe["express-splitter"].category = "pressing"
