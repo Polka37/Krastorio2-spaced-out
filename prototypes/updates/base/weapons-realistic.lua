@@ -50,6 +50,20 @@ data_util.add_effect(
 	{ type = "gun-speed", ammo_category = "kr-railgun-shell", modifier = 0.15 }
 )
 
+---@param technology_name String.technology.name
+---@param category String.effect.name
+local function remove_effect(technology_name, category)
+	for n, effect in pairs(data.raw.technology[technology_name].effects) do
+		if effect.ammo_category == category then
+			table.remove(data.raw.technology[technology_name].effects, n)
+		end
+	end
+end
+
+for n = 1, 7 do
+	remove_effect("physical-projectile-damage-" .. n, "kr-railgun-shell")
+end
+
 -- Technology for rocket turret
 
 data_util.add_effect(

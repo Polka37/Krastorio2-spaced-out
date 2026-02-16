@@ -169,6 +169,15 @@ data.raw.furnace["kr-air-purifier"].energy_source.emissions_per_minute = { pollu
 data.raw["assembling-machine"]["kr-greenhouse"].energy_source.emissions_per_minute = { pollution = -5, spores = 3 }
 data.raw["assembling-machine"]["kr-advanced-furnace"].energy_source.emissions_per_minute = { pollution = 30 }
 
+--Turrets
+data.raw["ammo-turret"]["kr-railgun-turret"].rotation_speed = 0.006
+data.raw["ammo-turret"]["kr-railgun-turret"].energy_per_shot = "5MJ"
+data.raw["ammo-turret"]["kr-railgun-turret"].energy_source = {
+	type = "electric",
+	buffer_capacity = "5MJ",
+	usage_priority = "primary-input",
+}
+
 --module effects
 table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "quality")
 

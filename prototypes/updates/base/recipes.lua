@@ -38,6 +38,11 @@ data_util.add_or_replace_ingredient(
 	{ type = "item", name = "kr-tritium", amount = 4 }
 )
 data_util.add_or_replace_ingredient(
+	"kr-basic-railgun-shell",
+	"steel-plate",
+	{ type = "item", name = "steel-plate", amount = 2 }
+)
+data_util.add_or_replace_ingredient(
 	"casting-iron-gear-wheel",
 	"molten-iron",
 	{ type = "fluid", name = "molten-iron", amount = 5 }
@@ -117,6 +122,7 @@ data_util.remove_ingredient("electronic-circuit", "wood")
 data_util.remove_ingredient("repair-pack", "stone")
 data_util.remove_ingredient("lithium", "holmium-plate")
 data_util.remove_ingredient("kr-logo", "kr-poop")
+data_util.remove_ingredient("kr-basic-railgun-shell", "advanced-circuit")
 
 recipe["wood-processing"].surface_conditions = nil
 recipe["pentapod-egg"].surface_conditions = { { property = "pressure", min = 1000, max = 2000 } }
