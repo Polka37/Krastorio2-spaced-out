@@ -1,67 +1,86 @@
 if not settings.startup["kr-loaders"].value then
-  return
+	return
 end
 
-local graphics = require("prototypes.buildings.loader-graphics")
-local sounds = require("__base__.prototypes.entity.sounds")
+data.raw["loader-1x1"]["kr-loader"].heating_energy = "50kW"
+data.raw["loader-1x1"]["kr-fast-loader"].heating_energy = "50kW"
+data.raw["loader-1x1"]["kr-express-loader"].heating_energy = "50kW"
+data.raw["loader-1x1"]["kr-advanced-loader"].heating_energy = "50kW"
+data.raw["loader-1x1"]["kr-superior-loader"].heating_energy = "50kW"
+
+data.raw["loader-1x1"]["kr-loader"].max_belt_stack_size = 4
+data.raw["loader-1x1"]["kr-fast-loader"].max_belt_stack_size = 4
+data.raw["loader-1x1"]["kr-express-loader"].max_belt_stack_size = 4
+data.raw["loader-1x1"]["kr-advanced-loader"].max_belt_stack_size = 4
+data.raw["loader-1x1"]["kr-superior-loader"].max_belt_stack_size = 4
 
 data:extend({
-  {
-    type = "recipe",
-    name = "kr-loader",
-    category = "pressing",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      { type = "item", name = "transport-belt", amount = 1 },
-      { type = "item", name = "iron-gear-wheel", amount = 10 },
-      { type = "item", name = "kr-iron-beam", amount = 2 },
-    },
-    results = { { type = "item", name = "kr-loader", amount = 1 } },
-  },
-  {
-    type = "item",
-    name = "kr-loader",
-    icon = "__Krastorio2Assets__/icons/entities/loader.png",
-    subgroup = "belt",
-    order = "d[loader]-a1[kr-loader]",
-    place_result = "kr-loader",
-    stack_size = 50,
-    weight = 20*kg,
-  },
-  {
-    type = "loader-1x1",
-    name = "kr-loader",
-    icon = "__Krastorio2Assets__/icons/entities/loader.png",
-    flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 0.25, result = "kr-loader" },
-    placeable_by = { item = "kr-loader", count = 1 },
-    fast_replaceable_group = "transport-belt",
-    next_upgrade = "kr-fast-loader",
-    collision_box = { { -0.4, -0.45 }, { 0.4, 0.45 } },
-    selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-    speed = data.raw["transport-belt"]["transport-belt"].speed,
-    max_belt_stack_size = 4,
-    adjustable_belt_stack_size = true,
-    container_distance = 0.75,
-    filter_count = 5,
-    energy_source = {
-      type = "electric",
-      usage_priority = "secondary-input",
-      drain = "400W",
-    },
-    energy_per_item = "9kJ",
-    max_health = 300,
-    heating_energy = "50kW",
-    corpse = "small-remnants",
-    resistances = { { type = "fire", percent = 90 } },
-    open_sound = sounds.machine_open,
-    close_sound = sounds.machine_close,
-    belt_animation_set = data.raw["transport-belt"]["transport-belt"].belt_animation_set,
-    animation_speed_coefficient = 32,
-    icon_draw_specification = {scale = 0.7},
-    structure = graphics.structure({ 249, 207, 70 }),
-    structure_render_layer = graphics.structure_render_layer,
-    circuit_wire_max_distance = default_circuit_wire_max_distance,
-  },
+	{
+		type = "recipe",
+		name = "kr-express-loader",
+		category = "pressing",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "express-transport-belt", amount = 1 },
+			{ type = "item", name = "kr-fast-loader", amount = 2 },
+			{ type = "item", name = "kr-steel-gear-wheel", amount = 10 },
+			{ type = "fluid", name = "lubricant", amount = 40 },
+		},
+		results = { { type = "item", name = "kr-express-loader", amount = 1 } },
+	},
+	{
+		type = "recipe",
+		name = "kr-superior-loader",
+		category = "metallurgy",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "kr-superior-transport-belt", amount = 1 },
+			{ type = "item", name = "kr-advanced-loader", amount = 2 },
+			{ type = "item", name = "kr-imersium-gear-wheel", amount = 10 },
+		},
+		results = { { type = "item", name = "kr-superior-loader", amount = 1 } },
+	},
+	{
+		type = "recipe",
+		name = "kr-advanced-loader",
+		category = "metallurgy",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "turbo-transport-belt", amount = 1 },
+			{ type = "item", name = "kr-express-loader", amount = 2 },
+			{ type = "item", name = "tungsten-plate", amount = 20 },
+			{ type = "fluid", name = "lubricant", amount = 40 },
+		},
+		results = { { type = "item", name = "kr-advanced-loader", amount = 1 } },
+		surface_conditions = { { property = "pressure", min = 4000, max = 4000 } },
+	},
+	{
+		type = "recipe",
+		name = "kr-fast-loader",
+		category = "pressing",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "fast-transport-belt", amount = 1 },
+			{ type = "item", name = "kr-loader", amount = 2 },
+			{ type = "item", name = "iron-gear-wheel", amount = 10 },
+		},
+		results = { { type = "item", name = "kr-fast-loader", amount = 1 } },
+	},
+	{
+		type = "recipe",
+		name = "kr-loader",
+		category = "pressing",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{ type = "item", name = "transport-belt", amount = 1 },
+			{ type = "item", name = "iron-gear-wheel", amount = 10 },
+			{ type = "item", name = "kr-iron-beam", amount = 2 },
+		},
+		results = { { type = "item", name = "kr-loader", amount = 1 } },
+	},
 })

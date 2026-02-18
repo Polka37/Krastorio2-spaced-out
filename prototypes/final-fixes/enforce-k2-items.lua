@@ -8,6 +8,7 @@ local convert = {
 	["glass"] = true,
 	["silicon"] = true,
 	["lithium"] = true,
+	["ammonia"] = true,
 }
 
 for _, recipe in pairs(data.raw.recipe) do
@@ -65,6 +66,18 @@ for _, ore in pairs(data.raw.resource) do
 		for _, item in pairs(ore.minable.results) do
 			if convert[item.name] then
 				item.name = "kr-" .. item.name
+			end
+		end
+	end
+end
+
+for _, decoration in pairs(data.raw["simple-entity"]) do
+	if decoration.minable then
+		if decoration.minable.results then
+			for _, item in pairs(decoration.minable.results) do
+				if convert[item.name] then
+					item.name = "kr-" .. item.name
+				end
 			end
 		end
 	end

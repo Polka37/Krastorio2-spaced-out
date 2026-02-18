@@ -1,34 +1,16 @@
-require("prototypes.updates.base.ammo")
-require("prototypes.updates.base.autoplace-controls")
 require("prototypes.updates.base.entities")
-require("prototypes.updates.base.equipment-grids")
 require("prototypes.updates.base.equipment")
-require("prototypes.updates.base.fluids")
-require("prototypes.updates.base.guns")
 require("prototypes.updates.base.items")
-require("prototypes.updates.base.main-menu")
 require("prototypes.updates.base.projectiles")
 require("prototypes.updates.base.recipes")
 require("prototypes.updates.base.resources")
 require("prototypes.updates.base.technologies")
-require("prototypes.updates.base.turrets")
 require("prototypes.updates.base.weapons-realistic")
+require("prototypes.updates.base.weight")
 
-require("prototypes.updates.adjust-spawn-rates")
 require("prototypes.updates.adjust-stack-sizes")
-require("prototypes.updates.convert-furnaces-to-assemblers")
-require("prototypes.updates.enable-burner-leech")
-require("prototypes.updates.finite-oil")
-require("prototypes.updates.generate-flare-stack-recipes")
-require("prototypes.updates.generate-greenhouse-recipes")
 require("prototypes.updates.generate-matter-recipes")
-require("prototypes.updates.generate-roboport-variations")
-require("prototypes.updates.generate-void-crushing-recipes")
-require("prototypes.updates.remove-nuclear-fuel")
-require("prototypes.updates.set-new-resource-autoplace")
 require("prototypes.updates.surface-conditions")
-
-require("prototypes.compatibility.aai-industry")
 
 require("prototypes.compatibility.any-planet-start")
 require("prototypes.compatibility.planets.castra")
@@ -41,6 +23,3 @@ require("prototypes.compatibility.Age-of-Production")
 
 -- Must be after Muluna
 require("prototypes.updates.generate-tech-card-cooling")
-
--- Has to be after base updates so it can use the updated icons
-require("prototypes.recipes.smelting-crafting")
