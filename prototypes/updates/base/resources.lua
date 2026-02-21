@@ -6,8 +6,9 @@ local function increase_base_density(resource_name, multiplier)
 	local resource = data.raw.resource[resource_name]
 	if not resource then
 		data_util.error("Resource " .. resource_name .. " does not exist.")
+	else
+		resource.autoplace.base_density = (resource.autoplace.base_density or 1) * multiplier
 	end
-	resource.autoplace.base_density = (resource.autoplace.base_density or 1) * multiplier
 end
 
 data.raw.resource["crude-oil"].stages.sheet.filename = "__Krastorio2Assets__/resources/crude-oil.png"
