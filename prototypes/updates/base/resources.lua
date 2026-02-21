@@ -22,6 +22,10 @@ increase_base_density("coal", 2)
 increase_base_density("copper-ore", 1.5)
 
 if data.raw["planet"]["gleba"].map_gen_settings then
-	data.raw["planet"]["gleba"].map_gen_settings.autoplace_controls["gleba_stone"] =
-		{ size = 3, frequency = 1.5, richness = 2 }
+	if not data.raw["planet"]["gleba"].map_gen_settings.autoplace_controls["gleba_stone"] then
+		data_util.error("Map gen setting gleba_stone does not exist.")
+	else
+		data.raw["planet"]["gleba"].map_gen_settings.autoplace_controls["gleba_stone"] =
+			{ size = 3, frequency = 1.5, richness = 2 }
+	end
 end
