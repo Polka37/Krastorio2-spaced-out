@@ -69,3 +69,14 @@ for _, ore in pairs(data.raw.resource) do
 		end
 	end
 end
+
+for _, tech in pairs(data.raw.technology) do
+	if tech.research_trigger then
+		if tech.research_trigger.item and convert[tech.research_trigger.item] then
+			tech.research_trigger.item = "kr-" .. tech.research_trigger.item
+		end
+		if tech.research_trigger.fluid and convert[tech.research_trigger.fluid] then
+			tech.research_trigger.fluid = "kr-" .. tech.research_trigger.fluid
+		end
+	end
+end
