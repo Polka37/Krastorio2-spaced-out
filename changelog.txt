@@ -8,6 +8,8 @@ Date: 2026-04-19
     - Adv chemical plant now can do oil refinery recipes
     - Light railguns consume 5MJ of energy per shot
     - Intergalactic transceiver must be made in space
+    - Singularity labs are more expensive and require late game space age items
+    - Biolabs need advanced labs instead of basic ones
   Features:
     - Added option to revert thruster fuel to require water again
     - Promethium tech card must be researched in space using singularity labs. Can be disabled in settings

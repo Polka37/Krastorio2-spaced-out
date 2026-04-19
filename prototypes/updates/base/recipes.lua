@@ -42,6 +42,7 @@ data_util.add_or_replace_ingredient(
 	"steel-plate",
 	{ type = "item", name = "steel-plate", amount = 2 }
 )
+data_util.add_or_replace_ingredient("biolab", "lab", { type = "item", name = "kr-advanced-lab", amount = 1 })
 data_util.add_or_replace_ingredient(
 	"casting-iron-gear-wheel",
 	"molten-iron",

@@ -75,6 +75,23 @@ data:extend({
 	},
 	{
 		type = "recipe",
+		name = "kr-singularity-lab",
+		energy_required = 240,
+		enabled = false,
+		category = "cryogenics",
+		ingredients = {
+			{ type = "item", name = "kr-ai-core", amount = 100 },
+			{ type = "item", name = "quantum-processor", amount = 100 },
+			{ type = "item", name = "tungsten-plate", amount = 200 },
+			{ type = "item", name = "supercapacitor", amount = 50 },
+			{ type = "item", name = "kr-rare-metals", amount = 300 },
+			{ type = "item", name = "biolab", amount = 5 },
+			{ type = "fluid", name = "fluoroketone-cold", amount = 500 },
+		},
+		results = { { type = "item", name = "kr-singularity-lab", amount = 1 } },
+	},
+	{
+		type = "recipe",
 		name = "kr-rocket-turret",
 		enabled = false,
 		energy_required = 20,
