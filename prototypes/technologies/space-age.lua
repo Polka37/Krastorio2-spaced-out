@@ -367,10 +367,9 @@ data:extend({
 				{ "agricultural-science-pack", 1 },
 				{ "electromagnetic-science-pack", 1 },
 				{ "cryogenic-science-pack", 1 },
-				{ "promethium-science-pack", 1 },
 			},
 		},
-		prerequisites = { "promethium-science-pack" },
+		prerequisites = { "kr-singularity-tech-card", "quantum-processor" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-singularity-lab" },
 		},
@@ -486,7 +485,7 @@ data:extend({
 				{ "promethium-science-pack", 1 },
 			},
 		},
-		prerequisites = { "kr-antimatter-reactor", "kr-singularity-lab" },
+		prerequisites = { "kr-antimatter-reactor" },
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-intergalactic-transceiver" },
 		},
