@@ -71,6 +71,7 @@ data:extend({
 			{ type = "item", name = "foundation", amount = 500 },
 		},
 		results = { { type = "item", name = "kr-intergalactic-transceiver", amount = 1 } },
+		surface_conditions = { { property = "gravity", max = 0 } },
 	},
 	{
 		type = "recipe",
