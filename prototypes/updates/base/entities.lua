@@ -181,6 +181,9 @@ data.raw["ammo-turret"]["kr-railgun-turret"].energy_source = {
 --module effects
 table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "quality")
 
+--module slots
+data.raw["furnace"]["kr-crusher"].module_slots = 2
+
 --crafting catefories
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-assembling")
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-hand-crafting")
