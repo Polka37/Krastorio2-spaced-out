@@ -1,7 +1,21 @@
+--only allow promethium science in singularity lab
+if settings.startup["kr-promethium-tech-card-space-only"].value then
+	for n, input in pairs(data.raw.lab["lab"].inputs) do
+		if input == "promethium-science-pack" then
+			table.remove(data.raw.lab["lab"].inputs, n)
+		end
+	end
+end
+
 --sync all labs inputs
 data.raw.lab["biolab"].inputs = data.raw.lab["lab"].inputs
 data.raw.lab["kr-advanced-lab"].inputs = data.raw.lab["lab"].inputs
-data.raw.lab["kr-singularity-lab"].inputs = data.raw.lab["lab"].inputs
+data.raw.lab["kr-singularity-lab"].inputs = table.deepcopy(data.raw.lab["lab"].inputs) --yes, this needs to use table.deepcopy
+
+if settings.startup["kr-promethium-tech-card-space-only"].value then
+	table.insert(data.raw.lab["kr-singularity-lab"].inputs, "promethium-science-pack")
+	data.raw.technology["kr-singularity-lab"].localised_description = { "technology-description.kr-singularity-lab-2" }
+end
 
 --make sure 24 science pack can be displayed
 local size3 = {
