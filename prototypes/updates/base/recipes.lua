@@ -134,7 +134,6 @@ data_util.remove_ingredient("kr-logo", "kr-poop")
 data_util.remove_ingredient("kr-basic-railgun-shell", "advanced-circuit")
 
 recipe["wood-processing"].surface_conditions = nil
-recipe["pentapod-egg"].surface_conditions = { { property = "pressure", min = 1000, max = 2000 } }
 
 recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
 recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"

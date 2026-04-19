@@ -10,6 +10,7 @@ Date: 2026-04-19
     - Intergalactic transceiver must be made in space
     - Singularity labs are more expensive and require late game space age items
     - Biolabs need advanced labs instead of basic ones
+    - Bio processing circuits recipe outputs twice as much processing units with +50% speed and can only be made in biochamber
   Features:
     - Added option to revert thruster fuel to require water again
     - Promethium tech card must be researched in space using singularity labs. Can be disabled in settings
