@@ -62,18 +62,26 @@ data_util.add_or_replace_ingredient(
 	"molten-copper",
 	{ type = "fluid", name = "molten-copper", amount = 120 }
 )
-data_util.add_or_replace_ingredient("thruster-fuel", "water", { type = "fluid", name = "kr-hydrogen", amount = 6 })
-data_util.add_or_replace_ingredient("thruster-oxidizer", "water", { type = "fluid", name = "kr-oxygen", amount = 4 })
-data_util.add_or_replace_ingredient(
-	"advanced-thruster-fuel",
-	"water",
-	{ type = "fluid", name = "kr-hydrogen", amount = 60 }
-)
-data_util.add_or_replace_ingredient(
-	"advanced-thruster-oxidizer",
-	"water",
-	{ type = "fluid", name = "kr-oxygen", amount = 40 }
-)
+
+if not settings.startup["kr-revert-thruster-fuel-changes"].value then
+	data_util.add_or_replace_ingredient("thruster-fuel", "water", { type = "fluid", name = "kr-hydrogen", amount = 6 })
+	data_util.add_or_replace_ingredient(
+		"thruster-oxidizer",
+		"water",
+		{ type = "fluid", name = "kr-oxygen", amount = 4 }
+	)
+	data_util.add_or_replace_ingredient(
+		"advanced-thruster-fuel",
+		"water",
+		{ type = "fluid", name = "kr-hydrogen", amount = 60 }
+	)
+	data_util.add_or_replace_ingredient(
+		"advanced-thruster-oxidizer",
+		"water",
+		{ type = "fluid", name = "kr-oxygen", amount = 40 }
+	)
+end
+
 data_util.add_or_replace_ingredient(
 	"kr-coal-filtration",
 	"heavy-oil",
