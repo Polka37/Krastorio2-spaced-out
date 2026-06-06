@@ -32,3 +32,5 @@ require("prototypes.recipes.buildings")
 require("prototypes.technologies.matter-tech-card")
 require("prototypes.technologies.singularity-tech-card")
 require("prototypes.technologies.space-age")
+
+require("prototypes.final-fixes.voiding-blacklist")

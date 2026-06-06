@@ -7,7 +7,6 @@ require("prototypes.final-fixes.banish-basic-card")
 require("prototypes.final-fixes.labs-fixes")
 require("prototypes.final-fixes.surface-conditions")
 require("prototypes.final-fixes.recycling")
-require("prototypes.final-fixes.voiding-blacklist")
 
 local api = require("__Krastorio2__.prototypes.libraries.space-age-warning")
 api.disable_space_age_warning()
