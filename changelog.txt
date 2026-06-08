@@ -14,7 +14,17 @@ Date: 2026-04-19
   Features:
     - Added option to revert thruster fuel to require water again
     - Promethium tech card must be researched in space using singularity labs. Can be disabled in settings
-
+---------------------------------------------------------------------------------------------------
+Version: 1.6.20
+Date: 2026-06-08
+  Compatibility:
+    - Fixed Age of Production planks recipe couldn't be unlocked
+    - Age of Production Lumber mill is unlocked by crafting greenhouse instead of mining it
+---------------------------------------------------------------------------------------------------
+Version: 1.6.19
+Date: 2026-06-06
+  Bugfixes:
+    - Hotfix for Age of Production startup error
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.18
 Date: 2026-02-05
