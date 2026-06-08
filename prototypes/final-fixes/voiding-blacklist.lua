@@ -1,43 +1,5 @@
------ @param Item Item.Prototype.String
---function blacklist(Item)
---	--recipe = data.raw.recipe["kr-burn-" .. Item]
---	if data.raw.recipe["kr-burn-" .. Item] then
---		for n, effects in pairs(data.raw.technology["kr-fluid-excess-handling"].effects) do
---			if effects.recipe == "kr-burn-" .. Item then
---				table.remove(data.raw.technology["kr-fluid-excess-handling"].effects, n)
---			end
---		end
---		data.raw.recipe["kr-burn-" .. Item] = nil
---	end
---	if data.raw.recipe["kr-crush-" .. Item] then
---		data.raw.recipe["kr-crush-" .. Item] = nil
---	end
---end
---
----- Crushing
---blacklist("biter-egg")
---blacklist("pentapod-egg")
---
----- Duplicates
---blacklist("oxygen")
---blacklist("hydrogen")
---blacklist("chlorine")
---blacklist("ammonia")
---
----- Molten metals
---blacklist("lava")
---blacklist("kr-molten-rare-metals")
---blacklist("molten-copper")
---blacklist("molten-iron")
---blacklist("molten-salt")
---blacklist("molten-aluminum")
---blacklist("holmium-solution")
---
----- Muluna
---blacklist("muluna-heat")
---blacklist("raw-data")
---blacklist("muluna-astronomical-data")
-flare_stack_lib = require("__Krastorio2__.prototypes.libraries.flare-stack")
+local flare_stack_lib = require("__Krastorio2__.prototypes.libraries.flare-stack")
+local crushing_lib = require("__Krastorio2__.prototypes.libraries.crushing")
 
 flare_stack_lib.add_blacklist("kr-molten-rare-metals")
 flare_stack_lib.add_blacklist("kr-molten-rare-metals")
@@ -55,6 +17,17 @@ flare_stack_lib.add_blacklist("oxygen")
 flare_stack_lib.add_blacklist("hydrogen")
 flare_stack_lib.add_blacklist("chlorine")
 flare_stack_lib.add_blacklist("ammonia")
+
+-- Muluna generates cryolab at the end causing crash when trying to make a crushing recipe
+if mods["planet-muluna"] then
+	data:extend({
+		{
+			type = "item",
+			name = "cryolab",
+		},
+	})
+	crushing_lib.set_item_excluded(data.raw.item["cryolab"], true)
+end
 
 crushing_lib.set_item_excluded(data.raw.item["biter-egg"], true)
 crushing_lib.set_item_excluded(data.raw.item["pentapod-egg"], true)
