@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.20
+Date: 2026-06-08
+  Compatibility:
+    - Fixed Age of Production planks recipe couldn't be unlocked
+    - Age of Production Lumber mill is unlocked by crafting greenhouse instead of mining it
+---------------------------------------------------------------------------------------------------
 Version: 1.6.19
 Date: 2026-06-06
   Bugfixes:
