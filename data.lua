@@ -17,6 +17,7 @@ require("prototypes.equipment.cargo-expansion")
 require("prototypes.items.tech-cards")
 
 require("prototypes.recipes.atmosphere-condensation")
+require("prototypes.recipes.chemistry")
 require("prototypes.recipes.crafting")
 require("prototypes.recipes.crushing")
 require("prototypes.recipes.growing")
