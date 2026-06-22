@@ -137,16 +137,18 @@ data.raw["electric-energy-interface"]["kr-activated-intergalactic-transceiver"].
 data.raw["accumulator"]["kr-intergalactic-transceiver"].surface_conditions = {
 	{ property = "gravity", min = 0.1 },
 }
-data.raw["container"]["kr-strongbox"].surface_conditions = {
-	{ property = "gravity", min = 0.1 },
-}
-data.raw["container"]["kr-warehouse"].surface_conditions = {
-	{ property = "gravity", min = 0.1 },
-}
-for _, container in pairs(data.raw["logistic-container"]) do
-	container.surface_conditions = {
+if settings.startup["kr-containers"].value then
+	data.raw["container"]["kr-strongbox"].surface_conditions = {
 		{ property = "gravity", min = 0.1 },
 	}
+	data.raw["container"]["kr-warehouse"].surface_conditions = {
+		{ property = "gravity", min = 0.1 },
+	}
+	for _, container in pairs(data.raw["logistic-container"]) do
+		container.surface_conditions = {
+			{ property = "gravity", min = 0.1 },
+		}
+	end
 end
 data.raw["solar-panel"]["kr-wind-turbine"].surface_conditions = {
 	{
