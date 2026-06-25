@@ -97,6 +97,9 @@ data.raw["underground-belt"]["kr-superior-underground-belt"].heating_energy = "2
 data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
 data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 
+--Make quarry drill drop full imersite stacks
+data.raw["mining-drill"]["kr-quarry-drill"].drops_full_belt_stacks = true
+
 --Ammo catefories
 data.raw["ammo-turret"]["kr-rocket-turret"].attack_parameters.ammo_categories = { "rocket", "kr-turret-missile" }
 data.raw["ammo-turret"]["rocket-turret"].attack_parameters.ammo_categories = { "rocket", "kr-turret-missile" }
