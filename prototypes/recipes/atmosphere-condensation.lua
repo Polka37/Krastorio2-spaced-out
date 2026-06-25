@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-oxygen",
-		category = "kr-atmosphere-condensation",
+		categories = { "kr-atmosphere-condensation" },
 		icon = "__Krastorio2Assets__/icons/fluids/oxygen.png",
 		subgroup = "raw-material",
 		order = "a[atmosphere-condensation]-a2[oxygen]",

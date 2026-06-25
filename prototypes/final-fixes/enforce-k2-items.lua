@@ -37,7 +37,8 @@ for _, item in pairs(data.raw.item) do
 		item.hidden = true
 		item.hidden_in_factoriopedia = true
 		if data.raw.recipe[item.name .. "-recycling"] then
-			data.raw.recipe[item.name .. "-recycling"] = nil
+			data.raw.recipe[item.name .. "-recycling"].hidden = true
+			data.raw.recipe[item.name .. "-recycling"].hidden_in_factoriopedia = true
 		end
 	end
 end

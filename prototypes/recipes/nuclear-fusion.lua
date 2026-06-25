@@ -8,7 +8,7 @@ data:extend({
 		order = "z2[fusion]",
 		enabled = true,
 		hide_from_player_crafting = true,
-		category = "kr-nuclear-fusion",
+		categories = { "kr-nuclear-fusion" },
 		energy_required = 5, --2.5GW
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 1000 },
@@ -30,7 +30,7 @@ data:extend({
 		order = "z1[fusion]",
 		enabled = true,
 		hide_from_player_crafting = true,
-		category = "kr-nuclear-fusion",
+		categories = { "kr-nuclear-fusion" },
 		energy_required = 20, --10GW
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 4000 },
@@ -51,7 +51,7 @@ data:extend({
 		order = "z3[fusion]",
 		enabled = true,
 		hide_from_player_crafting = true,
-		category = "kr-nuclear-fusion",
+		categories = { "kr-nuclear-fusion" },
 		energy_required = 2, --1GW
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 400 },
@@ -73,7 +73,7 @@ data:extend({
 		order = "z4[fusion-high]",
 		enabled = false,
 		hide_from_player_crafting = true,
-		category = "kr-nuclear-fusion",
+		categories = { "kr-nuclear-fusion" },
 		energy_required = 10, --5GW
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 2000 },

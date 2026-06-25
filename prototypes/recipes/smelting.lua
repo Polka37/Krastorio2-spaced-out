@@ -11,7 +11,7 @@ data:extend({
 			},
 		},
 		enabled = false,
-		category = "smelting",
+		categories = { "smelting" },
 		energy_required = 16,
 		ingredients = {
 			{ type = "item", name = "carbon", amount = 6 },

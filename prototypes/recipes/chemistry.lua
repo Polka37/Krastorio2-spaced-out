@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-dt-fuel-cell",
 		enabled = false,
-		category = "chemistry",
+		categories = { "chemistry" },
 		energy_required = 5,
 		ingredients = {
 			{ type = "fluid", name = "kr-heavy-water", amount = 10 },

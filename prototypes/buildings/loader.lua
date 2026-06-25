@@ -18,7 +18,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-express-loader",
-		category = "pressing",
+		categories = { "crafting-with-fluid", "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {
@@ -32,7 +32,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-superior-loader",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {
@@ -45,7 +45,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-advanced-loader",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {
@@ -60,7 +60,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-fast-loader",
-		category = "pressing",
+		categories = { "crafting", "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {
@@ -73,7 +73,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-loader",
-		category = "pressing",
+		categories = { "crafting", "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {

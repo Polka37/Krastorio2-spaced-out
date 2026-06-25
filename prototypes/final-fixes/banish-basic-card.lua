@@ -14,5 +14,5 @@ end
 data.raw.recipe["kr-basic-tech-card"].hidden = true
 data.raw.recipe["kr-basic-tech-card"].hidden_in_factoriopedia = true
 
-data.raw.tool["kr-basic-tech-card"].hidden = true
-data.raw.tool["kr-basic-tech-card"].hidden_in_factoriopedia = true
+data.raw.item["kr-basic-tech-card"].hidden = true
+data.raw.item["kr-basic-tech-card"].hidden_in_factoriopedia = true

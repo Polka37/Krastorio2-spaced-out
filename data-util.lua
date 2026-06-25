@@ -66,25 +66,24 @@ function data_util.make_tech_card(science_pack, ingredients, no_server)
 		enabled = false,
 		energy_required = 20,
 		ingredients = ingredients,
-		results = { { type = "item", name = science_pack, amount = 5 } },
+		results = { { type = "item", name = science_pack, amount = 5, reset_freshness_on_craft = true } },
 		allow_productivity = true,
 		show_amount_in_title = false,
 		always_show_products = true,
 		main_product = science_pack,
-		reset_freshness_on_craft = true,
-		result_is_always_fresh = true,
+		always_fresh = true,
 	}
 	local recipe = data.raw.recipe[science_pack]
 	table.insert(recipe.ingredients, 1, { type = "item", name = "kr-blank-tech-card", amount = 5 })
 	if no_server then
 		for _, ingredients in pairs(recipe.ingredients) do
 			if ingredients.type == "fluid" then
-				recipe.category = "crafting-with-fluid"
+				recipe.categories = { "crafting-with-fluid" }
 				return
 			end
 		end
 	else
-		recipe.category = "kr-tech-cards"
+		recipe.categories = { "kr-tech-cards" }
 	end
 end
 

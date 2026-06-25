@@ -10,7 +10,7 @@ data:extend({
 		subgroup = "agriculture-processes",
 		order = "a1[organics]-a[compost]",
 		enabled = false,
-		category = "organic",
+		categories = { "organic" },
 		allow_productivity = true,
 		energy_required = 30,
 		show_amount_in_title = false,
@@ -32,7 +32,7 @@ data:extend({
 			{ icon = "__base__/graphics/icons/processing-unit.png" },
 			{ icon = "__space-age__/graphics/icons/pentapod-egg.png", scale = 0.33, shift = { -8, -8 } },
 		},
-		category = "organic",
+		categories = { "organic" },
 		energy_required = 4,
 		auto_recycle = false,
 		ingredients = {

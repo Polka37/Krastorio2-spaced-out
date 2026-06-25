@@ -2,6 +2,16 @@ local flib_table = require("__flib__.table")
 local data_util = require("data-util")
 
 local speed_mult, dev_mult = 2, 0.5
+--- @param effects data.TriggerEffect[]
+--- @param new data.TriggerEffect
+local function replace_effect(effects, new)
+	for i = 1, #effects do
+		if effects[i].type == new.type then
+			effects[i] = new
+			break
+		end
+	end
+end
 
 --physical-damage
 data_util.update_ammo_effects(data.raw["technology"]["physical-projectile-damage-7"], {
@@ -1490,13 +1500,16 @@ data.raw.ammo["piercing-shotgun-shell"].ammo_type.action = {
 	},
 }
 data.raw.projectile["shotgun-pellet"].acceleration = -0.01
-data.raw.projectile["shotgun-pellet"].action.action_delivery.target_effects.damage = { amount = 6, type = "physical" }
+replace_effect(data.raw.projectile["shotgun-pellet"].action.action_delivery.target_effects, {
+	type = "damage",
+	damage = { amount = 6, type = "physical" },
+})
 
 data.raw.projectile["piercing-shotgun-pellet"].acceleration = -0.01
-data.raw.projectile["piercing-shotgun-pellet"].action.action_delivery.target_effects.damage = {
-	amount = 10,
-	type = "physical",
-}
+replace_effect(data.raw.projectile["piercing-shotgun-pellet"].action.action_delivery.target_effects, {
+	type = "damage",
+	damage = { amount = 10, type = "physical" },
+})
 
 --data.raw["ammo-turret"]["gun-turret"].localised_name={"kr-gun-turret"}
 data.raw["ammo-turret"]["gun-turret"].attack_parameters.range = 25

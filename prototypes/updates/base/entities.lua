@@ -190,8 +190,7 @@ table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "q
 data.raw["furnace"]["kr-crusher"].module_slots = 2
 
 --crafting catefories
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-assembling")
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic-or-hand-crafting")
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic")
 table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "kr-electrolysis")
 table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery")
 table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")
@@ -202,22 +201,12 @@ data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_catego
 	"crafting",
 	"advanced-crafting",
 	"crafting-with-fluid",
-	"electronics",
-	"electronics-with-fluid",
+	"electromagnetics",
 	"kr-smelting-crafting",
-	"pressing",
-	"metallurgy-or-assembling",
-	"organic-or-hand-crafting",
-	"organic-or-assembling",
-	"electronics-or-assembling",
-	"cryogenics-or-assembling",
-	"crafting-with-fluid-or-metallurgy",
 }
 data.raw["assembling-machine"]["kr-advanced-chemical-plant"].crafting_categories = {
 	"chemistry",
 	"kr-advanced-chemistry",
-	"chemistry-or-cryogenics",
-	"organic-or-chemistry",
 	"kr-fluid-filtration",
 	"oil-processing",
 }
@@ -225,9 +214,6 @@ data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories = {
 	"smelting",
 	"kr-advanced-smelting",
 	"metallurgy",
-	"pressing",
-	"crafting-with-fluid-or-metallurgy",
-	"metallurgy-or-assembling",
 }
 
 --quality effects

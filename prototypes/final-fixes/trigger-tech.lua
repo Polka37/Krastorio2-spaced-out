@@ -72,7 +72,7 @@ data:extend({
 		effects = {
 			{ type = "unlock-recipe", recipe = "kr-greenhouse" },
 			{ type = "unlock-recipe", recipe = "wood" },
-			{ type = "unlock-recipe", recipe = "wood-processing" },
+			{ type = "unlock-recipe", recipe = "tree-seed" },
 		},
 		ignore_tech_cost_multiplier = true,
 	},

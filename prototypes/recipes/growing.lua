@@ -4,7 +4,7 @@ data:extend({
 		-- This cannot have a kr- prefix because it needs to be grouped with the vanilla 'wood' item.
 		name = "wood",
 		enabled = false,
-		category = "kr-growing",
+		categories = { "kr-growing" },
 		energy_required = 60,
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 200 },
@@ -23,7 +23,7 @@ data:extend({
 		subgroup = "raw-resource",
 		order = "a[wood-with-fertilizer]",
 		enabled = false,
-		category = "kr-growing",
+		categories = { "kr-growing" },
 		energy_required = 60,
 		ingredients = {
 			{ type = "fluid", name = "water", amount = 200 },
@@ -44,7 +44,7 @@ data:extend({
 		subgroup = "raw-resource",
 		order = "b[jellynut]",
 		enabled = false,
-		category = "kr-growing",
+		categories = { "kr-growing" },
 		energy_required = 300,
 		emissions_multiplier = 6,
 		surface_conditions = { { property = "pressure", min = 2000, max = 2000 } },
@@ -57,7 +57,7 @@ data:extend({
 			{ type = "item", name = "jellynut", amount = 300 },
 		},
 		auto_recycle = false,
-		result_is_always_fresh = true,
+		always_fresh = true,
 		main_product = "jellynut",
 	},
 	{
@@ -68,7 +68,7 @@ data:extend({
 		subgroup = "raw-resource",
 		order = "b[yumako]",
 		enabled = false,
-		category = "kr-growing",
+		categories = { "kr-growing" },
 		energy_required = 300,
 		emissions_multiplier = 6,
 		surface_conditions = { { property = "pressure", min = 2000, max = 2000 } },
@@ -81,7 +81,7 @@ data:extend({
 			{ type = "item", name = "yumako", amount = 300 },
 		},
 		auto_recycle = false,
-		result_is_always_fresh = true,
+		always_fresh = true,
 		main_product = "yumako",
 	},
 })

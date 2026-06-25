@@ -4,7 +4,7 @@ data:extend({
 		name = "kr-advanced-chemical-plant",
 		energy_required = 30,
 		enabled = false,
-		additional_categories = { "kr-advanced-chemistry" },
+		categories = { "kr-advanced-chemistry", "crafting" },
 		ingredients = {
 			{ type = "item", name = "processing-unit", amount = 20 },
 			{ type = "item", name = "kr-imersium-beam", amount = 20 },
@@ -18,7 +18,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-advanced-furnace",
-		category = "metallurgy-or-assembling",
+		categories = { "metallurgy", "crafting" },
 		energy_required = 30,
 		enabled = false,
 		ingredients = {
@@ -33,7 +33,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-energy-storage",
 		energy_required = 30,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		enabled = false,
 		ingredients = {
 			{ type = "item", name = "processing-unit", amount = 10 },
@@ -48,7 +48,7 @@ data:extend({
 		name = "kr-quantum-computer",
 		energy_required = 120,
 		enabled = false,
-		category = "cryogenics",
+		categories = { "cryogenics" },
 		ingredients = {
 			{ type = "item", name = "kr-rare-metals", amount = 50 },
 			{ type = "item", name = "kr-ai-core", amount = 50 },
@@ -78,7 +78,7 @@ data:extend({
 		name = "kr-singularity-lab",
 		energy_required = 240,
 		enabled = false,
-		category = "cryogenics",
+		categories = { "cryogenics" },
 		ingredients = {
 			{ type = "item", name = "kr-ai-core", amount = 100 },
 			{ type = "item", name = "quantum-processor", amount = 100 },
@@ -108,7 +108,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-superior-splitter",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {
@@ -122,7 +122,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-superior-substation",
 		energy_required = 1,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		enabled = false,
 		ingredients = {
 			{ type = "item", name = "kr-imersium-beam", amount = 3 },
@@ -136,7 +136,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-superior-transport-belt",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		energy_required = 0.5,
 		enabled = false,
 		ingredients = {
@@ -149,7 +149,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-superior-underground-belt",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		energy_required = 2,
 		enabled = false,
 		ingredients = {

@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-automation-core",
 		enabled = false,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		energy_required = 2,
 		ingredients = {
 			{ type = "item", name = "iron-gear-wheel", amount = 4 },
@@ -17,7 +17,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-blank-tech-card",
 		enabled = false,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		energy_required = 2,
 		ingredients = {
 			{ type = "item", name = "iron-plate", amount = 2 },
@@ -30,7 +30,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-electronic-components",
 		enabled = false,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		energy_required = 4,
 		ingredients = {
 			{ type = "item", name = "kr-silicon", amount = 2 },
@@ -44,7 +44,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-energy-control-unit",
 		enabled = false,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		energy_required = 10,
 		ingredients = {
 			{ type = "item", name = "low-density-structure", amount = 6 },
@@ -65,8 +65,7 @@ data:extend({
 			{ icon = "__base__/graphics/icons/wood.png", scale = 0.26, shift = { -8, -8 } },
 		},
 		energy_required = 2,
-		category = "electronics",
-		additional_categories = { "organic" },
+		categories = { "crafting", "electromagnetics", "organic" },
 		ingredients = {
 			{ type = "item", name = "iron-plate", amount = 1 },
 			{ type = "item", name = "wood", amount = 1 },

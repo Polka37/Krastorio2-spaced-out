@@ -10,7 +10,7 @@ for _, original_recipe in pairs(data.raw.recipe) do
 		recipe.subgroup = "kr-tech-cards-cooling"
 		recipe.localised_name = { "", flib_locale.of(original_recipe), " ", { "recipe-name.kr-cooling" } }
 		recipe.hide_from_signal_gui = false
-		local science_pack = data.raw.tool[original_recipe.name]
+		local science_pack = data.raw.item[original_recipe.name]
 		recipe.order = science_pack.order
 		recipe.icons = {
 			{ icon = science_pack.icon },

@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-matter-research-data",
 		enabled = false,
-		category = "cryogenics",
+		categories = { "cryogenics" },
 		energy_required = 30,
 		ingredients = {
 			{ type = "item", name = "kr-imersite-crystal", amount = 5 },
@@ -30,7 +30,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-metallurgic-research-data",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		surface_conditions = {
 			{
 				property = "pressure",
@@ -51,7 +51,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-agricultural-research-data",
-		category = "organic",
+		categories = { "organic" },
 		subgroup = "science-pack",
 		surface_conditions = {
 			{
@@ -76,7 +76,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-electromagnetic-research-data",
-		category = "electromagnetics",
+		categories = { "electromagnetics" },
 		surface_conditions = {
 			{
 				property = "magnetic-field",
@@ -98,7 +98,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-cryogenic-research-data",
-		category = "cryogenics",
+		categories = { "cryogenics" },
 		surface_conditions = {
 			{
 				property = "pressure",
@@ -145,7 +145,7 @@ data:extend({
 		},
 		enabled = false,
 		allow_productivity = true,
-		category = "cryogenics",
+		categories = { "cryogenics" },
 		ingredients = {
 			{ type = "item", name = "promethium-asteroid-chunk", amount = 25 },
 			{ type = "item", name = "quantum-processor", amount = 1 },
@@ -204,7 +204,13 @@ data.raw.recipe["kr-singularity-tech-card"].surface_conditions = {
 data_util.add_or_replace_product(
 	"kr-singularity-tech-card",
 	"kr-matter-stabilizer",
-	{ type = "item", name = "kr-matter-stabilizer", amount = 1, probability = 0.9, ignored_by_productivity = 1 }
+	{
+		type = "item",
+		name = "kr-matter-stabilizer",
+		amount = 1,
+		independent_probability = 0.9,
+		ignored_by_productivity = 1,
+	}
 )
 
 data_util.make_tech_card("kr-matter-tech-card", {

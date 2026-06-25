@@ -98,7 +98,7 @@ table.insert(recipe["scrap-recycling"].results, 8, {
 	type = "item",
 	name = "kr-electronic-components",
 	amount = 1,
-	probability = 0.04,
+	independent_probability = 0.04,
 	show_details_in_recipe_tooltip = false,
 })
 
@@ -106,7 +106,7 @@ data_util.add_or_replace_product("scrap-recycling", "solid-fuel", {
 	type = "item",
 	name = "electronic-circuit",
 	amount = 1,
-	probability = 0.10,
+	independent_probability = 0.10,
 	show_details_in_recipe_tooltip = false,
 })
 data_util.add_or_replace_product("molten-iron", "molten-iron", { type = "fluid", name = "molten-iron", amount = 300 })
@@ -121,8 +121,8 @@ data_util.add_or_replace_product(
 	{ type = "fluid", name = "lubricant", amount = 40 }
 )
 
-recipe["express-underground-belt"].category = "pressing"
-recipe["express-splitter"].category = "pressing"
+recipe["express-underground-belt"].categories = { "crafting-with-fluid", "metallurgy" }
+recipe["express-splitter"].categories = { "crafting-with-fluid", "metallurgy" }
 
 recipe["express-underground-belt"].main_product = "express-underground-belt"
 recipe["express-splitter"].main_product = "express-splitter"
@@ -133,7 +133,7 @@ data_util.remove_ingredient("lithium", "holmium-plate")
 data_util.remove_ingredient("kr-logo", "kr-poop")
 data_util.remove_ingredient("kr-basic-railgun-shell", "advanced-circuit")
 
-recipe["wood-processing"].surface_conditions = nil
+recipe["tree-seed"].surface_conditions = nil
 
 recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
 recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"

@@ -16,7 +16,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-biter-biomass",
 		enabled = false,
-		category = "kr-crushing",
+		categories = { "kr-crushing" },
 		energy_required = 1,
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/biomass.png", scale = 1, shift = { 8, 8 } },
@@ -39,7 +39,7 @@ data:extend({
 		type = "recipe",
 		name = "kr-pentapod-biomass",
 		enabled = false,
-		category = "kr-crushing",
+		categories = { "kr-crushing" },
 		energy_required = 1,
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/biomass.png", scale = 1, shift = { 8, 8 } },

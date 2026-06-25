@@ -1,6 +1,7 @@
 local data_util = require("data-util")
 local flib_table = require("__flib__.table")
 
+data.raw.fluid["steam"].max_temperature = 4015
 table.insert(
 	flib_table.get_or_insert(data.raw.armor["mech-armor"], "resistances", {}),
 	{ type = "kr-radioactive", decrease = 6, percent = 60 }
@@ -49,28 +50,28 @@ data_util.hide("kr-legacy-steel-pipe-to-ground")
 data_util.hide("kr-gps-satellite")
 data_util.hide("kr-electric-mining-drill-mk3")
 
-data.raw.tool["agricultural-science-pack"].spoil_result = "kr-blank-tech-card"
+data.raw.item["agricultural-science-pack"].spoil_result = "kr-blank-tech-card"
 
 --order
 data.raw.item["kr-advanced-furnace"].order = "d[foundry]-a[advanced-furnace]"
 data.raw.item["kr-electric-mining-drill-mk2"].order = "a[items]-ba[electric-mining-drill-mk2]"
 
 -- stylua: ignore start
-data_util.set_icon(data.raw.tool["metallurgic-science-pack"], "__k2so-assets__/icons/cards/metallurgy-tech-card.png")
-data_util.set_icon(data.raw.tool["electromagnetic-science-pack"],"__k2so-assets__/icons/cards/electromagnetic-tech-card.png")
-data_util.set_icon(data.raw.tool["agricultural-science-pack"], "__k2so-assets__/icons/cards/agricultural-tech-card.png")
-data_util.set_icon(data.raw.tool["cryogenic-science-pack"], "__k2so-assets__/icons/cards/cryogenic-tech-card.png")
-data_util.set_icon(data.raw.tool["promethium-science-pack"], "__k2so-assets__/icons/cards/promethium-tech-card.png")
+data_util.set_icon(data.raw.item["metallurgic-science-pack"], "__k2so-assets__/icons/cards/metallurgy-tech-card.png")
+data_util.set_icon(data.raw.item["electromagnetic-science-pack"],"__k2so-assets__/icons/cards/electromagnetic-tech-card.png")
+data_util.set_icon(data.raw.item["agricultural-science-pack"], "__k2so-assets__/icons/cards/agricultural-tech-card.png")
+data_util.set_icon(data.raw.item["cryogenic-science-pack"], "__k2so-assets__/icons/cards/cryogenic-tech-card.png")
+data_util.set_icon(data.raw.item["promethium-science-pack"], "__k2so-assets__/icons/cards/promethium-tech-card.png")
 
-data.raw.tool["electromagnetic-science-pack"].localised_name = { "item-name.kr-electromagnetic-tech-card" }
-data.raw.tool["metallurgic-science-pack"].localised_name = { "item-name.kr-metallurgic-tech-card" }
-data.raw.tool["agricultural-science-pack"].localised_name = { "item-name.kr-agricultural-tech-card" }
-data.raw.tool["cryogenic-science-pack"].localised_name = { "item-name.kr-cryogenic-tech-card" }
-data.raw.tool["promethium-science-pack"].localised_name = { "item-name.kr-promethium-tech-card" }
+data.raw.item["electromagnetic-science-pack"].localised_name = { "item-name.kr-electromagnetic-tech-card" }
+data.raw.item["metallurgic-science-pack"].localised_name = { "item-name.kr-metallurgic-tech-card" }
+data.raw.item["agricultural-science-pack"].localised_name = { "item-name.kr-agricultural-tech-card" }
+data.raw.item["cryogenic-science-pack"].localised_name = { "item-name.kr-cryogenic-tech-card" }
+data.raw.item["promethium-science-pack"].localised_name = { "item-name.kr-promethium-tech-card" }
 -- stylua: ignore end
 
 local function add_light(item)
-	local card = data.raw.tool[item]
+	local card = data.raw.item[item]
 	card.pictures = {
 		layers = {
 			{

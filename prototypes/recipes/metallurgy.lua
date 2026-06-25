@@ -5,7 +5,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-molten-rare-metals-from-lava",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "a[melting]-a[lava-c]",
 		icon = "__k2so-assets__/icons/recipes/molten-rare-metals-from-lava.png",
@@ -27,7 +27,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-molten-rare-metals",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "a[melting]-c[molten-rare-metals]",
 		icon = "__k2so-assets__/icons/recipes/melting-rare-metals.png",
@@ -47,7 +47,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-molten-enriched-rare-metals",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "a[melting]-f[molten-rare-metals]",
 		icon = "__k2so-assets__/icons/recipes/melting-enriched-rare-metals.png",
@@ -66,7 +66,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-rare-metals",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ca[casting-molten-rare-metals]",
 		icons = {
@@ -100,7 +100,7 @@ data:extend({
 		type = "recipe",
 		name = "molten-enriched-copper",
 		icon = "__k2so-assets__/icons/recipes/melting-enriched-copper.png",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "a[melting]-e[molten-copper]",
 		auto_recycle = false,
@@ -123,7 +123,7 @@ data:extend({
 		type = "recipe",
 		name = "molten-enriched-iron",
 		icon = "__k2so-assets__/icons/recipes/melting-enriched-iron.png",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "a[melting]-d[molten-iron]",
 		auto_recycle = false,
@@ -148,7 +148,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-iron-beam",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ec[casting-iron-beam]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-iron-beam" } },
@@ -169,7 +169,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-steel-beam",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-eb[casting-steel-beam]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-steel-beam" } },
@@ -190,7 +190,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-steel-gear",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-d[casting-steel-gear]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-steel-gear-wheel" } },
@@ -211,7 +211,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-steel-pipe",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "energy-pipe-distribution",
 		order = "b[casting]-f[steel-pipe]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "entity-name.kr-steel-pipe" } },
@@ -232,7 +232,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-steel-pipe-to-ground",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "energy-pipe-distribution",
 		order = "b[casting]-g[steel-pipe-to-ground.png]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "entity-name.kr-steel-pipe-to-ground" } },
@@ -254,7 +254,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-refined-concrete-from-molten-iron",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ga[refined-concrete]",
 		localised_name = { "", { "item-name.refined-concrete" }, " ", { "recipe-name.kr-from-molten-iron" } },
@@ -277,7 +277,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-imersium-plate",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-cb[imersium-plate]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-imersium-plate" } },
@@ -299,7 +299,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-imersium-beam",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ec[imersium-beam]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-imersium-beam" } },
@@ -321,7 +321,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "kr-casting-imersium-gear-wheel",
-		category = "metallurgy",
+		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-da[imersium-gear-wheel]",
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-imersium-gear-wheel" } },
