@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: 2026-04-19
+Date: 2026-06-25
   Info:
-    - This updates changes K2SO to dependent on K2 directly instead of being a fork. This shouldn't affect gameplay in any major way, but it makes sure K2SO is always on par with bugfixes with K2 and makes mod maintenance easier. Your game saves should be save, but applying vannila K2 migrations may break mixed pipe networks or break interplanetary teleporters, so make sure you don't use those before updating.
+    - This updates changes K2SO to dependent on K2 directly instead of being a fork. There is some chance it may break mod compatibility, remember you can always revert mod verion temporarily.
   Changes:
     - Coal filtration now uses 400 heavy oil, to make sure it never causes infinite loop. It's now intended to be used on Fulgora
     - Adv chemical plant now can do oil refinery recipes
@@ -11,6 +11,9 @@ Date: 2026-04-19
     - Singularity labs are more expensive and require late game space age items
     - Biolabs need advanced labs instead of basic ones
     - Bio processing circuits recipe outputs twice as much processing units with +50% speed and can only be made in biochamber
+    - Quarry drills now drop imersite in stacks
+  Bugfixes:
+    - Underground steel pipes no longer connect to iron pipes and vice versa
   Features:
     - Added option to revert thruster fuel to require water again
     - Promethium tech card must be researched in space using singularity labs. Can be disabled in settings
