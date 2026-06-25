@@ -46,7 +46,7 @@ end
 ---@param Item String
 ---@param Weight Double_in_kg
 function data_util.set_weight(item, weight)
-	local types = { "item", "tool", "ammo", "gun", "capsule" }
+	local types = { "item", "ammo", "gun", "capsule" }
 	for _, type in pairs(types) do
 		if data.raw[type][item] then
 			data.raw[type][item].weight = weight * kg

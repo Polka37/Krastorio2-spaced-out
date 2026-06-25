@@ -6,7 +6,7 @@ require("prototypes.updates.base.recipes")
 require("prototypes.updates.base.resources")
 require("prototypes.updates.base.technologies")
 require("prototypes.updates.base.weapons-realistic")
---require("prototypes.updates.base.weight")
+require("prototypes.updates.base.weight")
 
 require("prototypes.updates.adjust-stack-sizes")
 require("prototypes.updates.generate-matter-recipes")
