@@ -26,6 +26,31 @@ data:extend({
 			{ type = "unlock-recipe", recipe = "kr-casting-imersium-gear-wheel" },
 		},
 	},
+	{
+		type = "technology",
+		name = "kr-geothermal",
+		icon_size = 256,
+		icons = {
+			{ icon = "__space-age__/graphics/icons/fluid/lava.png", scale = 0.5, shift = { 0, -10 } },
+			{ icon = "__base__/graphics/icons/fluid/steam.png", scale = 0.7, shift = { 0, 12 } },
+		},
+		unit = {
+			time = 30,
+			count = 3000,
+			ingredients = {
+				{ "production-science-pack", 1 },
+				{ "utility-science-pack", 1 },
+				{ kr_optimization_tech_card_name, 1 },
+				{ "kr-advanced-tech-card", 1 },
+				{ "metallurgic-science-pack", 1 },
+			},
+		},
+		prerequisites = { "kr-advanced-tech-card", "metallurgic-science-pack" },
+		effects = {
+			{ type = "unlock-recipe", recipe = "kr-geothermal" },
+			{ type = "unlock-recipe", recipe = "kr-advanced-steam-turbine" },
+		},
+	},
 
 	--Fulgora
 
