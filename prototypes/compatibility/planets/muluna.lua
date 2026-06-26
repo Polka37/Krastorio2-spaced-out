@@ -22,10 +22,10 @@ data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].localised_descripti
 	{ "entity-description.muluna-cycling-steam-turbine-k2" }
 
 --Make exploration science pack a tech card
-data_util.set_icon(data.raw.tool["interstellar-science-pack"], "__k2so-assets__/icons/cards/exploration-tech-card.png")
-data.raw.tool["interstellar-science-pack"].localised_name = { "item-name.exploration-tech-card" }
-data.raw.tool["interstellar-science-pack"].order = "b09[exploration-tech-card]"
-data.raw.tool["interstellar-science-pack"].pictures = {
+data_util.set_icon(data.raw.item["interstellar-science-pack"], "__k2so-assets__/icons/cards/exploration-tech-card.png")
+data.raw.item["interstellar-science-pack"].localised_name = { "item-name.exploration-tech-card" }
+data.raw.item["interstellar-science-pack"].order = "b09[exploration-tech-card]"
+data.raw.item["interstellar-science-pack"].pictures = {
 	layers = {
 		{
 			filename = "__k2so-assets__/icons/cards/exploration-tech-card.png",
@@ -142,7 +142,7 @@ if not mods["maraxsis"] then
 	data.raw.fluid["maraxsis-atmosphere"].localised_description = { "fluid-description.kr-muluna-atmosphere" }
 end
 
-data.raw.recipe["carbon-dioxide"].category = "kr-atmosphere-condensation"
+data.raw.recipe["carbon-dioxide"].categories = { "kr-atmosphere-condensation" }
 data.raw.recipe["carbon-dioxide"].energy_required = data.raw.recipe["maraxsis-atmosphere"].energy_required / 2
 
 data.raw.recipe["atmosphere-oxygen-separation"].surface_conditions = {

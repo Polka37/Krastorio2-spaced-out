@@ -6,7 +6,7 @@ local data_util = require("data-util")
 
 table.insert(
 	data.raw.resource["multi-ore"].minable.results,
-	{ type = "item", name = "kr-rare-metal-ore", amount = 1, probability = 2 / 100 }
+	{ type = "item", name = "kr-rare-metal-ore", amount = 1, independent_probability = 2 / 100 }
 )
 
 if not mods["aai-industry"] then
@@ -117,7 +117,7 @@ data:extend({
 		name = "kr-gamma-core",
 		enabled = false,
 		energy_required = 120,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		auto_recycle = true,
 		ingredients = {
 			{ type = "item", name = "kr-ai-core", amount = 1 },
@@ -135,7 +135,7 @@ data:extend({
 		name = "kr-beta-core",
 		enabled = false,
 		energy_required = 240,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		auto_recycle = true,
 		ingredients = {
 			{ type = "item", name = "kr-ai-core", amount = 1 },
@@ -154,7 +154,7 @@ data:extend({
 		name = "kr-alpha-core",
 		enabled = false,
 		energy_required = 600,
-		category = "electronics",
+		categories = { "crafting", "electromagnetics" },
 		auto_recycle = true,
 		ingredients = {
 			{ type = "item", name = "kr-ai-core", amount = 1 },
