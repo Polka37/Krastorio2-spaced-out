@@ -2,7 +2,12 @@
 Version: 2.0.2
 Date: 2026-06-26
   Bugfixes:
-    - Biofuel couldn't be used in vehicles
+    - Fixed that biofuel couldn't be used in vehicles
+  Features:
+    - Added recipe to craft steam from lava on Vulcanus
+    - Added imersite productivity research
+  Compatibility:
+    - Fixed Muluna compatibility
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 2026-06-25
