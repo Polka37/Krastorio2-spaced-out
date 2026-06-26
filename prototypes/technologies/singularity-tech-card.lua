@@ -128,4 +128,64 @@ data:extend({
 			{ type = "unlock-recipe", recipe = "kr-superior-long-inserter" },
 		},
 	},
+	{
+		type = "technology",
+		name = "kr-imersite-productivity",
+		icons = util.technology_icon_constant_recipe_productivity(
+			"__k2so-assets__/technologies/imersite-productivity.png"
+		),
+		icon_size = 256,
+		effects = {
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-imersium-plate",
+				change = 0.1,
+			},
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-imersite-crystal",
+				change = 0.1,
+			},
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-easy-imersium-beam",
+				change = 0.1,
+			},
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-easy-imersium-gear-wheel",
+				change = 0.1,
+			},
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-casting-imersium-plate",
+				change = 0.1,
+			},
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-casting-imersium-gear-wheel",
+				change = 0.1,
+			},
+			{
+				type = "change-recipe-productivity",
+				recipe = "kr-casting-imersium-beam",
+				change = 0.1,
+			},
+		},
+		prerequisites = { "kr-singularity-tech-card" },
+		unit = {
+			count_formula = "1.5^L*2000",
+			ingredients = {
+				{ "production-science-pack", 1 },
+				{ kr_optimization_tech_card_name, 1 },
+				{ "electromagnetic-science-pack", 1 },
+				{ "kr-matter-tech-card", 1 },
+				{ "kr-advanced-tech-card", 1 },
+				{ "kr-singularity-tech-card", 1 },
+			},
+			time = 60,
+		},
+		max_level = "infinite",
+		upgrade = true,
+	},
 })

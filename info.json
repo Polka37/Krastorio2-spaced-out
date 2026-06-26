@@ -11,7 +11,7 @@
     "base >= 2.1.0",
     "space-age >= 2.1.0",
     "Krastorio2",
-    "k2so-assets >= 1.0.6",
+    "k2so-assets >= 1.0.7",
     "! factorioplus"
   ],
   "space_travel_required": true
