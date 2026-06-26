@@ -19,7 +19,6 @@ local function update_fuel(
 	fuel_emissions_multiplier
 )
 	local item = data.raw.item[item]
-	item.fuel_category = "chemical"
 	item.fuel_value = fuel_value
 	item.fuel_acceleration_multiplier = fuel_acceleration_multiplier
 	item.fuel_top_speed_multiplier = fuel_top_speed_multiplier
