@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.4
 Date: 2026-06-27
+  Changes:
+    - changed imersite, rare metals, mineral water settings order in map gen resources tab
   Bugfixes:
     - Fixed that crash landing lab couldn't research with automation tech cards 
 ---------------------------------------------------------------------------------------------------
