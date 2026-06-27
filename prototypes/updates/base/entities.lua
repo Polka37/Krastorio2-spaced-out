@@ -94,6 +94,8 @@ data.raw.splitter["kr-superior-splitter"].heating_energy = "40kW"
 data.raw["underground-belt"]["kr-superior-underground-belt"].heating_energy = "250kW"
 
 --Add stacking to superior inserters
+data.raw.inserter["kr-superior-inserter"].max_belt_stack_size = 4
+data.raw.inserter["kr-superior-long-inserter"].max_belt_stack_size = 4
 data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
 data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 
