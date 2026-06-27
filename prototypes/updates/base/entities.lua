@@ -48,6 +48,23 @@ table.insert(
 	{ type = "item", name = "stone-brick", amount = 111 }
 )
 
+--Allow mirroring
+data.raw["assembling-machine"]["kr-advanced-chemical-plant"].use_mirroring = true
+data.raw["assembling-machine"]["kr-electrolysis-plant"].use_mirroring = true
+data.raw["assembling-machine"]["kr-filtration-plant"].use_mirroring = true
+data.raw["assembling-machine"]["kr-fuel-refinery"].use_mirroring = true
+data.raw["assembling-machine"]["kr-atmospheric-condenser"].use_mirroring = true
+data.raw["assembling-machine"]["kr-matter-associator"].use_mirroring = true
+data.raw["assembling-machine"]["kr-quantum-computer"].use_mirroring = true
+data.raw["assembling-machine"]["kr-research-server"].use_mirroring = true
+data.raw["assembling-machine"]["kr-matter-plant"].use_mirroring = true
+data.raw["assembling-machine"]["kr-fusion-reactor"].use_mirroring = true
+data.raw["assembling-machine"]["kr-advanced-furnace"].use_mirroring = true
+data.raw["assembling-machine"]["kr-advanced-assembling-machine"].use_mirroring = true
+data.raw["assembling-machine"]["kr-greenhouse"].use_mirroring = true
+data.raw["assembling-machine"]["kr-bio-lab"].use_mirroring = true
+data.raw.furnace["kr-flare-stack"].use_mirroring = true
+
 --Add heat dissipations
 data.raw["assembling-machine"]["kr-advanced-chemical-plant"].heating_energy = "100kW"
 data.raw["assembling-machine"]["kr-electrolysis-plant"].heating_energy = "100kW"
@@ -433,7 +450,6 @@ data.raw["assembling-machine"]["kr-advanced-furnace"].fluid_boxes = {
 }
 
 --flare stack
-data.raw.furnace["kr-flare-stack"].forced_symmetry = "diagonal-pos"
 data.raw.furnace["kr-flare-stack"].graphics_set_flipped = {
 	animation = {
 		north = {
