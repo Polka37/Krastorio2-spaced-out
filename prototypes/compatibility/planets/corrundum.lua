@@ -12,7 +12,7 @@ data:extend({
 		order = "h[rare-metals]",
 		enabled = false,
 		energy_required = 15,
-		category = "chemistry",
+		categories = { "chemistry" },
 		main_product = "kr-rare-metal-ore",
 		ingredients = {
 			{ type = "fluid", name = "mixed-sulfate-solution", amount = 300 },
