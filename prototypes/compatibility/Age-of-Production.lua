@@ -12,6 +12,8 @@ data.raw.technology["aop-lumber-mill"].research_trigger = { type = "craft-item",
 
 data_util.add_recipe_unlock("aop-lumber-mill", "aop-wood-planks")
 
+table.insert(data.raw["assembling-machine"]["aop-quantum-assembler"].crafting_categories, "kr-tech-cards")
+
 if not mods["lignumis"] then
 	data.raw.technology["tree-seeding"] = nil
 end
