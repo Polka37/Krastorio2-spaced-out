@@ -7,6 +7,8 @@ if settings.startup["kr-promethium-tech-card-space-only"].value then
 	end
 end
 
+data.raw.lab["kr-spaceship-research-computer"].inputs = { "automation-science-pack" }
+
 --sync all labs inputs
 data.raw.lab["biolab"].inputs = data.raw.lab["lab"].inputs
 data.raw.lab["kr-advanced-lab"].inputs = data.raw.lab["lab"].inputs
