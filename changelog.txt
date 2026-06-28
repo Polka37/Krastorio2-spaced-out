@@ -4,6 +4,7 @@ Date: 2026-06-28
   Bugfixes:
     - Fixed that assembler could craft biochamber recipes
     - Fixed that "Welcome to the jugnle" research didn't unlock any recipes
+    - Fixed coke from carbon locale
   Compatibility:
     - Fixed aai loaders compatibility
     - Reimplemented aai compatibility
