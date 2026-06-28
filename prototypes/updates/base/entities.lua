@@ -209,7 +209,6 @@ table.insert(data.raw["assembling-machine"]["kr-greenhouse"].allowed_effects, "q
 data.raw["furnace"]["kr-crusher"].module_slots = 2
 
 --crafting catefories
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "organic")
 table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "kr-electrolysis")
 table.insert(data.raw["assembling-machine"]["cryogenic-plant"].crafting_categories, "kr-fuel-refinery")
 table.insert(data.raw["assembling-machine"]["crusher"].crafting_categories, "kr-crushing")
