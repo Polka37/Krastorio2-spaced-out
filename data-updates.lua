@@ -20,6 +20,7 @@ require("prototypes.compatibility.planets.maraxsis")
 require("prototypes.compatibility.planets.moshine")
 require("prototypes.compatibility.planets.muluna")
 require("prototypes.compatibility.Age-of-Production")
+require("prototypes.compatibility.aai-industry")
 
 -- Must be after Muluna
 require("prototypes.updates.generate-tech-card-cooling")
