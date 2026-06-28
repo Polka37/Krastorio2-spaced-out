@@ -32,19 +32,6 @@ data:extend({
 	},
 	{
 		type = "technology",
-		name = "kr-decorations",
-		icon = "__Krastorio2Assets__/technologies/decorations.png",
-		icon_size = 256,
-		research_trigger = {
-			type = "craft-item",
-			item = "kr-greenhouse",
-			count = 10,
-		},
-		prerequisites = { "kr-greenhouse" },
-		effects = {}, -- This is populated during data-updates by prototypes/others/greenhouse.lua
-	},
-	{
-		type = "technology",
 		name = "kr-laboratory",
 		icon = "__base__/graphics/technology/research-speed.png",
 		icon_size = 256,
@@ -122,6 +109,13 @@ data:extend({
 		},
 	},
 })
+
+data.raw.technology["kr-decorations"].unit = nil
+data.raw.technology["kr-decorations"].research_trigger = {
+	type = "craft-item",
+	item = "kr-greenhouse",
+	count = 1,
+}
 
 data.raw.technology["automation"].unit = nil
 data.raw.technology["automation"].research_trigger = {

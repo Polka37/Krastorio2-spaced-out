@@ -3,6 +3,7 @@ Version: 2.0.5
 Date: 2026-06-28
   Bugfixes:
     - Fixed that assembler could craft biochamber recipes
+    - Fixed that "Welcome to the jugnle" research didn't unlock any recipes
   Compatibility:
     - Fixed aai loaders Compatibility
     - Reimplemented aai compatibility
