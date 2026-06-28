@@ -5,6 +5,7 @@ Date: 2026-06-28
     - Fixed that assembler could craft biochamber recipes
   Compatibility:
     - Fixed aai loaders Compatibility
+    - Reimplemented aai compatibility
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.4
 Date: 2026-06-27
