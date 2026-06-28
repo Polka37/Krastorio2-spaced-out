@@ -13,6 +13,13 @@ do
 	effects.allow_multiple_results = true
 end
 
+--Unify trees
+data_util.add_or_replace_product("tree-01", "tree-01", { type = "item", name = "muluna-sapling", amount = 1 })
+data.raw.recipe["tree-01"].hidden_in_factoriopedia = true
+data.raw.recipe["tree-01"].subgroup = "trees"
+data.raw.recipe["tree-01"].order = "a[tree-01]"
+data.raw.recipe["tree-01"].localised_name = { "entity-name.tree" }
+
 --Buff condesation turbine
 data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].effectivity = 0.95
 data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].max_fluid_usage = 100 / 60

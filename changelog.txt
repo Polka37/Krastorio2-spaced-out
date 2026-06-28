@@ -5,8 +5,9 @@ Date: 2026-06-28
     - Fixed that assembler could craft biochamber recipes
     - Fixed that "Welcome to the jugnle" research didn't unlock any recipes
   Compatibility:
-    - Fixed aai loaders Compatibility
+    - Fixed aai loaders compatibility
     - Reimplemented aai compatibility
+    - Trees produced in K2 greenhouse can be used in Muluna recipes
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.4
 Date: 2026-06-27
