@@ -93,6 +93,11 @@ data_util.add_or_replace_ingredient(
 	"lubricant",
 	{ type = "fluid", name = "lubricant", amount = 80 }
 )
+data_util.add_or_replace_ingredient(
+	"express-underground-belt",
+	"lubricant",
+	{ type = "fluid", name = "lubricant", amount = 40 }
+)
 
 table.insert(recipe["scrap-recycling"].results, 8, {
 	type = "item",
@@ -114,11 +119,6 @@ data_util.add_or_replace_product(
 	"molten-copper",
 	"molten-copper",
 	{ type = "fluid", name = "molten-copper", amount = 300 }
-)
-data_util.add_or_replace_product(
-	"express-underground-belt",
-	"lubricant",
-	{ type = "fluid", name = "lubricant", amount = 40 }
 )
 
 recipe["express-underground-belt"].categories = { "crafting-with-fluid", "metallurgy" }
