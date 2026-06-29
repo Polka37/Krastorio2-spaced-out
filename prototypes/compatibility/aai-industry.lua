@@ -1,6 +1,6 @@
 local data_util = require("data-util")
 
-if mods["aai-loaders"] then
+if mods["aai-loaders"] and not settings.startup["aai-loaders-mode"].value == "graphics-only" then
 	data_util.hide("aai-kr-advanced-loader")
 	data.raw["loader-1x1"]["aai-kr-advanced-loader"].hidden = true
 	data.raw["loader-1x1"]["aai-kr-advanced-loader"].hidden_in_factoriopedia = true
@@ -9,6 +9,11 @@ if mods["aai-loaders"] then
 	data.raw["loader-1x1"]["aai-turbo-loader"].next_upgrade = "aai-kr-superior-loader"
 	data.raw.technology["aai-kr-advanced-loader"].prerequisites = nil
 	data_util.add_prerequisite("aai-kr-superior-loader", "aai-turbo-loader")
+	data_util.add_or_replace_ingredient(
+		"aai-kr-superior-loader",
+		"aai-kr-advanced-loader",
+		{ type = "item", name = "aai-turbo-loader", amount = 1 }
+	)
 end
 
 if not mods["aai-industry"] then
