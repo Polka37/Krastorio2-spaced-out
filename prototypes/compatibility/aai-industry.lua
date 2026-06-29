@@ -1,6 +1,6 @@
 local data_util = require("data-util")
 
-if mods["aai-loaders"] and not settings.startup["aai-loaders-mode"].value == "graphics-only" then
+if mods["aai-loaders"] and settings.startup["aai-loaders-mode"].value ~= "graphics-only" then
 	data_util.hide("aai-kr-advanced-loader")
 	data.raw["loader-1x1"]["aai-kr-advanced-loader"].hidden = true
 	data.raw["loader-1x1"]["aai-kr-advanced-loader"].hidden_in_factoriopedia = true
