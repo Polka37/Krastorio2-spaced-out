@@ -63,6 +63,16 @@ data_util.add_or_replace_ingredient(
 	"molten-copper",
 	{ type = "fluid", name = "molten-copper", amount = 120 }
 )
+-- stylua: ignore start
+data_util.add_or_replace_ingredient("speed-module-3", "tungsten-carbide", { type = "item", name = "tungsten-carbide", amount = 1})
+data_util.add_or_replace_ingredient("speed-module-3", "speed-module-2", { type = "item", name = "speed-module-2", amount = 4})
+data_util.add_or_replace_ingredient("productivity-module-3", "biter-egg", { type = "item", name = "biter-egg", amount = 1})
+data_util.add_or_replace_ingredient("productivity-module-3", "productivity-module-2", { type = "item", name = "productivity-module-2", amount = 4})
+data_util.add_or_replace_ingredient("efficiency-module-3", "spoilage", { type = "item", name = "spoilage", amount = 5})
+data_util.add_or_replace_ingredient("efficiency-module-3", "efficiency-module-2", { type = "item", name = "efficiency-module-2", amount = 4})
+data_util.add_or_replace_ingredient("quality-module-3", "superconductor", { type = "item", name = "superconductor", amount = 1})
+data_util.add_or_replace_ingredient("quality-module-3", "quality-module-2", { type = "item", name = "quality-module-2", amount = 4})
+-- stylua: ignore end
 
 if not settings.startup["kr-revert-thruster-fuel-changes"].value then
 	data_util.add_or_replace_ingredient("thruster-fuel", "water", { type = "fluid", name = "kr-hydrogen", amount = 6 })

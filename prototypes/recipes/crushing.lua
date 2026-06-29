@@ -10,10 +10,6 @@ crushing_lib.make_recipe(data.raw.item["stack-inserter"], {
 		{ type = "item", name = "carbon-fiber", amount = 1 },
 	},
 })
-data.raw.recipe["kr-crush-stack-inserter"].allow_as_intermediate = false
-data.raw.recipe["kr-crush-long-handed-inserter"].allow_as_intermediate = false
-data.raw.recipe["kr-crush-kr-superior-inserter"].allow_as_intermediate = false
-data.raw.recipe["kr-crush-kr-superior-long-inserter"].allow_as_intermediate = false
 
 data:extend({
 	{

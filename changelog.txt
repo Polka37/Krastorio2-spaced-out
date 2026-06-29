@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 2026-06-29
+  Changes:
+    - Tier 3 modules once again require vanilla spece age ingredients
   Bugfixes:
     - Fixed that express underground belts produced lubricant instead of requiring it 
 ---------------------------------------------------------------------------------------------------
