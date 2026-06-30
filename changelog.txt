@@ -2,6 +2,7 @@
 Version: 2.0.8
 Date: 2026-06-30
   Changes:
+    - Buffed energy storage throughput from 5 MW to 20 MW
     - Removed imersite crushing recipe to prevent positive infinite loops, recyclers work as normal
     - Removed making water from oxygen and hydrogen to prevent infinite loops
     - Dirty water filtering recipes no longer produce surplus water in advanced chemical plant 
