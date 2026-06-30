@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.8
+Date: 2026-06-30
+  Changes:
+    - Dirty water filtering recipes no longer produce surplus water in advanced chemical plant 
+---------------------------------------------------------------------------------------------------
 Version: 2.0.7
 Date: 2026-06-29
   Compatibility:

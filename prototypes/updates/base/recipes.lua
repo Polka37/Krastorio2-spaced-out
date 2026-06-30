@@ -117,6 +117,22 @@ table.insert(recipe["scrap-recycling"].results, 8, {
 	show_details_in_recipe_tooltip = false,
 })
 
+data_util.add_or_replace_product(
+	"kr-filter-iron-ore-from-dirty-water",
+	"water",
+	{ type = "fluid", name = "water", amount = 100, ignored_by_productivity = 100 }
+)
+data_util.add_or_replace_product(
+	"kr-filter-copper-ore-from-dirty-water",
+	"water",
+	{ type = "fluid", name = "water", amount = 100, ignored_by_productivity = 100 }
+)
+data_util.add_or_replace_product(
+	"kr-filter-rare-metal-ore-from-dirty-water",
+	"water",
+	{ type = "fluid", name = "water", amount = 100, ignored_by_productivity = 100 }
+)
+
 data_util.add_or_replace_product("scrap-recycling", "solid-fuel", {
 	type = "item",
 	name = "electronic-circuit",
