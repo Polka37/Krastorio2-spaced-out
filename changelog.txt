@@ -3,6 +3,8 @@ Version: 2.0.9
 Date: 2026-06-30
   Changes:
     - Radar technology no longer requires chemical tech card
+  Locale:
+    - Updated Polish locale thanks to S3BA-pl (#173)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 2026-06-30
