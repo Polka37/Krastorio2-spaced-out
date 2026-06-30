@@ -2,6 +2,8 @@
 Version: 2.0.8
 Date: 2026-06-30
   Changes:
+    - Removed imersite crushing recipe to prevent positive infinite loops, recyclers work as normal
+    - Removed making water from oxygen and hydrogen to prevent infinite loops
     - Dirty water filtering recipes no longer produce surplus water in advanced chemical plant 
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.7

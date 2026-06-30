@@ -6,6 +6,8 @@ data.raw["item-group"]["kr-smelting-crafting"] = nil
 data.raw["item-subgroup"]["kr-smelting-crafting"].group = "intermediate-products"
 
 data_util.hide("kr-water-from-atmosphere")
+data_util.hide("kr-water")
+data_util.hide("kr-crush-kr-imersite-crystal")
 
 data_util.add_or_replace_ingredient(
 	"big-mining-drill",
