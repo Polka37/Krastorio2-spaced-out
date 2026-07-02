@@ -3,6 +3,7 @@ Version: 2.0.10
 Date: 2026-07-02
   Changes:
     - Recyclers require steel instead of rare metals once again
+    - Personal roboport mk2 can support up to 50 bots
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.9
 Date: 2026-06-30

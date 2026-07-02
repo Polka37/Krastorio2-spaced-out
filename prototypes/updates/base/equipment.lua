@@ -7,3 +7,5 @@ data.raw.item["battery-mk3-equipment"].icons = {
 	{ icon = "__k2so-assets__/icons/items/battery-mk3-equipment.png" },
 	{ icon = "__Krastorio2Assets__/icons/equipment/tier-3.png", icon_size = 64 },
 }
+
+data.raw["roboport-equipment"]["personal-roboport-mk2-equipment"].robot_limit = 50
