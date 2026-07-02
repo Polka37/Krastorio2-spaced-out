@@ -143,9 +143,13 @@ data_util.add_or_replace_product("scrap-recycling", "solid-fuel", {
 	independent_probability = 0.10,
 	show_details_in_recipe_tooltip = false,
 })
-data_util.add_or_replace_product("molten-iron", "molten-iron", { type = "fluid", name = "molten-iron", amount = 300 })
 data_util.add_or_replace_product(
-	"molten-copper",
+	"iron-ore-melting",
+	"molten-iron",
+	{ type = "fluid", name = "molten-iron", amount = 300 }
+)
+data_util.add_or_replace_product(
+	"copper-ore-melting",
 	"molten-copper",
 	{ type = "fluid", name = "molten-copper", amount = 300 }
 )
