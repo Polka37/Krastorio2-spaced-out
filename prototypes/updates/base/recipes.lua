@@ -110,6 +110,7 @@ data_util.add_or_replace_ingredient(
 	"lubricant",
 	{ type = "fluid", name = "lubricant", amount = 40 }
 )
+data_util.add_or_replace_ingredient("recycler", "kr-rare-metals", { type = "item", name = "steel-plate", amount = 20 })
 
 table.insert(recipe["scrap-recycling"].results, 8, {
 	type = "item",
