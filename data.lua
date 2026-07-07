@@ -35,3 +35,4 @@ require("prototypes.technologies.singularity-tech-card")
 require("prototypes.technologies.space-age")
 
 require("prototypes.final-fixes.voiding-blacklist")
+require("prototypes.updates.base.recycling")

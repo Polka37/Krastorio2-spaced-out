@@ -22,5 +22,6 @@ data:extend({
 		},
 		allow_productivity = true,
 		hide_from_signal_gui = false,
+		auto_recycle = false,
 	},
 })
