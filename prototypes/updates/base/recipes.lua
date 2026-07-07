@@ -44,6 +44,7 @@ data_util.add_or_replace_ingredient(
 	"steel-plate",
 	{ type = "item", name = "steel-plate", amount = 2 }
 )
+
 data_util.add_or_replace_ingredient("biolab", "lab", { type = "item", name = "kr-advanced-lab", amount = 1 })
 data_util.add_or_replace_ingredient(
 	"casting-iron-gear-wheel",
@@ -170,6 +171,21 @@ recipe["tree-seed"].surface_conditions = nil
 
 recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
 recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"
+
+-- Divide item bulk craft by 5
+function debulk(recipe)
+	for _, ingredients in pairs(recipe.ingredients) do
+		ingredients.amount = ingredients.amount / 5
+	end
+	for _, results in pairs(recipe.results) do
+		results.amount = results.amount / 5
+	end
+	recipe.energy_required = recipe.energy_required / 5
+end
+debulk(recipe["kr-iron-plate-from-enriched-iron"])
+debulk(recipe["kr-copper-plate-from-enriched-copper"])
+debulk(recipe["kr-rare-metals-from-enriched-rare-metals"])
+debulk(recipe["kr-rare-metals"])
 
 --replace vanilla ammonia fuel with K2 one while retaining prototype name
 local ammonia_fuel = table.deepcopy(recipe["kr-rocket-fuel-with-ammonia"])
