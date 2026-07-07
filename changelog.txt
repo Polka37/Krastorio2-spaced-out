@@ -5,6 +5,7 @@ Date: 2026-07-07
     - All metal plate smelting are crafted single plate at time instead of five, except steel plate
   Bugfixes:
     - Fixed that many items recycled into it's ingredients instead of itself
+    - Fixed that enriched ores had multiple factoriopedia entries
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.11
 Date: 2026-07-02

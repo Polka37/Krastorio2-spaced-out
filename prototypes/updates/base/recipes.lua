@@ -172,6 +172,10 @@ recipe["tree-seed"].surface_conditions = nil
 recipe["electronic-circuit"].order = "b[circuits]-a[electronic-circuit-original]"
 recipe["processing-unit"].order = "b[circuits]-c[processing-circuit-a]"
 
+recipe["kr-enriched-copper"].main_product = "kr-enriched-copper"
+recipe["kr-enriched-iron"].main_product = "kr-enriched-iron"
+recipe["kr-enriched-rare-metals"].main_product = "kr-enriched-rare-metals"
+
 -- Divide item bulk craft by 5
 function debulk(recipe)
 	for _, ingredients in pairs(recipe.ingredients) do
