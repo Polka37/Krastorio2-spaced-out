@@ -2,7 +2,8 @@
 Version: 2.0.13
 Date: 2026-07-08
   Compatibility:
-    - Fixed advanced assembler, research server, quantum computer ports didn't work with muluna data
+    - Fixed advanced assembler, research server, quantum computer ports didn't work with Muluna data
+    - Muluna interstellar tech card with cooling now can only be crafted on Muluna
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.12
 Date: 2026-07-07

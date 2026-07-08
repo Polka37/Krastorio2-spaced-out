@@ -52,3 +52,14 @@ for _, original_recipe in pairs(data.raw.recipe) do
 		end
 	end
 end
+
+--force cooling recipe for intersteller tech card to be bound to muluna
+if mods["planet-muluna"] then
+	data.raw.recipe["interstellar-science-pack-cooling"].surface_conditions = {
+		{
+			property = "gravity",
+			min = 2,
+			max = 2,
+		},
+	}
+end
