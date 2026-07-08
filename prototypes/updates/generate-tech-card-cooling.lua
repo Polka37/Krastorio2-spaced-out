@@ -40,13 +40,13 @@ for _, original_recipe in pairs(data.raw.recipe) do
 			)
 			data_util.add_recipe_unlock("kr-quantum-computer", recipe.name)
 			for _, ingredients in pairs(recipe.ingredients) do
-				--Add additional fluid to 3rd pipe input
+				--Add additional fluid to 2rd pipe input
 				if
 					ingredients.type == "fluid"
 					and ingredients.name ~= "fluoroketone-cold"
 					and ingredients.name ~= "muluna-astronomical-data"
 				then
-					ingredients.fluidbox_index = 3
+					ingredients.fluidbox_index = 2
 				end
 			end
 		end

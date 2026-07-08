@@ -339,14 +339,6 @@ data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes = {
 		secondary_draw_orders = { north = -1 },
 	},
 	{
-		--reserved for muluna data wire
-		production_type = "input",
-		volume = 1,
-		pipe_connections = {
-			{ flow_direction = "input", direction = defines.direction.north, position = { 0, 0 } },
-		},
-	},
-	{
 		production_type = "input",
 		pipe_picture = pipe_pictures,
 		pipe_covers = pipecoverspictures(),

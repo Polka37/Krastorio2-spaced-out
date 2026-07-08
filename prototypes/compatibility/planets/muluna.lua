@@ -55,93 +55,81 @@ data_util.set_icon(
 	256
 )
 data.raw.technology["interstellar-science-pack"].localised_name = { "item-name.exploration-tech-card" }
-
---Add pipe connections to research computers
-data.raw["assembling-machine"]["kr-quantum-computer"].fluid_boxes[2] = {
-	production_type = "input",
-	filter = "muluna-astronomical-data",
-	pipe_picture = nil,
-	pipe_covers = nil,
-	pipe_picture_frozen = nil,
-	pipe_covers_frozen = nil,
-	volume = 100,
-	pipe_connections = {
-		{
-			flow_direction = "input-output",
-			direction = defines.direction.west,
-			position = { -2.5, 0.5 },
-			connection_category = "data",
-		},
-		{
-			flow_direction = "input-output",
-			direction = defines.direction.east,
-			position = { 2.5, -0.5 },
-			connection_category = "data",
-		},
-	},
-	secondary_draw_orders = { north = -1 },
-}
-table.insert(data.raw["assembling-machine"]["kr-research-server"].fluid_boxes, 2, {
-	production_type = "input",
-	pipe_picture = nil,
-	pipe_covers = nil,
-	pipe_picture_frozen = nil,
-	pipe_covers_frozen = nil,
-	volume = 100,
-	pipe_connections = {
-		{
-			flow_direction = "input-output",
-			direction = defines.direction.east,
-			position = { 1, 0 },
-			connection_category = "data",
-		},
-		{
-			flow_direction = "input-output",
-			direction = defines.direction.west,
-			position = { -1, 0 },
-			connection_category = "data",
-		},
-	},
-	secondary_draw_orders = { north = -1 },
-})
 table.insert(
 	data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories,
 	"crafting-with-fluid-and-data"
 )
-table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].fluid_boxes, 2, {
-	production_type = "input",
-	pipe_picture = nil,
-	pipe_covers = nil,
-	pipe_picture_frozen = nil,
-	pipe_covers_frozen = nil,
-	volume = 100,
-	pipe_connections = {
-		{
-			flow_direction = "input",
-			direction = defines.direction.east,
-			position = { 2, 0 },
-			connection_category = "data",
-		},
-	},
-	secondary_draw_orders = { north = -1 },
-})
-table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].fluid_boxes, 4, {
-	production_type = "output",
-	pipe_picture = nil,
-	pipe_covers = nil,
-	pipe_picture_frozen = nil,
-	pipe_covers_frozen = nil,
-	volume = 100,
-	pipe_connections = {
-		{
-			flow_direction = "output",
-			direction = defines.direction.west,
-			position = { -2, 0 },
-			connection_category = "data",
-		},
-	},
-	secondary_draw_orders = { north = -1 },
-})
+
+--Add muluna data fluidboxes
+local function fluidbox(machine)
+	local Public = require("__planet-muluna__/lib/data-lib.lua")
+	local max_fluid_boxes = 30 --Assuming that no modded machines have this many fluidboxes.
+	local dummy_fluidboxes = max_fluid_boxes - 2
+
+	local function rotate_position(position)
+		local x = position.x or position[1]
+		local y = position.y or position[2]
+
+		return { -y, x }
+	end
+
+	local linked_connection_id = 100
+	if machine.name ~= "kr-quantum-computer" then
+		input = table.deepcopy(machine.fluid_boxes[1])
+		output = table.deepcopy(machine.fluid_boxes[2])
+	else
+		input = table.deepcopy(machine.fluid_boxes[2])
+		output = nil
+		dummy_fluidboxes = dummy_fluidboxes - 1
+	end
+	for _, box in pairs({ input, output }) do
+		for i = 1, dummy_fluidboxes do
+			linked_connection_id = linked_connection_id + 1
+			table.insert(
+				machine.fluid_boxes,
+				Public.dummy_fluidbox(box.production_type, box.pipe_connections[1].flow_direction, linked_connection_id)
+			)
+		end
+		box.pipe_picture = nil
+		box.pipe_covers = nil
+		if machine.name ~= "kr-quantum-computer" then
+			for _, connection in pairs(box.pipe_connections) do
+				connection.position = rotate_position(connection.position)
+				connection.connection_category = "data"
+				if connection.direction == defines.direction.north then
+					connection.direction = defines.direction.east
+				elseif connection.direction == defines.direction.south then
+					connection.direction = defines.direction.west
+				elseif connection.direction == defines.direction.east then
+					connection.direction = defines.direction.north
+				elseif connection.direction == defines.direction.west then
+					connection.direction = defines.direction.south
+				end
+			end
+		else
+			box.pipe_connections = {
+				{
+					flow_direction = "input-output",
+					direction = defines.direction.west,
+					position = { -2.5, 0.5 },
+					connection_category = "data",
+				},
+				{
+					flow_direction = "input-output",
+					direction = defines.direction.east,
+					position = { 2.5, -0.5 },
+					connection_category = "data",
+				},
+			}
+		end
+		table.insert(machine.fluid_boxes, box)
+	end
+	machine.use_mirroring = true
+end
+
+fluidbox(data.raw["assembling-machine"]["kr-advanced-assembling-machine"])
+fluidbox(data.raw["assembling-machine"]["kr-research-server"])
+fluidbox(data.raw["assembling-machine"]["kr-quantum-computer"]) --a bit hard coded, but i won't need it for more
 
 if not mods["maraxsis"] then
 	data.raw.recipe["maraxsis-atmosphere"].categories = { "kr-atmosphere-condensation" }
