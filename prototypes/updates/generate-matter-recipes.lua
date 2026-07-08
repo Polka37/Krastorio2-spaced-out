@@ -135,3 +135,14 @@ matter_lib.make_recipes({
 	unlocked_by = "kr-matter-fluorine-processing",
 })
 data.raw.recipe["kr-matter-to-fluorine"].surface_conditions = { { property = "pressure", min = 300, max = 300 } }
+
+--prevent matter stabilizers from being recycled into charged ones
+for _, recipe in pairs(data.raw.recipe) do
+	if recipe.ingredients then
+		for _, ingredient in pairs(recipe.ingredients) do
+			if ingredient.name == "kr-charged-matter-stabilizer" then
+				recipe.auto_recycle = false
+			end
+		end
+	end
+end

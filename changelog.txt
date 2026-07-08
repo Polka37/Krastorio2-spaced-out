@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.13
 Date: 2026-07-08
+  Bugfixes:
+    - Fixed that matter stabilizer recycled into charged one
   Compatibility:
     - Fixed advanced assembler, research server, quantum computer ports didn't work with Muluna data
     - Muluna interstellar tech card with cooling now can only be crafted on Muluna
