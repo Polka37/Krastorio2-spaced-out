@@ -4,7 +4,7 @@ Date: 2026-07-08
   Bugfixes:
     - Fixed that matter stabilizer recycled into charged one
   Compatibility:
-    - Fixed advanced assembler, research server, quantum computer ports didn't work with Muluna data
+    - Fixed advanced assembler, research server, quantum computer ports didn't work with Muluna data (#175)
     - Muluna interstellar tech card with cooling now can only be crafted on Muluna
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.12
@@ -114,6 +114,14 @@ Date: 2026-06-25
   Features:
     - Added option to revert thruster fuel to require water again
     - Promethium tech card must be researched in space using singularity labs. Can be disabled in settings
+---------------------------------------------------------------------------------------------------
+Version: 1.6.21
+Date: 2026-07-07
+  Info:
+    - I found that K2SO version 2.0.0 had few critical bugs that would worsen experience that were fixed in future versions only available for Factorio v2.1. K2SO 1.6.21 is the most stable version of the mod for Factorio 2.0
+  Bugfixes:
+    - Fixed crash when playing with K2 assets v2.0.5
+    - Fixed that the antimatter reactor animation did not work
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.20
 Date: 2026-06-08
