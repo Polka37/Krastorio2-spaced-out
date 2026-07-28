@@ -157,6 +157,9 @@ data_util.add_or_replace_product(
 
 recipe["express-underground-belt"].categories = { "crafting-with-fluid", "metallurgy" }
 recipe["express-splitter"].categories = { "crafting-with-fluid", "metallurgy" }
+recipe["kr-singularity-beacon"].categories = { "crafting", "electromagnetics" }
+
+table.insert(recipe["kr-ai-core"].categories, "electromagnetics")
 
 recipe["express-underground-belt"].main_product = "express-underground-belt"
 recipe["express-splitter"].main_product = "express-splitter"
