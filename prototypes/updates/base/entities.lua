@@ -223,7 +223,6 @@ data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_catego
 	"crafting",
 	"advanced-crafting",
 	"crafting-with-fluid",
-	"electromagnetics",
 	"kr-smelting-crafting",
 }
 data.raw["assembling-machine"]["kr-advanced-chemical-plant"].crafting_categories = {
