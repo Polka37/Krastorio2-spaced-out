@@ -5,6 +5,7 @@ Date: 2026-07-28
     - AI core and singularity beacon can be crafted in electromagnetic plant
   Bugfixes:
     - Fixed that electromagnetic data could be crafted in advanced assembling machine
+    - Fixed locale for sub-zero thruster fuel 
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.13
 Date: 2026-07-08
