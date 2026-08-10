@@ -3,6 +3,8 @@ Version: 2.0.15
 Date: 2026-08-10
   Changes:
     - Loaders stack size can be adjusted
+  Bugfixes:
+    - Atomic and antimatter explosives couldn't expose lava on Vulcanus or destroy ice platforms on Aquilo
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.14
 Date: 2026-07-28

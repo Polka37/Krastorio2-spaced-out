@@ -95,6 +95,53 @@ data_util.add_effect(
 	{ type = "ammo-damage", ammo_category = "kr-impulse-rifle", modifier = 0.5 }
 )
 
+--- Add interections with surfaces for atomic/antimatter bombs
+--refurbished space age code
+local function add_surface_effect(projectile)
+	-- target index 2, otherwise the lava tiles can remove cliffs first and you'd not get the achievement for cliff destruction.
+	if data.raw.projectile[projectile] ~= nil then
+		table.insert(data.raw.projectile[projectile].action.action_delivery.target_effects, 2, {
+			type = "create-entity",
+			check_buildability = true,
+			entity_name = "nuke-effects-aquilo",
+		})
+		table.insert(data.raw.projectile[projectile].action.action_delivery.target_effects, 2, {
+			type = "create-entity",
+			check_buildability = true,
+			entity_name = "nuke-effects-vulcanus",
+		})
+		table.insert(data.raw.projectile[projectile].action.action_delivery.target_effects, 2, {
+			type = "create-entity",
+			check_buildability = true,
+			entity_name = "nuke-effects-space",
+		})
+	elseif data.raw["artillery-projectile"][projectile] ~= nil then
+		table.insert(data.raw["artillery-projectile"][projectile].action.action_delivery.target_effects, 2, {
+			type = "create-entity",
+			check_buildability = true,
+			entity_name = "nuke-effects-aquilo",
+		})
+		table.insert(data.raw["artillery-projectile"][projectile].action.action_delivery.target_effects, 2, {
+			type = "create-entity",
+			check_buildability = true,
+			entity_name = "nuke-effects-vulcanus",
+		})
+		table.insert(data.raw["artillery-projectile"][projectile].action.action_delivery.target_effects, 2, {
+			type = "create-entity",
+			check_buildability = true,
+			entity_name = "nuke-effects-space",
+		})
+	end
+end
+
+add_surface_effect("kr-nuclear-turret-rocket-projectile")
+add_surface_effect("kr-antimatter-rocket-projectile")
+add_surface_effect("kr-atomic-artillery-projectile")
+add_surface_effect("kr-antimatter-artillery-projectile")
+add_surface_effect("kr-matter-railgun-projectile")
+add_surface_effect("kr-matter-turret-rocket-projectile")
+add_surface_effect("atomic-rocket")
+
 if not settings.startup["kr-realistic-weapons"].value then
 	return
 end
