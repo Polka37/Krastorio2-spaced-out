@@ -2,17 +2,12 @@ if not settings.startup["kr-loaders"].value then
 	return
 end
 
-data.raw["loader-1x1"]["kr-loader"].heating_energy = "50kW"
-data.raw["loader-1x1"]["kr-fast-loader"].heating_energy = "50kW"
-data.raw["loader-1x1"]["kr-express-loader"].heating_energy = "50kW"
-data.raw["loader-1x1"]["kr-advanced-loader"].heating_energy = "50kW"
-data.raw["loader-1x1"]["kr-superior-loader"].heating_energy = "50kW"
-
-data.raw["loader-1x1"]["kr-loader"].max_belt_stack_size = 4
-data.raw["loader-1x1"]["kr-fast-loader"].max_belt_stack_size = 4
-data.raw["loader-1x1"]["kr-express-loader"].max_belt_stack_size = 4
-data.raw["loader-1x1"]["kr-advanced-loader"].max_belt_stack_size = 4
-data.raw["loader-1x1"]["kr-superior-loader"].max_belt_stack_size = 4
+for _, loader in pairs(data.raw["loader-1x1"]) do
+	loader.heating_energy = "50kW"
+	loader.max_belt_stack_size = 4
+	loader.adjustable_belt_stack_size = true
+	--loader.wait_for_full_stack = true
+end
 
 data:extend({
 	{
