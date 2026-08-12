@@ -14,3 +14,11 @@ data:extend({
 		order = "a2",
 	},
 })
+
+if mods["PowerOverload"] then
+	require("__PowerOverload__/registry")
+	PowerOverload.register_pole({
+		name = "kr-superior-substation",
+		default = "1GW",
+	})
+end
