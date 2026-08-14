@@ -9,6 +9,8 @@ for _, loader in pairs(data.raw["loader-1x1"]) do
 	--loader.wait_for_full_stack = true
 end
 
+data.raw.item["kr-advanced-loader"].default_import_location = "vulcanus"
+
 data:extend({
 	{
 		type = "recipe",

@@ -3,6 +3,7 @@ Version: 2.0.16
 Date: 2026-08-??
   Changes:
     - Advanced assembling machine now requires ai core as prerequisite tech
+    - Turbo loader default import location is now Vulcanus
   Compatibility:
     - Added support for Power Overload for superior substation
 ---------------------------------------------------------------------------------------------------
