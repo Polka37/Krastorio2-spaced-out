@@ -1,10 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.16
-Date: 2026-08-??
+Date: 2026-08-14
+  Features:
+    - Added ability to manufacture low density structures and processing units from scrap and matter
   Changes:
     - Advanced assembling machine now requires ai core as prerequisite tech
     - Turbo loader default import location is now Vulcanus
     - Steel gear wheel now costs 10 molten iron instead of 20
+    - Quadrupled scrap matter value and halved scrap to matter recipe speed
   Compatibility:
     - Added support for Power Overload for superior substation
 ---------------------------------------------------------------------------------------------------

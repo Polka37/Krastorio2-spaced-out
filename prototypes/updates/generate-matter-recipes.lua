@@ -95,10 +95,35 @@ data.raw.recipe["kr-matter-to-holmium-ore"].surface_conditions = { { property = 
 
 matter_lib.make_conversion_recipe({
 	material = { type = "item", name = "scrap", amount = 10 },
-	matter_count = 1,
-	energy_required = 0.5,
+	matter_count = 4,
+	energy_required = 1,
 	unlocked_by = "kr-matter-scrap-processing",
 })
+
+matter_lib.make_deconversion_recipe({
+	material = { type = "item", name = "low-density-structure", amount = 10 },
+	matter_count = 50,
+	energy_required = 10,
+	unlocked_by = "kr-matter-scrap-processing",
+	needs_stabilizer = true,
+})
+matter_lib.make_deconversion_recipe({
+	material = { type = "item", name = "processing-unit", amount = 10 },
+	matter_count = 30,
+	energy_required = 10,
+	unlocked_by = "kr-matter-scrap-processing",
+	needs_stabilizer = true,
+})
+data_util.add_or_replace_ingredient(
+	"kr-matter-to-low-density-structure",
+	"scrap",
+	{ type = "item", name = "scrap", amount = 100 }
+)
+data_util.add_or_replace_ingredient(
+	"kr-matter-to-processing-unit",
+	"scrap",
+	{ type = "item", name = "scrap", amount = 100 }
+)
 
 matter_lib.make_deconversion_recipe({
 	material = { type = "item", name = "holmium-plate", amount = 10 },
