@@ -18,6 +18,7 @@ data_util.add_prerequisite("kr-imersium-processing", "kr-quarry-minerals-extract
 data_util.add_prerequisite("kr-advanced-tech-card", "utility-science-pack")
 data_util.add_prerequisite("kr-energy-control-unit", "kr-advanced-tech-card")
 data_util.add_prerequisite("worker-robots-speed-7", "electromagnetic-science-pack")
+data_util.add_prerequisite("kr-automation", "kr-ai-core")
 
 data_util.remove_prerequisite("radar", "chemical-science-pack")
 data_util.remove_prerequisite("energy-shield-mk2-equipment", "power-armor")
