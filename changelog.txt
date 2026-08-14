@@ -10,6 +10,7 @@ Date: 2026-08-14
     - Quadrupled scrap matter value and halved scrap to matter recipe speed
   Compatibility:
     - Added support for Power Overload for superior substation
+    - Made low density structure cost between Muluna and K2SO consistent
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.15
 Date: 2026-08-10

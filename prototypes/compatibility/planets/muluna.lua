@@ -13,12 +13,22 @@ do
 	effects.allow_multiple_results = true
 end
 
---Unify trees
-data_util.add_or_replace_product("tree-01", "tree-01", { type = "item", name = "muluna-sapling", amount = 1 })
-data.raw.recipe["tree-01"].hidden_in_factoriopedia = true
-data.raw.recipe["tree-01"].subgroup = "trees"
-data.raw.recipe["tree-01"].order = "a[tree-01]"
-data.raw.recipe["tree-01"].localised_name = { "entity-name.tree" }
+--Make LDS costs consistent
+data_util.add_or_replace_ingredient(
+	"low-density-structure-from-aluminum",
+	"aluminum-plate",
+	{ type = "item", name = "aluminum-plate", amount = 10 }
+)
+data_util.add_or_replace_ingredient(
+	"casting-low-density-structure-aluminum",
+	"molten-iron",
+	{ type = "fluid", name = "molten-iron", amount = 60 }
+)
+data_util.add_or_replace_ingredient(
+	"casting-low-density-structure-aluminum",
+	"molten-aluminum",
+	{ type = "fluid", name = "molten-aluminum", amount = 120 }
+)
 
 --Buff condesation turbine
 data.raw["fusion-generator"]["muluna-cycling-steam-turbine"].effectivity = 0.95
