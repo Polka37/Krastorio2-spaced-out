@@ -44,4 +44,53 @@ data:extend({
 		allow_productivity = true,
 		hide_from_signal_gui = false,
 	},
+	{
+		type = "recipe",
+		name = "kr-biter-egg-upcycling",
+		icons = {
+			{ icon = "__space-age__/graphics/icons/biter-egg.png" },
+			{ icon = "__core__/graphics/icons/any-quality.png", scale = 0.25, shift = { 8, -8 } },
+		},
+		icon_size = 128,
+		subgroup = "nauvis-agriculture",
+		order = "b[nauvis-agriculture]-b1[biter-upcycling]",
+		enabled = false,
+		categories = { "kr-bioprocessing" },
+		allow_productivity = false,
+		energy_required = 15,
+		show_amount_in_title = false,
+		ingredients = {
+			{ type = "item", name = "biter-egg", amount = 1 },
+			{ type = "item", name = "bioflux", amount = 2, quality_max = "normal" },
+		},
+		results = {
+			{
+				type = "item",
+				name = "biter-egg",
+				amount = 1,
+				shared_probability = { min = 0.5, max = 0.65 },
+				quality_change = -1,
+			},
+			{
+				type = "item",
+				name = "biter-egg",
+				amount = 1,
+				shared_probability = { min = 0, max = 0.5 },
+			},
+			{
+				type = "item",
+				name = "biter-egg",
+				amount = 1,
+				shared_probability = { min = 0.65, max = 0.95 },
+				quality_change = 1,
+			},
+			{
+				type = "item",
+				name = "biter-egg",
+				amount = 1,
+				shared_probability = { min = 0.95, max = 1 },
+				quality_change = 2,
+			},
+		},
+	},
 })

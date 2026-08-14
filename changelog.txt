@@ -3,6 +3,7 @@ Version: 2.0.16
 Date: 2026-08-14
   Features:
     - Added ability to manufacture low density structures and processing units from scrap and matter
+    - Added biter egg upcycling recipe
   Changes:
     - Advanced assembling machine now requires ai core as prerequisite tech
     - Turbo loader default import location is now Vulcanus

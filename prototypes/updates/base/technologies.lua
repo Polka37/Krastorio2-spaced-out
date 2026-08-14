@@ -86,6 +86,7 @@ data_util.add_recipe_unlock("cryogenic-science-pack", "kr-cryogenic-research-dat
 data_util.add_recipe_unlock("promethium-science-pack", "kr-promethium-research-data")
 data_util.add_recipe_unlock("cryogenic-plant", "kr-liquid-hydrogen")
 data_util.add_recipe_unlock("cryogenic-plant", "kr-liquid-oxygen")
+data_util.add_recipe_unlock("biter-egg-handling", "kr-biter-egg-upcycling")
 
 if settings.startup["kr-loaders"].value then
 	data_util.add_recipe_unlock("turbo-transport-belt", "kr-advanced-loader")
