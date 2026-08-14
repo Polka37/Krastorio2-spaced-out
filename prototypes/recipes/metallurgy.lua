@@ -201,7 +201,7 @@ data:extend({
 		hide_from_signal_gui = false,
 		enabled = false,
 		ingredients = {
-			{ type = "fluid", name = "molten-iron", amount = 20, fluidbox_multiplier = 10 },
+			{ type = "fluid", name = "molten-iron", amount = 10, fluidbox_multiplier = 10 },
 		},
 		energy_required = 1,
 		allow_decomposition = false,

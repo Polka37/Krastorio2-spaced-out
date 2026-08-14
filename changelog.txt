@@ -4,6 +4,7 @@ Date: 2026-08-??
   Changes:
     - Advanced assembling machine now requires ai core as prerequisite tech
     - Turbo loader default import location is now Vulcanus
+    - Steel gear wheel now costs 10 molten iron instead of 20
   Compatibility:
     - Added support for Power Overload for superior substation
 ---------------------------------------------------------------------------------------------------
