@@ -115,8 +115,8 @@ data.raw["accumulator"]["kr-energy-storage"].energy_source.input_flow_limit = "2
 data.raw["accumulator"]["kr-energy-storage"].energy_source.output_flow_limit = "20MW"
 
 --Add stacking to superior inserters
-data.raw.inserter["kr-superior-inserter"].max_belt_stack_size = 4
-data.raw.inserter["kr-superior-long-inserter"].max_belt_stack_size = 4
+data.raw.inserter["kr-superior-inserter"].max_belt_stack_size = data.raw["utility-constants"]["default"].max_belt_stack_size
+data.raw.inserter["kr-superior-long-inserter"].max_belt_stack_size = data.raw["utility-constants"]["default"].max_belt_stack_size
 data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
 data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 
