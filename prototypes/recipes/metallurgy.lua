@@ -69,6 +69,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ca[casting-molten-rare-metals]",
+		auto_recycle = false,
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/rare-metals.png" },
 			{ icon = "__k2so-assets__/icons/fluids/molten-rare-metals.png", scale = 0.35, shift = { 8, -8 } },
@@ -151,6 +152,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ec[casting-iron-beam]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-iron-beam" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/iron-beam.png" },
@@ -172,6 +174,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-eb[casting-steel-beam]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-steel-beam" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/steel-beam.png" },
@@ -193,6 +196,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-d[casting-steel-gear]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-steel-gear-wheel" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/steel-gear-wheel.png" },
@@ -214,6 +218,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "energy-pipe-distribution",
 		order = "b[casting]-f[steel-pipe]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "entity-name.kr-steel-pipe" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/entities/steel-pipe.png", scale = 0.5, shift = { -8, 8 } },
@@ -235,6 +240,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "energy-pipe-distribution",
 		order = "b[casting]-g[steel-pipe-to-ground.png]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "entity-name.kr-steel-pipe-to-ground" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/entities/steel-pipe-to-ground.png", scale = 0.5, shift = { -8, 8 } },
@@ -257,6 +263,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ga[refined-concrete]",
+		auto_recycle = false,
 		localised_name = { "", { "item-name.refined-concrete" }, " ", { "recipe-name.kr-from-molten-iron" } },
 		icons = {
 			{ icon = "__base__/graphics/icons/refined-concrete.png" },
@@ -280,6 +287,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-cb[imersium-plate]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-imersium-plate" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/imersium-plate.png" },
@@ -302,6 +310,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-ec[imersium-beam]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-imersium-beam" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/imersium-beam.png" },
@@ -324,6 +333,7 @@ data:extend({
 		categories = { "metallurgy" },
 		subgroup = "vulcanus-processes",
 		order = "b[casting]-da[imersium-gear-wheel]",
+		auto_recycle = false,
 		localised_name = { "", { "recipe-name.casting" }, " ", { "item-name.kr-imersium-gear-wheel" } },
 		icons = {
 			{ icon = "__Krastorio2Assets__/icons/items/imersium-gear-wheel.png" },
