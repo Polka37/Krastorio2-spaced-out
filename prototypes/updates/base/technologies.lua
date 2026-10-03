@@ -3,6 +3,8 @@ local data_util = require("data-util")
 data_util.add_prerequisite("automation-science-pack", "automation")
 data_util.add_prerequisite("military", "automation-science-pack")
 data_util.add_prerequisite("rocket-fuel", "kr-atmosphere-condensation")
+-- kr-advanced-chemistry unlocks the ammonia and hydrogen chloride that the extra rocket fuel recipes of rocket-fuel use
+data_util.add_prerequisite("rocket-fuel", "kr-advanced-chemistry")
 data_util.add_prerequisite(kr_optimization_tech_card_name, "kr-research-server")
 data_util.add_prerequisite("energy-shield-mk2-equipment", "power-armor-mk2")
 data_util.add_prerequisite("big-mining-drill", "kr-electric-mining-drill-mk2")
