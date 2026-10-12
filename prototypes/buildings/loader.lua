@@ -2,7 +2,16 @@ if not settings.startup["kr-loaders"].value then
 	return
 end
 
-for _, loader in pairs(data.raw["loader-1x1"]) do
+local kr_loaders = {
+	"kr-loader",
+	"kr-fast-loader",
+	"kr-express-loader",
+	"kr-advanced-loader",
+	"kr-superior-loader"
+}
+
+for _, loader_name in ipairs(kr_loaders) do
+	local loader = data.raw["loader-1x1"][loader_name]
 	loader.heating_energy = "50kW"
 	loader.max_belt_stack_size = 4
 	loader.adjustable_belt_stack_size = true
