@@ -4,7 +4,7 @@ end
 
 for _, loader in pairs(data.raw["loader-1x1"]) do
 	loader.heating_energy = "50kW"
-	loader.max_belt_stack_size = 4
+	loader.max_belt_stack_size = data.raw["utility-constants"]["default"].max_belt_stack_size
 	loader.adjustable_belt_stack_size = true
 	--loader.wait_for_full_stack = true
 end
