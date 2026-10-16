@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.18
 Date: 2026-10-16
+  Changes:
+    - Rocket fuel research requires advanced chemistry (#202 by GreenTech-Solutions)
   Bugfixes:
-    - Fixed removed fluidbox max temperature from advanced steam turbine that caused startup error on factorio 2.1.22
+    - Removed fluidbox max temperature from advanced steam turbine that caused startup error on factorio 2.1.22
+    - Fixed that krastorio loaders didn't use max belt stacking over 4 (#196 by Sevaija)
+    - Fixed that K2SO updated all loaders heat consumption and belt stacking instead of only K2 ones (#205 by kryojenik)
+  Locale:
+    - Updated Russian localisation (#190 by V1ncvega)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.17
 Date: 2026-08-28
