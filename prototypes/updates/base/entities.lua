@@ -115,8 +115,10 @@ data.raw["accumulator"]["kr-energy-storage"].energy_source.input_flow_limit = "2
 data.raw["accumulator"]["kr-energy-storage"].energy_source.output_flow_limit = "20MW"
 
 --Add stacking to superior inserters
-data.raw.inserter["kr-superior-inserter"].max_belt_stack_size = data.raw["utility-constants"]["default"].max_belt_stack_size
-data.raw.inserter["kr-superior-long-inserter"].max_belt_stack_size = data.raw["utility-constants"]["default"].max_belt_stack_size
+data.raw.inserter["kr-superior-inserter"].max_belt_stack_size =
+	data.raw["utility-constants"]["default"].max_belt_stack_size
+data.raw.inserter["kr-superior-long-inserter"].max_belt_stack_size =
+	data.raw["utility-constants"]["default"].max_belt_stack_size
 data.raw.inserter["kr-superior-inserter"].stack_size_bonus = 4
 data.raw.inserter["kr-superior-long-inserter"].stack_size_bonus = 4
 
@@ -191,6 +193,9 @@ data.raw.reactor["heating-tower"].consumption = "50MW"
 
 --wind turbine
 data.raw["solar-panel"]["kr-wind-turbine"].solar_coefficient_property = "rubia-wind-speed"
+
+--solar
+data.raw["solar-panel"]["kr-advanced-solar-panel"].production = "400kW"
 
 --emissions
 data.raw.furnace["kr-air-purifier"].energy_source.emissions_per_minute = { pollution = -50, spores = -5 }

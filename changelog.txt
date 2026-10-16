@@ -3,6 +3,7 @@ Version: 2.0.18
 Date: 2026-10-16
   Changes:
     - Rocket fuel research requires advanced chemistry (#202 by GreenTech-Solutions)
+    - Buffed advanced solar panels from 250kW to 400kW
   Bugfixes:
     - Removed fluidbox max temperature from advanced steam turbine that caused startup error on factorio 2.1.22
     - Fixed that krastorio loaders didn't use max belt stacking over 4 (#196 by Sevaija)
